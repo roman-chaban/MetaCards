@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { Inter, Poppins } from 'next/font/google';
+import '@/assets/layoutStyles/layout.scss';
 
 const inter = Inter({
   subsets: ['latin'],
