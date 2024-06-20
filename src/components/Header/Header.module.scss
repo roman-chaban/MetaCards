@@ -1,2 +1,79 @@
 @import '../../assets/styles/stack.scss';
 
+.header__container {
+  @include container;
+  padding-top: rem(50px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  padding-right: rem(60px);
+  &_image {
+    height: auto;
+  }
+}
+
+.header__nav > .header__nav_menu {
+  display: flex;
+  align-items: center;
+  gap: rem(55px);
+  padding-right: rem(120px);
+}
+
+.menu__listItem > .menu__listLink {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: $font-size-create-subtitle;
+  color: $color-gray-dark;
+}
+
+.inputButton__items {
+  display: flex;
+  align-items: center;
+  gap: rem(55px);
+}
+
+.search__input {
+  display: flex;
+  align-items: center;
+  gap: rem(25px);
+  width: 100%;
+  padding-left: rem(25px);
+  padding-right: rem(83px);
+  max-width: rem(370px);
+  height: 57px;
+  background: $color-input-background;
+  border-radius: rem(14px);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: $color-input-background;
+  border-radius: rem(14px);
+  font-size: $font-size-placeholder;
+  font-weight: 500;
+  &::placeholder {
+    color: $color-input-placeholder;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.175;
+    letter-spacing: -0.02em;
+  }
+}
+
+.connect__button {
+  width: 100%;
+  max-width: 199px;
+  height: 57px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  border-radius: rem(16px);
+  padding: 16px 24px;
+  background: $color-button-bg;
+  color: $color-white;
+}

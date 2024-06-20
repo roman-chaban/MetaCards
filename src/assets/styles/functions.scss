@@ -1,4 +1,4 @@
 @function rem($pxValue) {
   $baseFontSize: 16px;
-  @return #{$pxValue / $baseFontSize}rem;
+  @return ($pxValue / $baseFontSize) * 1rem;
 }
