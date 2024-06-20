@@ -1,16 +1,9 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
-import { Inter, Poppins } from 'next/font/google';
 import '@/assets/layoutStyles/layout.scss';
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-});
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-});
+import { Header } from '@/components/Header/Header';
+import { Footer } from '@/components/Footer/Footer';
+import { inter, poppins } from '@/constants/layoutFonts';
 
 export const metadata: Metadata = {
   title: 'DivSea NFT | Layout',
@@ -25,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.className} ${poppins.className}`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
