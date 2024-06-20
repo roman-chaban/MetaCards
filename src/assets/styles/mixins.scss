@@ -4,3 +4,29 @@
   margin: 0 auto;
   padding: 0 95px;
 }
+
+@mixin button() {
+  width: 100%;
+  max-width: 179px;
+  height: 57px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  border-radius: rem(16px);
+  padding: 16px 24px;
+  background: $color-button-bg;
+  color: $color-white;
+}
+
+@mixin secondaryButton() {
+  padding: 18px 21px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $color-black;
+  border: 1.5px solid $color-black;
+  border-radius: 12px;
+  background: transparent;
+}

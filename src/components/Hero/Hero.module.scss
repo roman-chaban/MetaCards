@@ -1,0 +1,151 @@
+@import '../../assets/styles/stack.scss';
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(50px);
+  margin-top: rem(111px);
+  padding-left: rem(150px);
+}
+
+.hero__information {
+  width: 100%;
+  max-width: rem(600px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(50px);
+}
+
+.hero__informationTitles {
+  display: flex;
+  flex-direction: column;
+  gap: rem(18px);
+}
+
+.hero__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: $font-size-heading;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: $color-button-bg;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 195px;
+    height: 1px;
+    background: $color-border-top-dark;
+    opacity: 0.2;
+  }
+}
+
+.hero__subTitle {
+  font-size: $font-size-subtitle;
+  color: $color-gray-subtitle;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.55556;
+  text-align: justify;
+}
+
+.hero__subTitle_mark {
+  font-weight: 600;
+  color: $color-button-bg;
+}
+
+.hero__information__buttons {
+  display: flex;
+  align-items: center;
+  gap: rem(26px);
+}
+
+.explore__button {
+  @include button;
+}
+
+.create__button {
+  @include secondaryButton;
+}
+
+.features {
+  margin-top: rem(35px);
+  display: flex;
+  align-items: center;
+  gap: rem(90px);
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    gap: rem(6px);
+  }
+}
+
+.views__title {
+  line-height: 1.25;
+  text-align: center;
+  font-weight: 600;
+  font-size: $font-size-subtitle-large;
+}
+
+.subTitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-gray-light-alt;
+}
+
+.heroGallery {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(40px);
+}
+
+.heroNft__banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(50px);
+}
+
+.nft__image {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.secondaryImage {
+  position: relative;
+  bottom: 160px;
+}
+
+.subGallery__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sliderButtons {
+  padding: rem(22px);
+  max-width: 170px;
+  height: 70px;
+  display: flex;
+  gap: rem(40px);
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(20px);
+  background: $color-slider-buttons-background;
+  box-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
+}
+
+.slider__decoration {
+  display: block;
+  border-radius: 2px;
+  width: 2px;
+  height: 25px;
+  background: $color-gray-medium;
+}
+
+.prev__button,
+.next__button {
+  background: transparent;
+}

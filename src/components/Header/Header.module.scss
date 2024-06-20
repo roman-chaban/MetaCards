@@ -65,15 +65,5 @@
 }
 
 .connect__button {
-  width: 100%;
-  max-width: 199px;
-  height: 57px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: uppercase;
-  border-radius: rem(16px);
-  padding: 16px 24px;
-  background: $color-button-bg;
-  color: $color-white;
+  @include button;
 }
