@@ -1,8 +1,8 @@
 @import '../../assets/styles/stack.scss';
 
 .weekly {
-  min-height: 100vh;
   background: $color-section-background;
+  position: relative;
 }
 
 // .weekly__container {
@@ -24,8 +24,15 @@
   font-size: $font-size-section-heading;
 }
 
+.slider__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem(90px);
+}
+
 .weekly__cards {
-  margin-top: rem(120px);
+  margin: rem(120px) 0;
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -36,14 +43,58 @@
 .card {
   width: 100%;
   width: 281px;
-  height: 402px;
+  height: 395px;
   padding: rem(20px);
   border-radius: rem(20px);
-  box-shadow: 39px 12px 59px 0 rgba(199, 199, 199, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   background: $color-white;
 }
 
 .card__image {
   object-fit: cover;
   border-radius: rem(20px);
+}
+
+.card__titles {
+  padding-top: rem(20px);
+}
+
+.card__title {
+  font-size: $font-size-card-title;
+  color: $color-button-bg;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.card__information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__information_titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__subTitle {
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: $color-card-subTitle;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+  gap: rem(7px);
+  color: $color-button-bg;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.card__button {
+  @include button;
+  max-width: 121px;
+  height: 51px;
 }

@@ -32,7 +32,15 @@ export const WeeklyCards: FC = () => {
           <div className={styles.card__information}>
             <div className={styles.card__information_titles}>
               <p className={styles.card__subTitle}>{product.subTitle}</p>
-              <span className={styles.card__rating}>{product.rating}</span>
+              <span className={styles.card__rating}>
+                <Image
+                  src='/images/productsImages/icon.svg'
+                  alt='Ethereum icon'
+                  width={20}
+                  height={20}
+                />
+                {product.rating}
+              </span>
             </div>
             <Button type='button' className={styles.card__button}>
               {product.buttonLabel}

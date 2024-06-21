@@ -1,0 +1,75 @@
+@import '../../assets/styles/stack.scss';
+
+.recent {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: rem(100px);
+}
+
+.recent__container {
+  border: 2px solid #edf2f7;
+  border-radius: 16px;
+  width: 365px;
+  height: 246px;
+  box-shadow: 10px 10px 50px 0 rgba(20, 20, 22, 0.1);
+  background: $color-white;
+  padding: rem(25px);
+  position: absolute;
+  bottom: -120px;
+  right: 80px;
+}
+
+.recent__title {
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  color: $color-recent-title;
+  font-size: $font-size-card-title;
+}
+
+.title {
+  font-size: $font-size-placeholder;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.subTitle {
+  color: $color-card-subTitle;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.recent__items {
+  margin-top: rem(40px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+}
+
+.recentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(20px);
+}
+
+.recent__titlesBlock {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8px);
+}
+
+.percent__ratingFlex {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1.5;
+  color: $color-button-bg;
+}
+
+.recent__ratingPercentBlock {
+  display: flex;
+  flex-direction: column;
+  margin-left: rem(130px);
+  gap: rem(10px);
+}
