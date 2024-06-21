@@ -1,0 +1,49 @@
+@import '../../assets/styles/stack.scss';
+
+.weekly {
+  min-height: 100vh;
+  background: $color-section-background;
+}
+
+// .weekly__container {
+//   // @include container;
+// }
+
+.weekly__titleBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weekly__title {
+  padding-top: 70px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 0.59812;
+  color: $color-gray-light;
+  font-size: $font-size-section-heading;
+}
+
+.weekly__cards {
+  margin-top: rem(120px);
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(60px);
+}
+
+.card {
+  width: 100%;
+  width: 281px;
+  height: 402px;
+  padding: rem(20px);
+  border-radius: rem(20px);
+  box-shadow: 39px 12px 59px 0 rgba(199, 199, 199, 0.6);
+  background: $color-white;
+}
+
+.card__image {
+  object-fit: cover;
+  border-radius: rem(20px);
+}

@@ -8,6 +8,7 @@ import { inter, poppins } from '@/constants/layoutFonts';
 export const metadata: Metadata = {
   title: 'DivSea NFT | Layout',
   description: 'Discover And Create NFTs',
+  icons: '/images/icons/Wave.svg',
 };
 
 export default function RootLayout({

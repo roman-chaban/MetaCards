@@ -5,6 +5,13 @@
   padding: 0 95px;
 }
 
+@mixin heroContainer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: rem(100px);
+}
+
 @mixin button() {
   width: 100%;
   max-width: 179px;

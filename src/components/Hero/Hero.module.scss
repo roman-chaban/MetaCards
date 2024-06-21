@@ -1,11 +1,15 @@
 @import '../../assets/styles/stack.scss';
 
+.hero {
+  padding-top: rem(110px);
+}
+
 .hero__container {
   display: flex;
   justify-content: space-between;
   gap: rem(50px);
   margin-top: rem(111px);
-  padding-left: rem(150px);
+  @include heroContainer;
 }
 
 .hero__information {

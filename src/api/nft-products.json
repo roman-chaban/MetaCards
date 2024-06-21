@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Sun-Glass",
+    "subTitle": "Current bid",
+    "time": "07h 09m 12s",
+    "image": "/images/productsImages/firstNFT.svg",
+    "buttonLabel": "PLACE BID",
+    "rating": "1.75"
+  },
+  {
+    "title": "Sun-Glass",
+    "subTitle": "Current bid",
+    "time": "07h 09m 12s",
+    "image": "/images/productsImages/secondNFT.svg",
+    "buttonLabel": "PLACE BID",
+    "rating": "1.75"
+  },
+  {
+    "title": "Sun-Glass",
+    "subTitle": "Current bid",
+    "time": "07h 09m 12s",
+    "image": "/images/productsImages/thirdNFT.svg",
+    "buttonLabel": "PLACE BID",
+    "rating": "1.75"
+  },
+  {
+    "title": "Sun-Glass",
+    "subTitle": "Current bid",
+    "time": "07h 09m 12s",
+    "image": "/images/productsImages/fourNFT.svg",
+    "buttonLabel": "PLACE BID",
+    "rating": "1.75"
+  },
+  {
+    "title": "Sun-Glass",
+    "subTitle": "Current bid",
+    "time": "07h 09m 12s",
+    "image": "/images/productsImages/fiveNFT.svg",
+    "buttonLabel": "PLACE BID",
+    "rating": "1.75"
+  }
+]
