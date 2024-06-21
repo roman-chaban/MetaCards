@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${poppins.className}`}>
         <Providers>
           <Header />
-          {children}
+          <main className='main'>{children}</main>
           <Footer />
         </Providers>
       </body>
