@@ -1,3 +1,4 @@
+import { Collections } from '@/components/Collections/Collections';
 import { Hero } from '@/components/Hero/Hero';
 import { Weekly } from '@/components/Weekly/Weekly';
 import type { Metadata } from 'next';
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Hero />
       <Weekly />
+      <Collections />
     </>
   );
 }

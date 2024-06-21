@@ -37,3 +37,10 @@
   border-radius: 12px;
   background: transparent;
 }
+
+@mixin tableRowItem() {
+  font-weight: 600;
+  line-height: 1.5;
+  color: $color-button-bg;
+  font-size: $font-size-collection-card-volume;
+}
