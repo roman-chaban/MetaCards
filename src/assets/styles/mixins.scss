@@ -44,3 +44,13 @@
   color: $color-button-bg;
   font-size: $font-size-collection-card-volume;
 }
+
+@mixin exploreButton () {
+  font-size: $font-size-link;
+  color: $color-explore-button;
+  background: transparent;
+  font-weight: 500;
+  line-height: 2.25921;
+  letter-spacing: -0.01em;
+  margin-bottom: -2px;
+}

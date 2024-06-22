@@ -1,0 +1,67 @@
+@import '../../assets/styles/stack.scss';
+
+.explore {
+  min-height: 100vh;
+  padding: rem(100px) 0;
+  background: $color-explore-background;
+}
+
+.explore__container {
+  @include container;
+  border-bottom: 2px solid #ebe9e9;
+}
+
+.explore__title {
+  text-align: center;
+  font-size: $font-size-section-heading;
+  color: $color-button-bg;
+  font-weight: 600;
+  line-height: 0.59812;
+  padding-bottom: rem(65px);
+}
+
+.explore__nav {
+  display: flex;
+  justify-content: center;
+  &_menu {
+    display: flex;
+    align-items: center;
+    gap: rem(25px);
+  }
+}
+
+.nav__button {
+  border: 2.21px solid $color-button-bg;
+  border-radius: 13px;
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  gap: rem(9px);
+  background: transparent;
+}
+
+.nav__link {
+  color: $color-button-bg;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+.exploreBlock {
+  display: flex;
+  align-items: center;
+  gap: rem(5px);
+  justify-content: flex-end;
+  padding-bottom: rem(100px);
+  &__button {
+    @include exploreButton;
+  }
+}
+
+.weekly__nftCardsGridContainer {
+  padding: rem(100px) 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: rem(40px);
+  row-gap: rem(60px);
+}

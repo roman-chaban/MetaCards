@@ -11,7 +11,7 @@ import { Button } from '../UI/Button/Button';
 
 type InputValue = string;
 
-const Header: FC = () => {
+export const Header: FC = () => {
   const [text, setText] = useState<InputValue>('');
   return (
     <header className={styles.header}>
@@ -54,4 +54,3 @@ const Header: FC = () => {
   );
 };
 
-export { Header };

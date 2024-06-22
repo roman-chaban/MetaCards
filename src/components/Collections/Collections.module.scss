@@ -1,8 +1,8 @@
 @import '../../assets/styles/stack.scss';
 
 .collections {
-  margin-top: rem(140px);
-  min-height: 100vh;
+  background: $color-explore-background;
+  padding-top: rem(100px);
 }
 
 .collection__container {
@@ -104,4 +104,14 @@
   line-height: 1.3;
   letter-spacing: 0.01em;
   font-size: $font-size-collection-card-volume;
+}
+
+.explore {
+  display: flex;
+  align-items: center;
+  gap: rem(5px);
+  justify-content: flex-end;
+  &__button {
+    @include exploreButton;
+  }
 }

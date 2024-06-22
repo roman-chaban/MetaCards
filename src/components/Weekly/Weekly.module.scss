@@ -31,8 +31,8 @@
   margin-bottom: rem(90px);
 }
 
-.weekly__cards {
-  margin: rem(120px) 0;
+.weekly__nftCardsContainer {
+  padding: rem(120px) 0;
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -98,3 +98,4 @@
   max-width: 121px;
   height: 51px;
 }
+
