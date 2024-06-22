@@ -1,6 +1,8 @@
 import { Collections } from '@/components/Collections/Collections';
+import { Create } from '@/components/Create/Create';
 import { Explore } from '@/components/Explore/Explore';
 import { Hero } from '@/components/Hero/Hero';
+import { Unleash } from '@/components/Unleash/Unleash';
 import { Weekly } from '@/components/Weekly/Weekly';
 import type { Metadata } from 'next';
 
@@ -15,7 +17,9 @@ export default function Home() {
       <Hero />
       <Weekly />
       <Collections />
-      <Explore /> 
+      <Explore />
+      <Unleash />
+      <Create />
     </>
   );
 }

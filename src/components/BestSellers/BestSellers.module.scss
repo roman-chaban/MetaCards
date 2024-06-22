@@ -1,0 +1,65 @@
+@import '../../assets/styles/stack.scss';
+
+.bestSellers {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  width: 850px;
+}
+
+.bestSellers__block {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30px);
+  background: $color-white;
+  width: 322px;
+  height: 510px;
+  border: 0.88px solid $color-bestSellers-border;
+  border-radius: 14px;
+  box-shadow: 9px 9px 44px 0 rgba(20, 20, 22, 0.1);
+  padding: 25px 20px;
+}
+
+.bestSellers__title {
+  color: $color-recent-title;
+  font-size: $font-size-subtitle;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+.dots__decoration {
+  position: absolute;
+  z-index: -1;
+  right: -266px;
+  bottom: -111px;
+}
+
+.bestSellers__list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(25px);
+}
+
+.bestSellers__listBlock {
+  position: relative;
+  &::after {
+    font-size: $font-size-circle-small;
+    color: $color-circle-number;
+    background-color: $color-circle;
+    position: absolute;
+    content: attr(data-number);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 32px;
+    top: 1px;
+    line-height: 1.66667;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+  }
+}

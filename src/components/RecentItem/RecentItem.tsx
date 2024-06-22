@@ -11,14 +11,21 @@ interface RecentItemProps {
     title: string;
     subIcon: string;
   };
+  index: number;
 }
 
-export const RecentItem: FC<RecentItemProps> = ({ item }) => {
+export const RecentItem: FC<RecentItemProps> = ({ item, index }) => {
   const percentValue = parseFloat(item.percent.replace('%', ''));
   return (
     <div className={styles.recentItem}>
-      <div className={styles.recent__iconBlock}>
-        <Image src={item.icon} alt={item.title} width={50} height={50} />
+      <div className={styles.recent__iconBlock} data-number={index}>
+        <Image
+          src={item.icon}
+          alt={item.title}
+          width={50}
+          height={50}
+          className={styles.icon}
+        />
       </div>
       <div className={styles.recent__titlesBlock}>
         <h5 className={styles.title}>{item.title}</h5>

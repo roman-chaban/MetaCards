@@ -11,8 +11,8 @@ export const Recent: FC = () => {
           <h4 className={styles.recent__title}>Recent Viewed</h4>
         </div>
         <div className={styles.recent__items}>
-          {recentItems.map((item) => (
-            <RecentItem key={item.percent} item={item} />
+          {recentItems.map((item, index) => (
+            <RecentItem key={item.percent} item={item} index={index + 1} />
           ))}
         </div>
       </div>

@@ -1,0 +1,59 @@
+@import '../../assets/styles/stack.scss';
+
+.unleash {
+  padding-bottom: rem(180px);
+  background: $color-explore-background;
+}
+
+.unleash__container {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+}
+
+.unleashBlock {
+  display: flex;
+  flex-direction: column;
+  gap: rem(45px);
+}
+
+.unleashList {
+  &__title {
+    font-size: $font-size-section-heading;
+    color: $color-unleash-title;
+    line-height: 1.20889;
+    font-weight: 600;
+    text-transform: capitalize;
+    &_mark {
+      color: $color-unleash-mark;
+    }
+  }
+}
+
+.unleash__listItemsBlock {
+  display: flex;
+  align-items: center;
+  gap: rem(15px);
+}
+
+.unleash__list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12px);
+  &_item {
+    line-height: 2;
+    color: $color-unleash-list-icon;
+    opacity: 0.7;
+  }
+}
+
+.explore__button {
+  @include button;
+  display: flex;
+  align-items: center;
+  gap: rem(12px);
+  border-radius: rem(14px);
+  font-family: 'Poppins', sans-serif;
+  max-width: 185px;
+  margin-top: rem(25px);
+}
