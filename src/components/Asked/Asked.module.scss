@@ -1,0 +1,56 @@
+@import '../../assets/styles/stack.scss';
+
+.asked {
+  background: $color-explore-background;
+}
+
+.asked__container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  gap: rem(78px);
+  padding-left: rem(95px);
+  padding-right: rem(95px);
+  padding-bottom: rem(214px);
+}
+
+.asked__title {
+  max-width: 442px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: $font-size-section-heading;
+  &_mark {
+    color: $color-gray-light;
+  }
+}
+
+.asked__list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32px);
+  &_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-asked-list-title;
+    font-size: $font-size-list-title;
+    line-height: 2.52982;
+    font-weight: 600;
+    padding-bottom: rem(17px);
+    border-bottom: 1.15px solid #adadad;
+  }
+}
+
+.asked__list_mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: $color-button-bg;
+  border-radius: 100%;
+}

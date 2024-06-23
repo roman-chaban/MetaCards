@@ -1,3 +1,4 @@
+import { Asked } from '@/components/Asked/Asked';
 import { Collections } from '@/components/Collections/Collections';
 import { Community } from '@/components/Community/Community';
 import { Create } from '@/components/Create/Create';
@@ -21,6 +22,7 @@ export default function Home() {
       <Explore />
       <Unleash />
       <Community />
+      <Asked />
       <Create />
     </>
   );

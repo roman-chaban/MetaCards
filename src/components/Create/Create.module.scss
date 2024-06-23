@@ -1,13 +1,15 @@
 @import '../../assets/styles/stack.scss';
 
 .create {
-  min-height: 100vh;
   background: $color-explore-background;
+  padding-bottom: rem(160px);
+  padding-left: rem(95px);
+  padding-right: rem(95px);
 }
 
 .create__container {
-  @include container;
   background: $color-button-bg;
+  @include container;
   height: 311px;
   padding: 31px 22px 31px 65px;
   border-radius: rem(30px);
