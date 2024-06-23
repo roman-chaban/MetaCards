@@ -9,6 +9,7 @@ import { Input } from '../UI/Input/Input';
 import { Search } from 'grommet-icons';
 import { Button } from '../UI/Button/Button';
 import { useScrollObserver } from '@/hooks/useScrollObserver';
+import Link from 'next/link';
 
 type InputValue = string;
 
@@ -24,14 +25,16 @@ export const Header: FC = () => {
     >
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
-          <Image
-            priority
-            className={styles.header__logo_image}
-            src='/images/icons/Wave.svg'
-            alt='Wave Logo'
-            width={53}
-            height={53}
-          />
+          <Link href='/'>
+            <Image
+              priority
+              className={styles.header__logo_image}
+              src='/images/icons/Wave.svg'
+              alt='Wave Logo'
+              width={53}
+              height={53}
+            />
+          </Link>
         </div>
         <nav className={styles.header__nav}>
           <ul className={styles.header__nav_menu}>

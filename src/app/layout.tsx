@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.className} ${poppins.className}`}>
-        <Providers>
+        {/* <Providers> */}
           <Header />
           <main className='main'>{children}</main>
           <Footer />
-        </Providers>
+        {/* </Providers> */}
       </body>
     </html>
   );
