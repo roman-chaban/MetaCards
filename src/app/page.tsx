@@ -1,4 +1,5 @@
 import { Collections } from '@/components/Collections/Collections';
+import { Community } from '@/components/Community/Community';
 import { Create } from '@/components/Create/Create';
 import { Explore } from '@/components/Explore/Explore';
 import { Hero } from '@/components/Hero/Hero';
@@ -19,6 +20,7 @@ export default function Home() {
       <Collections />
       <Explore />
       <Unleash />
+      <Community />
       <Create />
     </>
   );
