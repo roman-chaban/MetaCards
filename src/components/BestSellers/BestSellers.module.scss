@@ -4,8 +4,8 @@
   position: relative;
   z-index: 2;
   display: flex;
-  justify-content: flex-end;
-  width: 805px;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .bestSellers__block {
@@ -32,7 +32,7 @@
 .dots__decoration {
   position: absolute;
   z-index: -1;
-  right: -140px;
+  right: -100px;
   bottom: -98px;
 }
 
@@ -103,4 +103,10 @@
 .bestSellers__titleNotification {
   position: relative;
   display: flex;
+}
+
+@media (max-width: rem(1160px)) {
+  .dots__decoration {
+    right: -90px;
+  }
 }

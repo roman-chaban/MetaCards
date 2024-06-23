@@ -42,7 +42,7 @@
 
 .card {
   width: 100%;
-  width: 281px;
+  max-width: 281px;
   height: 395px;
   padding: rem(20px);
   border-radius: rem(20px);
@@ -53,6 +53,7 @@
 
 .card__image {
   object-fit: cover;
+  object-position: center;
   border-radius: rem(20px);
 }
 

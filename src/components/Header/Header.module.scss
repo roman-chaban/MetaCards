@@ -1,8 +1,19 @@
 @import '../../assets/styles/stack.scss';
 
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
 .header__container {
   @include container;
-  padding-top: rem(50px);
+  padding-top: rem(30px);
+  padding-bottom: rem(30px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,19 +62,63 @@
 .input {
   display: flex;
   align-items: center;
-  width: 100%;
   background: $color-input-background;
   border-radius: rem(14px);
   font-size: $font-size-placeholder;
   font-weight: 500;
   &::placeholder {
+    width: 100%;
     color: $color-input-placeholder;
     font-family: 'Poppins', sans-serif;
     line-height: 1.175;
     letter-spacing: -0.02em;
+    text-align: left;
   }
 }
 
 .connect__button {
   @include button;
+}
+
+.header__scrollActive {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: rem(1170px)) {
+  .header__container {
+    padding-right: rem(25px);
+    gap: rem(50px);
+  }
+  .header__logo {
+    padding-right: 0;
+  }
+
+  .header__nav > .header__nav_menu {
+    padding-right: 0;
+  }
+  .header__input {
+    width: 100%;
+  }
+  .connect__button {
+    padding: rem(10px);
+    max-height: 50px;
+    font-size: $font-size-card-subtitle;
+  }
+  .search__input {
+    max-height: 50px;
+    padding-left: rem(20px);
+    padding-right: 0;
+    &_icon {
+      max-width: 19px;
+      max-height: 19px;
+    }
+  }
+  .input::placeholder {
+    font-size: $font-size-bid-medium;
+  }
+  .inputButton__items {
+    gap: rem(45px);
+  }
 }

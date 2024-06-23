@@ -61,6 +61,14 @@
   padding: rem(100px) 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   column-gap: rem(40px);
   row-gap: rem(60px);
+}
+
+@media (max-width: rem(1350px)) {
+  .weekly__nftCardsGridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
 }

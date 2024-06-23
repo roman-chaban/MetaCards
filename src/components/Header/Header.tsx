@@ -8,13 +8,20 @@ import Image from 'next/image';
 import { Input } from '../UI/Input/Input';
 import { Search } from 'grommet-icons';
 import { Button } from '../UI/Button/Button';
+import { useScrollObserver } from '@/hooks/useScrollObserver';
 
 type InputValue = string;
 
 export const Header: FC = () => {
   const [text, setText] = useState<InputValue>('');
+  const { isScrolledNav } = useScrollObserver();
+
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${
+        isScrolledNav ? styles.header__scrollActive : ''
+      }`}
+    >
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
           <Image
@@ -35,7 +42,7 @@ export const Header: FC = () => {
         </nav>
         <div className={styles.inputButton__items}>
           <div className={styles.search__input}>
-            <Search color='#9d9d9d' />
+            <Search color='#9d9d9d' className={styles.search__input_icon} />
             <Input
               placeholder='Search Art Work / Creator'
               name='Search at work '
@@ -53,4 +60,3 @@ export const Header: FC = () => {
     </header>
   );
 };
-

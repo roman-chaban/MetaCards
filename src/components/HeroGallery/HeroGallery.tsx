@@ -23,6 +23,7 @@ export const HeroGallery: FC = () => {
             alt='Arrow Icon'
             width={130}
             height={135}
+            className={styles.arrow__icon}
           />
           <Image
           className={styles.dots__decoration}
