@@ -1,12 +1,17 @@
 import type { FC } from 'react';
 import styles from './Unleash.module.scss';
 import { UnleashListItem, unleashList } from '@/constants/unleashList';
-import { FormNextLink, StatusGood } from 'grommet-icons';
+import { FormNextLink } from 'grommet-icons';
 import { Button } from '../UI/Button/Button';
 import Image from 'next/image';
 import { BestSellers } from '../BestSellers/BestSellers';
+import { Recent } from '../Recent/Recent';
 
 export const Unleash: FC = () => {
+  const recentStyles = {
+    container: styles.unleash__recentContainer,
+  };
+
   return (
     <section className={styles.unleash}>
       <div className={styles.unleash__container}>
@@ -36,6 +41,7 @@ export const Unleash: FC = () => {
         </article>
         <div className={styles.unleash__itemsBlock}>
           <BestSellers />
+          <Recent classNames={recentStyles} />
         </div>
       </div>
     </section>

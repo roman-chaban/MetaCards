@@ -14,6 +14,9 @@ export const Weekly: FC = () => {
     cardRating: styles.weekly__cardRating,
     cardButton: styles.weekly__cardButton,
   };
+  const recentStyles = {
+    container: styles.recent__container,
+  };
   return (
     <section className={styles.weekly}>
       <div className={styles.weekly__container}>
@@ -25,7 +28,7 @@ export const Weekly: FC = () => {
           <SliderButtons />
         </div>
       </div>
-      <Recent />
+      <Recent classNames={recentStyles} />
     </section>
   );
 };

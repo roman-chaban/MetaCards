@@ -7,8 +7,10 @@
 
 .unleash__container {
   @include container;
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
-  justify-content: space-between;
+  gap: rem(105px);
 }
 
 .unleashBlock {
@@ -56,4 +58,17 @@
   font-family: 'Poppins', sans-serif;
   max-width: 185px;
   margin-top: rem(25px);
+}
+
+.unleash__recentContainer {
+  border-radius: 16px;
+  width: 365px;
+  height: 246px;
+  box-shadow: 10px 10px 50px 0 rgba(20, 20, 22, 0.1);
+  background: $color-white;
+  padding: rem(25px);
+  position: relative;
+  bottom: 165px;
+  z-index: 50;
+  right: 82px;
 }

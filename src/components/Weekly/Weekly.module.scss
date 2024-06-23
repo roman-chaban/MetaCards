@@ -99,3 +99,15 @@
   height: 51px;
 }
 
+.recent__container {
+  border: 2px solid #edf2f7;
+  border-radius: 16px;
+  width: 365px;
+  height: 246px;
+  box-shadow: 10px 10px 50px 0 rgba(20, 20, 22, 0.1);
+  background: $color-white;
+  padding: rem(25px);
+  position: absolute;
+  bottom: -120px;
+  right: 80px;
+}

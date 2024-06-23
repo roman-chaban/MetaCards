@@ -1,14 +1,20 @@
 import type { FC } from 'react';
 import styles from './Recent.module.scss';
-import { RecentItems, recentItems } from '@/constants/recentItems';
+import { recentItems } from '@/constants/recentItems';
 import { RecentItem } from '../RecentItem/RecentItem';
 
-export const Recent: FC = () => {
+interface RecentProps {
+  classNames: {
+    container: string;
+  };
+}
+
+export const Recent: FC<RecentProps> = ({ classNames }) => {
   return (
     <div className={styles.recent}>
-      <div className={styles.recent__container}>
+      <div className={classNames.container}>
         <div className={styles.recent__titlesBlock}>
-          <h4 className={styles.recent__title}>Recent Viewed</h4>
+          <h4 className={styles.recent__title}>Recently Viewed</h4>
         </div>
         <div className={styles.recent__items}>
           {recentItems.map((item, index) => (

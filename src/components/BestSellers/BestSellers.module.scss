@@ -5,7 +5,7 @@
   z-index: 2;
   display: flex;
   justify-content: flex-end;
-  width: 850px;
+  width: 805px;
 }
 
 .bestSellers__block {
@@ -32,8 +32,8 @@
 .dots__decoration {
   position: absolute;
   z-index: -1;
-  right: -266px;
-  bottom: -111px;
+  right: -140px;
+  bottom: -98px;
 }
 
 .bestSellers__list {
@@ -43,6 +43,9 @@
 }
 
 .bestSellers__listBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   &::after {
     font-size: $font-size-circle-small;
@@ -62,4 +65,42 @@
     letter-spacing: 0.01em;
     font-weight: 600;
   }
+}
+
+.bestSellers__ImageTitles {
+  display: flex;
+  align-items: center;
+  gap: rem(15px);
+}
+
+.bestSellers__titles {
+  display: flex;
+  flex-direction: column;
+
+  &_title {
+    color: $color-circle;
+    line-height: 1.71429;
+    text-align: center;
+    font-weight: 500;
+  }
+  &_subTitle {
+    font-size: $font-size-card-subtitle;
+    line-height: 1.66667;
+    color: $color-bestSellers-subTitle;
+  }
+}
+
+.bestSellers__followButton {
+  border: 1.74px solid $color-bestSellers-button-border;
+  border-radius: 7px;
+  padding: 6px 13px;
+  background: transparent;
+  line-height: 1.14286;
+  font-weight: 700;
+  font-size: $font-size-card-subtitle;
+}
+
+.bestSellers__titleNotification {
+  position: relative;
+  display: flex;
 }

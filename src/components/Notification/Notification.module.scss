@@ -1,0 +1,81 @@
+@import '../../assets/styles/stack.scss';
+
+.notification {
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: rem(13px);
+    position: absolute;
+    left: 120px;
+    bottom: 10px;
+    border-radius: 13px;
+    padding: 11px;
+    width: 325px;
+    height: 83px;
+    backdrop-filter: blur(30.380367279052734px);
+    box-shadow: 0 19px 28px 0 rgba(70, 70, 70, 0.1);
+    background: linear-gradient(
+      226deg,
+      #fcfcfd 0%,
+      rgba(252, 252, 253, 0.6) 100%
+    );
+  }
+}
+
+.notification__dotImage {
+  display: flex;
+  align-items: center;
+  gap: rem(14px);
+}
+
+.notification__dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: $color-button-bg;
+  border-radius: 100%;
+}
+
+.notification__imageBlock {
+  position: relative;
+}
+
+.check__icon {
+  position: absolute;
+  left: 30px;
+}
+
+.notification__bid {
+  width: 151px;
+  display: flex;
+  flex-direction: column;
+  &_titles {
+    display: flex;
+    align-items: center;
+    gap: rem(5.7px);
+  }
+}
+
+.notification__bid_title {
+  font-size: $font-size-bid-medium;
+  color: $color-notification-title;
+  font-weight: 500;
+  line-height: 1.71429;
+}
+.notification__bid_subTitle {
+  font-size: $font-size-bid-medium;
+  color: $color-button-bg;
+  font-weight: 500;
+  line-height: 1.71429;
+}
+
+.notification__bid_subCapture {
+  font-size: $font-size-bid-medium;
+  line-height: 1.66667;
+  font-weight: 600;
+}
+
+.notification__bid_subMark {
+  font-size: $font-size-bid-medium;
+  color: $color-notification-title;
+}
