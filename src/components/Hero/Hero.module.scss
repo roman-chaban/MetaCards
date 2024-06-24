@@ -182,4 +182,23 @@
     bottom: 50px;
     right: 35px;
   }
+  .hero__title {
+    font-size: $font-size-media-hero-heading;
+    max-width: 420px;
+    &::before {
+      top: -2px;
+    }
+  }
+  .hero__subTitle {
+    font-size: $font-size-base;
+    max-width: 400px;
+  }
+  .explore__button,
+  .create__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-size-base;
+    max-height: 50px;
+  }
 }

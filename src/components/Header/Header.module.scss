@@ -13,8 +13,7 @@
 
 .header__container {
   @include container;
-  padding-top: rem(30px);
-  padding-bottom: rem(30px);
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,7 +34,6 @@
 }
 
 .menu__listItem > .menu__listLink {
-  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: $font-size-create-subtitle;
   color: $color-gray-dark;
@@ -121,5 +119,9 @@
   }
   .inputButton__items {
     gap: rem(45px);
+  }
+  .menu__listItem > .menu__listLink {
+    font-size: $font-size-base;
+    font-weight: 600;
   }
 }
