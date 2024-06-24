@@ -37,6 +37,7 @@ export const CollectionsTable: FC = () => {
                 alt={tableItem.title}
                 width={85}
                 height={85}
+                className={styles.table__icon}
               />
               <div className={styles.collection__table_dataTitles}>
                 <div className={styles.table__first_title}>

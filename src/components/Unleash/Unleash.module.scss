@@ -70,3 +70,28 @@
   z-index: 50;
   right: 215px;
 }
+
+@media (max-width: rem(1200px)) {
+  .unleashList__title {
+    font-size: $font-size-subtitle-large;
+  }
+  .icon {
+    max-width: 16px;
+    max-height: 16px;
+  }
+  .unleash__list_item {
+    font-size: $font-size-card-subtitle;
+  }
+  .explore__button {
+    max-height: rem(55px);
+    font-size: $font-size-card-subtitle;
+    justify-content: space-between;
+  }
+  .unleash__recentContainer {
+    max-width: rem(385px);
+    max-height: rem(235px);
+    padding: 1rem;
+    bottom: 165px;
+    right: 130px;
+  }
+}

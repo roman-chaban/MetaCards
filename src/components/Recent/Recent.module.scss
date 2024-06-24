@@ -94,3 +94,9 @@
   margin-left: rem(130px);
   gap: rem(10px);
 }
+
+@media (max-width: rem(1200px)) {
+  .recent__items {
+    margin-top: 1.5rem;
+  }
+}

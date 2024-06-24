@@ -79,3 +79,16 @@
   font-size: $font-size-bid-medium;
   color: $color-notification-title;
 }
+
+@media (max-width: rem(1200px)) {
+  .notification__container {
+    max-width: rem(320px);
+  }
+  .notification__bid {
+    max-width: 110px;
+  }
+  .notification__nftIcon {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}

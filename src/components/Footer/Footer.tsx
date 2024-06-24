@@ -17,6 +17,7 @@ export const Footer: FC = () => {
               width={65}
               height={65}
               priority
+              className={styles.footer__logo}
             />
             <h2 className={styles.footer__top__title}>DiveSea</h2>
           </div>

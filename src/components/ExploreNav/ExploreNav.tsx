@@ -14,9 +14,17 @@ export const ExploreNav: FC = () => {
             {item.icon === '' ? (
               ''
             ) : (
-              <Image src={item.icon} alt={item.title} width={25} height={25} />
+              <Image
+                className={styles.explore__button_icon}
+                src={item.icon}
+                alt={item.title}
+                width={25}
+                height={25}
+              />
             )}
-            <Link className={styles.nav__link} href={item.href}>{item.title}</Link>
+            <Link className={styles.nav__link} href={item.href}>
+              {item.title}
+            </Link>
           </Button>
         ))}
       </ul>

@@ -26,6 +26,7 @@ export const Unleash: FC = () => {
             {unleashList.map((listItem: UnleashListItem, index) => (
               <div key={index} className={styles.unleash__listItemsBlock}>
                 <Image
+                  className={styles.icon}
                   src='/images/exploreIcons/check.svg'
                   alt='Check Icon'
                   width={20}

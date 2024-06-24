@@ -31,6 +31,9 @@ export const Create: FC = () => {
             width={390}
             height={249}
             className={styles.banner}
+            objectFit='cover'
+            quality={100}
+            priority
           />
         </div>
       </div>

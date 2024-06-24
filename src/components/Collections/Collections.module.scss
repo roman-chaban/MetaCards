@@ -115,3 +115,39 @@
     @include exploreButton;
   }
 }
+
+@media (max-width: rem(1200px)) {
+  .collection__title {
+    font-size: $font-size-subtitle-large;
+  }
+
+  .collections__table_title,
+  .collections__table_item {
+    font-size: $font-size-link;
+  }
+
+  .collections__table_menu {
+    gap: 14.5rem;
+  }
+
+  .table__icon {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .table__first_title {
+    font-size: $font-size-create-subtitle;
+  }
+
+  .table__second_title {
+    font-size: $font-size-subtitle;
+  }
+
+  .volume,
+  .rating,
+  .items,
+  .owners,
+  .percent {
+    font-size: $font-size-link;
+  }
+}

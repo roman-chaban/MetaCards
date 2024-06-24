@@ -73,3 +73,24 @@
     font-weight: 600;
   }
 }
+
+@media (max-width: rem(1200px)) {
+  .footer__logo {
+    max-width: 53px;
+    max-height: 53px;
+  }
+  .footer__top__title {
+    font-size: $font-size-card-title;
+  }
+  .nav__menu_listLink {
+    font-size: $font-size-base;
+  }
+  .footer__bottom_copyright,
+  .footer__socialMedias_listLink {
+    font-size: $font-size-card-subtitle;
+  }
+  .social__icon {
+    max-width: 20px;
+    max-height: 20px;
+  }
+}

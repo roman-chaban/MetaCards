@@ -40,6 +40,7 @@ export const Notification: FC = () => {
             alt='NFT Avatar'
             width={60}
             height={60}
+            className={styles.notification__nftIcon}
           />
         </div>
       </div>
