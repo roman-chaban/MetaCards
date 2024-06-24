@@ -5,6 +5,7 @@ import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { inter, poppins } from '@/constants/layoutFonts';
 import { Providers } from '@/store/provider/provider';
+import { ButtonUp } from '@/components/UI/ButtonUp/ButtonUp';
 
 export const metadata: Metadata = {
   title: 'DivSea NFT | Layout',
@@ -21,9 +22,10 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${inter.className} ${poppins.className}`}>
         {/* <Providers> */}
-          <Header />
-          <main className='main'>{children}</main>
-          <Footer />
+        <Header />
+        <main className='main'>{children}</main>
+        <Footer />
+        <ButtonUp />
         {/* </Providers> */}
       </body>
     </html>

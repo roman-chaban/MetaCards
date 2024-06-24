@@ -4,12 +4,13 @@ import type { FC } from 'react';
 
 interface NavItemProps {
   navLink: { label: string; href: string };
+  className: string
 }
 
-export const NavItem: FC<NavItemProps> = ({ navLink }) => {
+export const NavItem: FC<NavItemProps> = ({ navLink, className }) => {
   return (
     <li className={styles.menu__listItem}>
-      <Link className={styles.menu__listLink} href={navLink.href}>
+      <Link className={className} href={navLink.href}>
         {navLink.label}
       </Link>
     </li>

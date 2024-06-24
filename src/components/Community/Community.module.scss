@@ -13,6 +13,7 @@
 }
 
 .community__firstBlock {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +26,46 @@
   border: 2px solid #d2d2d2;
 }
 
+.firstBlock__icons {
+  position: absolute;
+}
+
+.first__icon {
+  height: auto;
+  position: relative;
+  bottom: 440px;
+  right: 205px;
+}
+
+.second__icon {
+  height: auto;
+  position: relative;
+  bottom: 415px;
+  right: -365px;
+}
+
+.third__icon {
+  height: auto;
+  position: relative;
+  top: 400px;
+  right: 365px;
+}
+
+.four__icon {
+  height: auto;
+  position: relative;
+  left: -40px;
+  top: 535px;
+}
+
+.five__icon {
+  position: relative;
+  left: 290px;
+  top: 360px;
+}
+
 .community__secondBlock {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +77,37 @@
   height: auto;
   aspect-ratio: 1 / 1;
   box-sizing: border-box;
+}
+
+.six__icon {
+  height: auto;
+  position: relative;
+  bottom: 210px;
+  height: auto;
+}
+
+.seven__icon {
+  height: auto;
+  position: relative;
+  bottom: 400px;
+  left: 135px;
+}
+
+.eight__icon {
+  position: relative;
+  bottom: -160px;
+  left: 355px;
+}
+
+.nine__icon {
+  height: auto;
+  position: relative;
+  top: 360px;
+  left: 120px;
+}
+
+.secondBlock__icons {
+  position: absolute;
 }
 
 .community__infoBlock {
@@ -85,6 +156,41 @@
   .community__secondBlock {
     max-width: 500px;
     padding: 90px;
+  }
+
+  .first__icon {
+    bottom: 250px;
+    right: 155px;
+  }
+  .second__icon {
+    bottom: 190px;
+    right: -330px;
+  }
+  .third__icon {
+    top: 285px;
+    right: 215px;
+  }
+  .four__icon {
+    left: -50px;
+    top: 355px;
+  }
+  .five__icon {
+    left: 170px;
+    top: 220px;
+  }
+  .six__icon {
+    bottom: 160px;
+    right: 120px;
+  }
+  .seven__icon {
+    bottom: 225px;
+  }
+  .eight__icon {
+    bottom: 30px;
+    left: 220px;
+  }
+  .nine__icon {
+    top: 155px;
   }
 }
 

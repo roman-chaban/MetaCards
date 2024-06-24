@@ -5,6 +5,7 @@ interface ButtonProps {
   type: 'button' | 'submit';
   className: string;
   style?: CSSProperties;
+  onClick?: () => void;
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -12,9 +13,10 @@ export const Button: FC<ButtonProps> = ({
   className,
   type,
   style,
+  onClick,
 }) => {
   return (
-    <button type={type} style={style} className={className}>
+    <button onClick={onClick} type={type} style={style} className={className}>
       {children}
     </button>
   );

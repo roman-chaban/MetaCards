@@ -1,9 +1,17 @@
-import { Fragment, type FC } from 'react';
+'use client';
+
+import { FC, useState } from 'react';
 import styles from './Asked.module.scss';
 import { AskedListItem, askedList } from '@/constants/askedList';
-import { Add } from 'grommet-icons';
+import { Accordion } from '../Accordion/Accordion';
 
 export const Asked: FC = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <section className={styles.asked}>
       <div className={styles.asked__container}>
@@ -13,14 +21,16 @@ export const Asked: FC = () => {
         </h2>
         <ul className={styles.asked__list}>
           {askedList.map((item: AskedListItem, index) => (
-            <Fragment key={index}>
-              <li className={styles.asked__list_item}>
-                {item.title}
-                <span className={styles.asked__list_mark}>
-                  <Add color='white' style={{ width: 15, height: 15 }} />
-                </span>
-              </li>
-            </Fragment>
+            <li key={index} className={styles.asked__list_item}>
+              <Accordion
+                title={item.title}
+                subTitles={{
+                  secondSubTitle: item.subTitle,
+                }}
+                isOpen={openIndex === index}
+                onToggle={() => handleToggle(index)}
+              />
+            </li>
           ))}
         </ul>
       </div>

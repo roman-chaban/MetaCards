@@ -37,7 +37,7 @@ export const Unleash: FC = () => {
             ))}
           </ul>
           <Button type='button' className={styles.explore__button}>
-            Explore more <FormNextLink color='white' />
+            Explore more <FormNextLink className={styles.next__icon} color='white' />
           </Button>
         </article>
         <div className={styles.unleash__itemsBlock}>

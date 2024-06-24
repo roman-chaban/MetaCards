@@ -32,11 +32,39 @@
   gap: rem(55px);
   padding-right: rem(120px);
 }
+.menu__listItem {
+  position: relative;
+}
 
 .menu__listItem > .menu__listLink {
   font-weight: 500;
   font-size: $font-size-create-subtitle;
   color: $color-gray-dark;
+  transition: all 0.4s ease-in-out 0s;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $color-footer-border-bottom;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out,
+      left 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+}
+
+.menu__listItem > .menu__listLink:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.activeLink {
+  font-weight: 600;
+  font-size: $font-size-create-subtitle;
+  color: $color-button-bg;
 }
 
 .inputButton__items {

@@ -56,6 +56,19 @@
   font-family: 'Poppins', sans-serif;
   max-width: 185px;
   margin-top: rem(25px);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s;
+  &:hover {
+    background: $color-gray-subtitle;
+  }
+  &:hover .next__icon {
+    transform: translateX(rem(8px));
+  }
+}
+
+.next__icon {
+  transition: transform 0.3s;
 }
 
 .unleash__recentContainer {

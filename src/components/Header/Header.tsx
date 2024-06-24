@@ -10,12 +10,14 @@ import { Search } from 'grommet-icons';
 import { Button } from '../UI/Button/Button';
 import { useScrollObserver } from '@/hooks/useScrollObserver';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 type InputValue = string;
 
 export const Header: FC = () => {
   const [text, setText] = useState<InputValue>('');
   const { isScrolledNav } = useScrollObserver();
+  const pathname = usePathname();
 
   return (
     <header
@@ -38,9 +40,18 @@ export const Header: FC = () => {
         </div>
         <nav className={styles.header__nav}>
           <ul className={styles.header__nav_menu}>
-            {navLinks.map((navLink: NavLink) => (
-              <NavItem key={navLink.href} navLink={navLink} />
-            ))}
+            {navLinks.map((navLink: NavLink) => {
+              const isActive = pathname === navLink.href;
+              return (
+                <NavItem
+                  key={navLink.href}
+                  navLink={navLink}
+                  className={
+                    isActive ? styles.activeLink : styles.menu__listLink
+                  }
+                />
+              );
+            })}
           </ul>
         </nav>
         <div className={styles.inputButton__items}>
