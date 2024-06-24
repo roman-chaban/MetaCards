@@ -1,5 +1,4 @@
-## NFT-Project
-
+## MetaCards
 ### NFT Cards Project Description
 
 ### Overview
