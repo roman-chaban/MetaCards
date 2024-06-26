@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .header {
   width: 100%;
@@ -30,7 +30,7 @@
   display: flex;
   align-items: center;
   gap: rem(55px);
-  padding-right: rem(120px);
+  padding-right: rem(117px);
 }
 .menu__listItem {
   position: relative;
@@ -42,7 +42,7 @@
   color: $color-gray-dark;
   transition: all 0.4s ease-in-out 0s;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 50%;
     bottom: -3px;
@@ -50,7 +50,9 @@
     height: 2px;
     border-radius: 2px;
     background-color: $color-footer-border-bottom;
-    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    transition:
+      width 0.3s ease-in-out,
+      opacity 0.3s ease-in-out,
       left 0.3s ease-in-out;
     transform: translateX(-50%);
   }
@@ -70,7 +72,7 @@
 .inputButton__items {
   display: flex;
   align-items: center;
-  gap: rem(55px);
+  gap: rem(30px);
 }
 
 .search__input {
@@ -89,14 +91,14 @@
 .input {
   display: flex;
   align-items: center;
-  background: $color-input-background;
+  background: transparent;
   border-radius: rem(14px);
   font-size: $font-size-placeholder;
   font-weight: 500;
   &::placeholder {
     width: 100%;
     color: $color-input-placeholder;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.175;
     letter-spacing: -0.02em;
     text-align: left;
@@ -104,16 +106,29 @@
 }
 
 .connect__button {
-  @include button;
+  @include button(100%);
+  font-size: $font-size-base;
 }
 
 .header__scrollActive {
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transition: background 0.3s ease;
 }
 
-@media (max-width: rem(1170px)) {
+@media (max-width: rem(1295px)) {
+  .connect__button {
+    padding: rem(16px);
+    font-size: $font-size-placeholder;
+  }
+  .search__input {
+    max-width: rem(270px);
+  }
+}
+
+@media (max-width: rem(1180px)) {
   .header__container {
     padding-right: rem(25px);
     gap: rem(50px);

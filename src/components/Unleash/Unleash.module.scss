@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .unleash {
   background: $color-explore-background;
@@ -48,12 +48,12 @@
 }
 
 .explore__button {
-  @include button;
+  @include button(179px);
   display: flex;
   align-items: center;
   gap: rem(12px);
   border-radius: rem(14px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   max-width: 185px;
   margin-top: rem(25px);
   position: relative;

@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .weekly {
   background: $color-section-background;
@@ -46,7 +46,8 @@
   height: 402px;
   padding: rem(15px);
   border-radius: rem(20px);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   background: $color-white;
   box-sizing: border-box;
@@ -102,7 +103,7 @@
 }
 
 .card__button {
-  @include button;
+  @include button(179px);
   max-width: 121px;
   height: 51px;
 }

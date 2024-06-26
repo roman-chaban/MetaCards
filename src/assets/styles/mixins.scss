@@ -12,23 +12,23 @@
   padding-left: rem(100px);
 }
 
-@mixin button() {
+@mixin button($maxWidth) {
   width: 100%;
-  max-width: 179px;
+  max-width: $maxWidth;
   height: 57px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   line-height: 1.5;
   text-transform: uppercase;
   border-radius: rem(16px);
-  padding: 16px 24px;
+  padding: 16px 25px;
   background: $color-button-bg;
   color: $color-white;
 }
 
 @mixin secondaryButton() {
   padding: 18px 21px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 0.01em;
   text-transform: uppercase;
@@ -45,7 +45,7 @@
   font-size: $font-size-collection-card-volume;
 }
 
-@mixin exploreButton () {
+@mixin exploreButton() {
   font-size: $font-size-link;
   color: $color-explore-button;
   background: transparent;
