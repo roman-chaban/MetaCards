@@ -168,3 +168,30 @@
     font-weight: 600;
   }
 }
+
+@media (max-width: rem(995px)) {
+  .header__container {
+    max-width: 888px;
+    gap: rem(40px);
+    padding: 31px 30px;
+  }
+  .header__logo_image {
+    max-width: 37px;
+    max-height: 37px;
+  }
+  .menu__listItem > .menu__listLink {
+    font-size: $font-size-subtitle-small;
+  }
+  .inputButton__items {
+    gap: rem(20px);
+  }
+  .search__input {
+    max-height: 40px;
+  }
+  .connect__button {
+    font-size: $font-size-subtitle-small;
+    max-width: 150px;
+    max-height: 40px;
+    border-radius: 12px;
+  }
+}

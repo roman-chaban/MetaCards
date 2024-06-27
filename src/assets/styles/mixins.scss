@@ -54,3 +54,9 @@
   letter-spacing: -0.01em;
   margin-bottom: -2px;
 }
+
+@mixin onTablet {
+  @media (max-width: 999px) {
+    @content;
+  }
+}

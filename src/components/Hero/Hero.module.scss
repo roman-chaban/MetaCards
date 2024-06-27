@@ -203,3 +203,65 @@
     max-height: 50px;
   }
 }
+
+@media (max-width: rem(992px)) {
+  .hero {
+    max-height: 500px;
+  }
+  .hero__container {
+    padding-left: rem(69px);
+    gap: rem(34px);
+  }
+  .hero__information {
+    max-width: 403px;
+    gap: rem(31px);
+  }
+  .hero__informationTitles {
+    gap: rem(12px);
+  }
+  .hero__title {
+    font-size: $font-size-hero-title;
+  }
+  .hero__subTitle {
+    font-size: $font-size-subtitle-small;
+    max-width: 280px;
+  }
+  .explore__button {
+    padding: 12px 24px;
+    justify-content: center;
+    font-size: $font-size-explore-button-tablet;
+    max-width: 127px;
+    max-height: 42px;
+  }
+  .create__button {
+    padding: 12px 18px;
+    max-width: 100px;
+    max-height: 42px;
+    justify-content: center;
+    font-size: $font-size-explore-button-tablet;
+  }
+  .features {
+    margin-top: rem(18px);
+    gap: rem(46px);
+  }
+  .views__title {
+    font-size: $font-size-features-title-tablet;
+  }
+  .subTitle {
+    font-size: $font-size-explore-button-tablet;
+  }
+  .features__titles {
+    gap: rem(3px);
+  }
+  .dots__decoration {
+    left: 0px;
+  }
+  .arrow__icon {
+    max-width: 90px;
+    max-height: 90px;
+    right: 20px;
+  }
+  .secondaryImage {
+    max-width: 300px;
+  }
+}
