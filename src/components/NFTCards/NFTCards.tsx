@@ -58,6 +58,7 @@ export const NFTCards: FC<NFTCardsProps> = ({ classNames }) => {
                   alt='Ethereum icon'
                   width={20}
                   height={20}
+                  className={styles.card__icon}
                 />
                 {product.rating}
               </span>

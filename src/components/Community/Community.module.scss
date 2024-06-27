@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .community {
   background: $color-explore-background;
@@ -191,6 +191,38 @@
   }
   .nine__icon {
     top: 155px;
+  }
+}
+
+@media (max-width: 992px) {
+  .first__icon {
+    max-width: 45px;
+    max-height: 45px;
+    right: 145px;
+  }
+  .second__icon {
+    right: -345px;
+  }
+  .third__icon {
+    top: 275px;
+  }
+  .four__icon {
+    top: 350px;
+  }
+  .seven__icon {
+    bottom: 280px;
+  }
+  .six__icon {
+    bottom: 130px;
+    right: 195px;
+  }
+  .eight__icon {
+    bottom: 0;
+    left: 272px;
+  }
+  .nine__icon {
+    top: 280px;
+    left: 20px;
   }
 }
 

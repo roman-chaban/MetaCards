@@ -151,3 +151,9 @@
     font-size: $font-size-link;
   }
 }
+
+@include onTablet {
+  .collection__title {
+    font-size: $font-size-media-title;
+  }
+}

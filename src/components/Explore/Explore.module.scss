@@ -91,3 +91,9 @@
     justify-items: center;
   }
 }
+
+@include onTablet {
+  .explore__title {
+    font-size: $font-size-media-title;
+  }
+}
