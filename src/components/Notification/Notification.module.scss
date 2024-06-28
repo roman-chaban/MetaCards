@@ -92,3 +92,27 @@
     max-height: 50px;
   }
 }
+
+
+@media (max-width: 575px) {
+  .notification__container {
+    max-width: 17.5rem;
+    left: 100px;
+    max-height: 75px;
+  }
+  .notification__dotImage {
+    gap: rem(12px);
+  }
+  .notification__nftIcon {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .avatar__icon {
+    max-width: 35px;
+    max-height: 35px;
+  }
+  .check__icon {
+    left: 24px;
+    bottom: 23px;
+  }
+}

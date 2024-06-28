@@ -95,6 +95,12 @@
   }
 }
 
+@media (min-width: 700px) {
+  .footer__top_social {
+    display: none;
+  }
+}
+
 @include onTablet {
   .footer__top {
     padding-top: rem(50px);

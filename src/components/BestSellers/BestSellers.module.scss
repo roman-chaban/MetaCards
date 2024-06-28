@@ -130,3 +130,15 @@
     max-height: 14px;
   }
 }
+
+
+@media (max-width: 575px) {
+  .bestSellers__block {
+      max-width: 275px;
+  } 
+  .dots__decoration {
+    max-width: 250px;
+    max-height: 250px;
+    right: -100px;
+  } 
+}
