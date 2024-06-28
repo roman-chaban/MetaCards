@@ -46,7 +46,6 @@
   font-weight: 600;
 }
 
-
 .exploreBlock {
   display: flex;
   align-items: center;
@@ -98,12 +97,15 @@
   }
 }
 
-@include onTabletMedium {
-  .explore__container {
-    @include tabletContainerPaddings;
-  }
+@media (max-width: 700px) {
   .weekly__nftCardsGridContainer {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+  }
+}
+
+@include onTabletMedium {
+  .explore__container {
+    @include tabletContainerPaddings;
   }
 }

@@ -10,6 +10,7 @@
   align-items: center;
   @include container;
   padding-bottom: rem(200px);
+  overflow-x: hidden;
 }
 
 .community__firstBlock {
@@ -319,14 +320,44 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 577px) {
+
+  .community__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .community__firstBlock {
-    max-width: 300px;
+    max-width: 600px;
   }
 
   .community__secondBlock {
-    max-width: 250px;
+    max-width: 405px;
     padding: 30px;
+  }
+  .community__infoBlock {
+    font-size: $font-size-collection-card-title;
+  }
+  .community__infoBlock_subTitle {
+    font-size: $font-size-explore-button-tablet;
+  }
+  .first__icon {
+    bottom: 259px;
+  }
+  .second__icon {
+    right: -180px;
+    z-index: 55;
+  }
+  .third__icon {
+    top: 170px;
+  }
+  .four__icon {
+    left: 100px;
+  }
+  .seven__icon {
+    bottom: 250px;
+  }
+  .six__icon {
+    right: 203px;
   }
 }
 

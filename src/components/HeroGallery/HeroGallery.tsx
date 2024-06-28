@@ -8,6 +8,7 @@ export const HeroGallery: FC = () => {
     <div className={styles.heroGallery}>
       <div className={styles.heroNft__banner}>
         <Image
+        priority
           className={styles.nft__image}
           src='/images/hero/nft-1.svg'
           alt='NFT Banner Image'
@@ -19,6 +20,7 @@ export const HeroGallery: FC = () => {
       <div className={styles.heroNft__subGallery}>
         <div className={styles.subGallery__items}>
           <Image
+          priority
             src='/images/hero/arrow.svg'
             alt='Arrow Icon'
             width={130}
@@ -26,6 +28,7 @@ export const HeroGallery: FC = () => {
             className={styles.arrow__icon}
           />
           <Image
+          priority
           className={styles.dots__decoration}
             src='/images/hero/dots-decoration.svg'
             alt='Dots Decoration'
@@ -34,6 +37,7 @@ export const HeroGallery: FC = () => {
           />
         </div>
         <Image
+        priority
           className={styles.secondaryImage}
           src='/images/hero/nft-2.svg'
           alt='NFT Secondary Banner Image'

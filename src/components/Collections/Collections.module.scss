@@ -30,7 +30,7 @@
     width: 100%;
     padding-bottom: rem(40px);
     display: flex;
-    gap: 18.5rem;
+    gap: 14.5rem;
     align-items: center;
   }
   &_item,
@@ -45,7 +45,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 4.7rem;
   }
 }
 
@@ -127,7 +127,7 @@
   }
 
   .collections__table_menu {
-    gap: 14.5rem;
+    gap: 12.5rem;
   }
 
   .table__icon {
@@ -155,6 +155,9 @@
 @media (min-width: 630px) {
   .volumeTitle,
   .volume__title {
+    display: none;
+  }
+  .percentTitle {
     display: none;
   }
 }
@@ -218,7 +221,8 @@
   }
   .volumeTitle {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+
     font-weight: 600;
     line-height: 140%;
     color: $color-button-bg;

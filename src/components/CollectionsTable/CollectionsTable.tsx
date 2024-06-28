@@ -55,11 +55,15 @@ const CollectionsTable: FC = () => {
             <td className={styles.rating}>{tableItem.rating}</td>
             <td className={styles.owners}>{tableItem.owners}</td>
             <td className={styles.items}>{tableItem.items}</td>
-            <td className={styles.volumeTitle}>{tableItem.volume} 
-              <td className={styles.percentTitle}>
-              {tableItem.percent}
-              </td>
-              </td>
+            <tr>
+          <td className={styles.volumeTitle}>
+              <Image src='/images/collections/ethereum.svg' alt='Ethereum Icon' width={18} height={18} />
+                {tableItem.volume}
+          </td>
+      <td className={styles.percentTitle}>
+            {tableItem.percent}
+      </td>
+    </tr>
           </tr>
         ))}
       </tbody>
