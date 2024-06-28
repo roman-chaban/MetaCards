@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import { CollectionsTable } from '../CollectionsTable/CollectionsTable';
+import  CollectionsTable from '../CollectionsTable/CollectionsTable';
 import styles from '@/components/Collections/Collections.module.scss';
 
 export const CollectionsStatistic: FC = () => {

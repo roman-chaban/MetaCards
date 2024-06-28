@@ -152,6 +152,13 @@
   }
 }
 
+@media (min-width: 630px) {
+  .volumeTitle,
+  .volume__title {
+    display: none;
+  }
+}
+
 @include onTablet {
   .collection__title {
     font-size: $font-size-media-title;
@@ -180,5 +187,45 @@
   }
   .collections__table_bodyRow {
     gap: rem(10px);
+  }
+}
+
+@include onMobileLarge {
+  .items,
+  .rating,
+  .percent,
+  .owners,
+  .volume {
+    display: none;
+  }
+  .collections__table_bodyRow {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .collections__table_header {
+    display: none;
+  }
+  .collections__table_menu {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .volume__title {
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+    font-size: $font-size-link;
+    color: $color-gray-collection;
+  }
+  .volumeTitle {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    line-height: 140%;
+    color: $color-button-bg;
+  }
+  .percentTitle {
+    color: $color-green-light;
+    font-weight: 600;
+    line-height: 140%;
   }
 }

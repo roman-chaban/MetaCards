@@ -81,6 +81,27 @@
   justify-content: space-between;
 }
 
+.image__block {
+  position: relative;
+  &_time {
+    font-size: $font-size-subtitle-small;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: $color-white;
+    font-weight: 500;
+    padding: 7px 12px;
+    border-radius: 10px;
+    border: 1.18px solid rgba(28, 29, 32, 0.08);
+    backdrop-filter: blur(4.72005033493042px);
+    box-shadow: 0 5px 14px 0 rgba(28, 29, 32, 0.08);
+    background: rgba(28, 29, 32, 0.35);
+    display: block;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+  }
+}
+
 .card__information_titles {
   display: flex;
   flex-direction: column;
@@ -264,5 +285,3 @@
     }
   }
 }
-
-

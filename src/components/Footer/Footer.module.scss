@@ -110,3 +110,10 @@
     padding-bottom: rem(50px);
   }
 }
+
+
+@media (max-width: 680px){
+  .nav__menu_listLink {
+    font-size: $font-size-bid-medium;
+  }
+}

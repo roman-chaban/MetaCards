@@ -6,8 +6,9 @@ import {
   tableBodyItems,
 } from '@/constants/collectionsTableItems';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 
-export const CollectionsTable: FC = () => {
+const CollectionsTable: FC = () => {
   return (
     <table className={styles.collections__table}>
       <thead className={styles.collections__table_menu}>
@@ -26,6 +27,7 @@ export const CollectionsTable: FC = () => {
             </th>
           ))}
         </tr>
+        <tr className={styles.volume__title}>Volume</tr>
       </thead>
       <tbody className={styles.collections__table_body}>
         {tableBodyItems.map((tableItem: TableBodyItem, index) => (
@@ -52,11 +54,18 @@ export const CollectionsTable: FC = () => {
             <td className={styles.percent}>{tableItem.percent}</td>
             <td className={styles.rating}>{tableItem.rating}</td>
             <td className={styles.owners}>{tableItem.owners}</td>
-            <td className={styles.items}>{tableItem.owners}</td>
+            <td className={styles.items}>{tableItem.items}</td>
+            <td className={styles.volumeTitle}>{tableItem.volume} 
+              <td className={styles.percentTitle}>
+              {tableItem.percent}
+              </td>
+              </td>
           </tr>
         ))}
       </tbody>
-      <tfoot></tfoot>
     </table>
   );
 };
+
+
+export default dynamic(() => Promise.resolve(CollectionsTable), {ssr: false});

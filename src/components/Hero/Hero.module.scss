@@ -295,3 +295,29 @@
     right: 35px;
   }
 }
+
+@include onMobileLarge {
+  .hero__container {
+    flex-direction: column;
+  }
+  .hero__title {
+    font-size: $font-size-subtitle-large;
+  }
+  .features {
+    display: none;
+  }
+  .nft__image {
+    max-width: 80%;
+  }
+  .secondaryImage {
+    bottom: 215px;
+    left: 10px;
+  }
+  .dots__decoration {
+    bottom: 100px;
+    left: 10px;
+  }
+  .arrow__icon {
+    right: 50px;
+  }
+}

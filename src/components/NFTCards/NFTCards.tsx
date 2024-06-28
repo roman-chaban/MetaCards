@@ -30,6 +30,7 @@ export const NFTCards: FC<NFTCardsProps> = ({ classNames }) => {
     <div className={classNames.container}>
       {products.map((product: Product, index) => (
         <div className={`${styles.card} ${classNames.card}`} key={index}>
+          <div className={styles.image__block}>
           <Image
             priority
             className={`${styles.card__image} ${classNames.cardImage}`}
@@ -38,6 +39,8 @@ export const NFTCards: FC<NFTCardsProps> = ({ classNames }) => {
             width={250}
             height={250}
           />
+          <span className={styles.image__block_time} >{product.time}</span>
+          </div>
           <div className={styles.card__titles}>
             <h3 className={`${styles.card__title} ${classNames.cardTitle}`}>
               {product.title}
