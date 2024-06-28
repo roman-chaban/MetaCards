@@ -97,3 +97,13 @@
     font-size: $font-size-media-title;
   }
 }
+
+@include onTabletMedium {
+  .explore__container {
+    @include tabletContainerPaddings;
+  }
+  .weekly__nftCardsGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}

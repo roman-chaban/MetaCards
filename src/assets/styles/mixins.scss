@@ -55,8 +55,19 @@
   margin-bottom: -2px;
 }
 
+@mixin tabletContainerPaddings() {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 @mixin onTablet {
   @media (max-width: 999px) {
+    @content;
+  }
+}
+
+@mixin onTabletMedium {
+  @media (max-width: 800px) {
     @content;
   }
 }

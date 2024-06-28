@@ -1,10 +1,10 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .create {
   background: $color-explore-background;
   padding-bottom: rem(160px);
-  padding-left: rem(95px);
-  padding-right: rem(95px);
+  padding-left: rem(85px);
+  padding-right: rem(85px);
 }
 
 .create__container {
@@ -95,7 +95,7 @@
   height: 100%;
   filter: blur(52.874610900878906px);
   z-index: 1;
-  background: url('/images/exploreIcons/banner.svg') no-repeat center center;
+  background: url("/images/exploreIcons/banner.svg") no-repeat center center;
   background-size: cover;
 }
 
@@ -144,9 +144,78 @@
   }
 }
 
-@media (max-width: 992px) {
+@include onTablet {
   .create__banner {
     filter: blur(30px);
+  }
+  .createInfo__title {
+    font-size: $font-size-media-title;
+  }
+
+  .create__banner {
+    max-width: 70%;
+  }
+  .banner {
+    max-width: 70%;
+  }
+  .create__container {
+    padding-top: 31px;
+    align-items: center;
+  }
+  .bannerContainer {
+    left: 100px;
+  }
+  .createInfo__block_titles {
+    gap: rem(8px);
+  }
+  .createInfo__block {
+    position: relative;
+    bottom: 20px;
+    gap: rem(35px);
+  }
+  .createInfo__buttonExplore {
+    padding: 14px 12px;
+    font-size: $font-size-placeholder;
+  }
+  .createInfo__buttonSell {
+    padding: 14px 11px;
+    font-size: $font-size-placeholder;
+  }
+}
+
+@include onTabletMedium {
+  .create {
+    @include tabletContainerPaddings;
+  }
+  .create__container {
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    max-height: 300px;
+  }
+  .bannerContainer {
+    left: 60px;
+    height: 100%;
+  }
+  .createInfo__block {
+    align-items: center;
+  }
+  .createInfo__block_titles {
+    align-items: center;
+  }
+  .createInfo__title {
+    padding-top: 30px;
+  }
+  .create__banner {
+    position: relative;
+    left: -65px;
+    height: 100%;
+  }
+
+  .banner {
+    width: 100%;
+    height: 170%;
   }
 }
 

@@ -224,6 +224,18 @@
     top: 280px;
     left: 20px;
   }
+  .community__infoBlock_title {
+    font-size: $font-size-media-title;
+  }
+  .community__infoBlock_subTitle {
+    font-size: $font-size-card-subtitle;
+    line-height: 1.5;
+  }
+  .community__infoBlock_button {
+    max-width: 144px;
+    font-size: $font-size-subtitle-small;
+    padding: 14px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -237,7 +249,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .community__firstBlock {
     max-width: 500px;
   }
@@ -245,6 +257,65 @@
   .community__secondBlock {
     max-width: 400px;
     padding: 50px;
+  }
+  .first__icon {
+    right: 35px;
+    bottom: 226px;
+    max-width: 35px;
+    max-height: 35px;
+  }
+  .second__icon {
+    max-width: 35px;
+    max-height: 35px;
+    right: -245px;
+    bottom: 135px;
+  }
+  .third__icon {
+    max-width: 30px;
+    max-height: 30px;
+    top: 120px;
+    right: 220px;
+  }
+  .four__icon {
+    max-width: 35px;
+    max-height: 35px;
+    top: 248px;
+  }
+  .five__icon {
+    max-width: 35px;
+    max-height: 35px;
+    top: 145px;
+    z-index: 50;
+    left: -200px;
+  }
+  .six__icon {
+    max-width: 35px;
+    max-height: 35px;
+    bottom: 115px;
+    right: 170px;
+  }
+  .seven__icon {
+    max-width: 35px;
+    max-height: 35px;
+    bottom: 221px;
+  }
+  .eight__icon {
+    max-width: 35px;
+    max-height: 35px;
+    left: 180px;
+  }
+  .nine__icon {
+    max-width: 35px;
+    max-height: 35px;
+    top: 185px;
+  }
+}
+
+@media (max-width: 690px) {
+  .community__container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

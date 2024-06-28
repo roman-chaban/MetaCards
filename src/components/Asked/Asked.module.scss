@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .asked {
   background: $color-explore-background;
@@ -77,6 +77,12 @@
   .asked__container {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+}
+
+@include onTabletMedium {
+  .asked__container {
+    padding-bottom: rem(100px);
   }
 }
 

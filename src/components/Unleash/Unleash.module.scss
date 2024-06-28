@@ -108,3 +108,25 @@
     right: 130px;
   }
 }
+
+@include onTablet {
+  .unleash__recentContainer {
+    max-width: 259px;
+    max-height: 170px;
+    padding: 18px 17px 19px 17px;
+    bottom: 130px;
+    right: 90px;
+  }
+}
+
+@include onTabletMedium {
+  .unleash__container {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .unleash__list,
+  .explore__button {
+    display: none;
+  }
+}

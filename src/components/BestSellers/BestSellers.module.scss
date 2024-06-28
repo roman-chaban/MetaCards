@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .bestSellers {
   position: relative;
@@ -111,5 +111,22 @@
   }
   .bestSellers {
     justify-content: center;
+  }
+}
+
+@include onTablet {
+  .bestSellers__block {
+    max-width: 300px;
+    max-height: 460px;
+  }
+  .icon {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .bestSellers__listBlock::after {
+    left: 20px;
+    top: 5px;
+    max-width: 14px;
+    max-height: 14px;
   }
 }

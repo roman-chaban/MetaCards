@@ -197,12 +197,30 @@
   .card__image {
     border-radius: 0.875rem;
   }
+  .recent__container {
+    max-width: 259px;
+    max-height: 170px;
+    padding: 18px 17px 19px 17px;
+    bottom: -50px;
+    right: 90px;
+  }
+}
+
+@include onTabletMedium {
+  .recent__container {
+    right: 20px;
+    bottom: -70px;
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .weekly__nftCardsContainer {
     padding: 3rem 2rem;
     gap: 2rem;
+  }
+  .weekly__title {
+    font-size: $font-size-media-title;
   }
 
   .card {
@@ -247,8 +265,4 @@
   }
 }
 
-@include onTablet {
-  .weekly__title {
-    font-size: $font-size-media-title;
-  }
-}
+

@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .recent {
   display: flex;
@@ -98,5 +98,44 @@
 @media (max-width: rem(1200px)) {
   .recent__items {
     margin-top: 1.5rem;
+  }
+}
+
+@include onTablet {
+  .recentItem {
+    gap: rem(20px);
+  }
+  .recent__title {
+    font-size: $font-size-card-subtitle;
+  }
+  .icon {
+    max-width: 34px;
+    max-height: 34px;
+  }
+  .recent__iconBlock::after {
+    max-width: 15px;
+    max-height: 15px;
+    font-size: $font-size-features-subTitle-tablet;
+  }
+  .title {
+    font-size: $font-size-card-subtitle;
+    line-height: 140%;
+    font-weight: 500;
+  }
+  .subTitle {
+    font-size: $font-size-subtitle-small;
+  }
+  .recent__ratingPercentBlock {
+    align-items: flex-end;
+    gap: rem(4px);
+    margin-left: 45px;
+  }
+  .percent__ratingFlex,
+  .percent {
+    font-size: $font-size-subtitle-small;
+  }
+  .ethereum__icon {
+    max-width: 16px;
+    max-height: 16px;
   }
 }

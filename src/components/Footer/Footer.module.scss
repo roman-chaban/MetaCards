@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .footer {
   background: $color-button-bg;
@@ -36,7 +36,7 @@
     gap: rem(70px);
   }
   &__menu_listLink {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     color: $color-gray-footer-nav;
     font-size: $font-size-link;
     text-transform: capitalize;
@@ -52,7 +52,7 @@
   margin-top: rem(71.92px);
   padding-bottom: rem(80px);
   &_copyright {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     color: $color-footer-copyright;
     line-height: 1.47059;
     font-weight: 500;
@@ -92,5 +92,21 @@
   .social__icon {
     max-width: 20px;
     max-height: 20px;
+  }
+}
+
+@include onTablet {
+  .footer__top {
+    padding-top: rem(50px);
+    gap: rem(25px);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__bottom {
+    margin-top: rem(45px);
+    gap: rem(20px);
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-bottom: rem(50px);
   }
 }

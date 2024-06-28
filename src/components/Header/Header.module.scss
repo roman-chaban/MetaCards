@@ -194,4 +194,16 @@
     max-height: 40px;
     border-radius: 12px;
   }
+  .header__nav {
+    display: none;
+  }
+}
+
+@include onTabletMedium {
+  .search__input {
+    display: none;
+  }
+  .menu__listItem > .menu__listLink {
+    font-size: $font-size-base;
+  }
 }

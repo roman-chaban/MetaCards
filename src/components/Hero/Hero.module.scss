@@ -205,6 +205,20 @@
 }
 
 @media (max-width: rem(992px)) {
+  .sliderButtons {
+    max-width: 115px;
+    padding: 13px;
+    max-height: 50px;
+    gap: 1.5rem;
+    align-items: normal;
+    justify-content: space-between;
+  }
+  .prev__button,
+  .next__button {
+    max-width: 18px;
+    max-height: 18px;
+  }
+
   .hero {
     max-height: 500px;
   }
@@ -254,7 +268,7 @@
     gap: rem(3px);
   }
   .dots__decoration {
-    left: 0px;
+    left: -55px;
   }
   .arrow__icon {
     max-width: 90px;
@@ -263,5 +277,21 @@
   }
   .secondaryImage {
     max-width: 300px;
+  }
+}
+
+@include onTabletMedium {
+  .hero__container {
+    padding-left: 40px;
+  }
+  .dots__decoration {
+    max-width: 75px;
+    left: -30px;
+  }
+  .secondaryImage {
+    bottom: 115px;
+  }
+  .arrow__icon {
+    right: 35px;
   }
 }

@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .collections {
   background: $color-explore-background;
@@ -155,5 +155,30 @@
 @include onTablet {
   .collection__title {
     font-size: $font-size-media-title;
+  }
+  .collections__table_menu {
+    gap: 9rem;
+  }
+  .collection__table_dataCell {
+    gap: 1.5rem;
+  }
+  .collections__table_header {
+    gap: rem(50px);
+  }
+
+  .collections__table_bodyRow {
+    gap: rem(30px);
+  }
+  .collection__table_item {
+    font-size: $font-size-bid-medium;
+  }
+}
+
+@include onTabletMedium {
+  .collection__container {
+    @include tabletContainerPaddings;
+  }
+  .collections__table_bodyRow {
+    gap: rem(10px);
   }
 }

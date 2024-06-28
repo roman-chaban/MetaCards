@@ -38,10 +38,11 @@ export const RecentItem: FC<RecentItemProps> = ({ item, index }) => {
             alt={item.subTitle}
             width={20}
             height={20}
+            className={styles.ethereum__icon}
           />
           {item.rating}
         </span>
-        <span style={{ color: percentValue < 1 ? '#e23333' : '#10c352' }}>
+        <span  className={styles.percent} style={{ color: percentValue < 1 ? '#e23333' : '#10c352' }}>
           {item.percent}
         </span>
       </div>
