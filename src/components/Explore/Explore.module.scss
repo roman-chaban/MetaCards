@@ -109,3 +109,17 @@
     @include tabletContainerPaddings;
   }
 }
+
+@media (max-width: 475px) {
+  .weekly__nftCardsGridContainer {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    padding: 4.25rem 0;
+  }
+  .additionalButtonNone  {
+    display: none;
+  }
+  .exploreBlock {
+    padding-bottom: 3rem;
+  }
+}

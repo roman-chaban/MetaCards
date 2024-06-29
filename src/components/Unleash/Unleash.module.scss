@@ -136,4 +136,13 @@
   .unleash__recentContainer {
     right: 70px;
   }
+  .unleashList__title {
+    font-size: $font-size-collection-card-title;
+  }
+}
+
+@media (max-width: 445px) {
+  .unleash__recentContainer {
+    right: 25px;
+  }
 }

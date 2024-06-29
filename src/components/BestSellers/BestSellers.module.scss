@@ -139,6 +139,12 @@
   .dots__decoration {
     max-width: 250px;
     max-height: 250px;
-    right: -100px;
+    right: -80px;
   } 
+}
+
+@include onMobile {
+  .dots__decoration {
+    right: -55px;
+  }
 }

@@ -11,6 +11,7 @@ import { Button } from '../UI/Button/Button';
 import { useScrollObserver } from '@/hooks/useScrollObserver';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import MenuIcon from '@mui/icons-material/Menu';
 
 type InputValue = string;
 
@@ -37,6 +38,9 @@ export const Header: FC = () => {
               height={53}
             />
           </Link>
+          <h4 className={styles.logo__title}>
+            DivSea
+          </h4>
         </div>
         <nav className={styles.header__nav}>
           <ul className={styles.header__nav_menu}>
@@ -68,6 +72,9 @@ export const Header: FC = () => {
           </div>
           <Button className={styles.connect__button} type='button'>
             Connect Wallet
+          </Button>
+          <Button type={'button'} className={styles.burger__button}>
+          <MenuIcon id={styles.burger__icon} />
           </Button>
         </div>
       </div>

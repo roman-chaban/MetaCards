@@ -232,6 +232,9 @@
   .create__banner {
     filter: blur(10px);
   }
+  .bannerContainer {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 375px) {

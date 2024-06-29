@@ -10,7 +10,11 @@ export const Hero: FC = () => {
       <div className={styles.hero__container}>
         <div className={styles.hero__information}>
           <div className={styles.hero__informationTitles}>
-            <h1 className={styles.hero__title}>Discover And Create NFTs</h1>
+            <h1 className={styles.hero__title}>Discover And Create NFTs
+
+              <span className={styles.title__decoration} >OVER 1M CREATORS</span>
+
+            </h1>
             <p className={styles.hero__subTitle}>
               Discover, Create and Sell NFTs On Our NFT Marketplace With Over
               Thousands Of NFTs And Get a{' '}

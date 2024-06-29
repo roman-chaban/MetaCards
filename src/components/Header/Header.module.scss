@@ -12,6 +12,7 @@
 }
 
 .header__container {
+  position: relative;
   @include container;
   height: 80px;
   display: flex;
@@ -20,10 +21,19 @@
 }
 
 .header__logo {
+  display: flex;
+  align-items: center;
+  gap: rem(10px);
   padding-right: rem(60px);
   &_image {
     height: auto;
   }
+}
+
+.logo__title {
+  font-weight: 600;
+  line-height: 130%;
+  font-size: $font-size-card-title;
 }
 
 .header__nav > .header__nav_menu {
@@ -118,6 +128,15 @@
   transition: background 0.3s ease;
 }
 
+.burger__button {
+  background: transparent;
+}
+
+#burger__icon {
+  width: 33px;
+  height: 33px;
+}
+
 @media (max-width: rem(1295px)) {
   .connect__button {
     padding: rem(16px);
@@ -169,6 +188,16 @@
   }
 }
 
+@media (min-width: 992px) {
+  #burger__icon {
+    display: none;
+  }
+
+  .logo__title {
+    display: none;
+  }
+}
+
 @media (max-width: rem(995px)) {
   .header__container {
     max-width: 888px;
@@ -205,5 +234,29 @@
   }
   .menu__listItem > .menu__listLink {
     font-size: $font-size-base;
+  }
+}
+
+@include onMobileLarge {
+  .connect__button {
+    display: none;
+  }
+  .header__container {
+    padding-left: 33px;
+    max-height: 65px;
+  }
+}
+
+@include onMobile {
+  .header__container::after {
+    position: absolute;
+    content: "";
+    width: 86.2%;
+    height: 0.5px;
+    background: $color-header-border-bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
   }
 }

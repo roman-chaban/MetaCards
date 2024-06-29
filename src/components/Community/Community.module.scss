@@ -321,7 +321,6 @@
 }
 
 @media (max-width: 577px) {
-
   .community__container {
     padding-left: 0;
     padding-right: 0;
@@ -358,6 +357,26 @@
   }
   .six__icon {
     right: 203px;
+  }
+}
+
+@media (max-width: 500px) {
+  .first__icon {
+    bottom: 175px;
+    z-index: 5;
+  }
+  .third__icon {
+    top: 120px;
+  }
+  .seven__icon {
+    bottom: 220px;
+  }
+  .four__icon {
+    top: 175px;
+    left: 145px;
+  }
+  .six__icon {
+    right: 170px;
   }
 }
 
