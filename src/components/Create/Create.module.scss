@@ -237,6 +237,12 @@
   }
 }
 
+@include onMobile {
+  .createInfo__title {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 375px) {
   .create__banner {
     filter: blur(5px);

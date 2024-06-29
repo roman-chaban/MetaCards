@@ -151,3 +151,8 @@
 }
 
 
+@include onMobile  {
+  .nav__menu_listLink {
+    font-weight: 600;
+  }
+}

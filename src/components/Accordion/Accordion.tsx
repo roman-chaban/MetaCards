@@ -19,7 +19,7 @@ export const Accordion: FC<AccordionProps> = ({
 }) => {
   return (
     <div onClick={onToggle} className={styles.accordion}>
-      <h1 className={styles.title}>
+      <h3 className={styles.title}>
         {title}
         <span
           className='icon'
@@ -31,7 +31,7 @@ export const Accordion: FC<AccordionProps> = ({
             <Add color='white' className={styles.circle__icon} />
           )}
         </span>
-      </h1>
+      </h3>
       <div className={`${styles.content} ${isOpen ? styles.open : ''}`}>
         <div>
           {subTitles.secondSubTitle && (

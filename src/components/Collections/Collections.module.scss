@@ -233,3 +233,9 @@
     line-height: 140%;
   }
 }
+
+@include onMobile {
+  .collections {
+    padding-top: 0;
+  }
+}

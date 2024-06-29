@@ -123,3 +123,10 @@
     padding-bottom: 3rem;
   }
 }
+
+
+@media (max-width: 370px) {
+  .explore__title {
+    line-height: 120%;
+  }
+}

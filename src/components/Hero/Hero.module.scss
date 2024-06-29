@@ -331,8 +331,7 @@
 
 @include onMobile {
   .hero__container {
-    padding-left: 0;
-    max-width: 375px;
+    padding-left: 30px;
   }
 
   .hero__information {
@@ -368,6 +367,7 @@
     max-width: 315px;
   }
   .heroNft__banner {
+    padding-left: 20px;
     gap: rem(10px);
   }
   .nft__image {
@@ -378,7 +378,7 @@
     max-width: 65px;
     max-height: 215px;
     bottom: 7px;
-    left: 3px;
+    left: 0px;
   }
   .arrow__icon {
     max-width: 60px;

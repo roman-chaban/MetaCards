@@ -1,7 +1,8 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 $primary-accordion: #ffffff;
-$primary-accordion-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+$primary-accordion-shadow:
+  rgba(0, 0, 0, 0.12) 0px 1px 3px,
   rgba(0, 0, 0, 0.24) 0px 1px 2px;
 $primary-accordion-background: #f0f0f0;
 $primary-accordion-light: #dddddd;
@@ -15,7 +16,9 @@ $primary-accordion-gray: #333333;
   cursor: pointer;
   border-radius: 8px;
   padding: 15px;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease;
 }
 
 .accordion:hover {
@@ -47,7 +50,9 @@ $primary-accordion-gray: #333333;
 .content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
   opacity: 0;
 }
 
@@ -62,12 +67,22 @@ $primary-accordion-gray: #333333;
   border-radius: 100%;
 }
 
-
 @include onTabletMedium {
   .accordion {
     padding: 8px;
   }
   .title {
     font-size: $font-size-base;
+  }
+}
+
+@include onMobile {
+  .title {
+    font-size: 13px;
+    line-height: 130%;
+  }
+  .circle__icon {
+    max-width: 20px;
+    max-height: 20px;
   }
 }

@@ -116,3 +116,10 @@
     bottom: 23px;
   }
 }
+
+@media (max-width: 440px) {
+    .notification__container {
+      left: 70px;
+      bottom: 25px;
+    }
+}

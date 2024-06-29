@@ -362,8 +362,11 @@
 
 @media (max-width: 500px) {
   .first__icon {
-    bottom: 175px;
+    bottom: 140px;
     z-index: 5;
+  }
+  .second__icon {
+    right: -240px;
   }
   .third__icon {
     top: 120px;
@@ -378,7 +381,20 @@
   .six__icon {
     right: 170px;
   }
+  .five__icon {
+    top: 110px;
+  }
+  .eight__icon {
+    left: 155px;
+  }
+  .nine__icon {
+    top: 235px;
+  }
+  .community__secondBlock {
+    max-width: 345px;
+  }
 }
+
 
 @media (max-width: 375px) {
   .community__firstBlock {
