@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Sun-Glass",
     "subTitle": "Current bid",
     "time": "07h 09m 12s",
@@ -8,6 +9,7 @@
     "rating": "1.75"
   },
   {
+    "id": 2,
     "title": "Sun-Glass",
     "subTitle": "Current bid",
     "time": "07h 09m 12s",
@@ -15,7 +17,7 @@
     "buttonLabel": "PLACE BID",
     "rating": "1.75"
   },
-  {
+  {    "id": 3,
     "title": "Sun-Glass",
     "subTitle": "Current bid",
     "time": "07h 09m 12s",
@@ -24,6 +26,7 @@
     "rating": "1.75"
   },
   {
+    "id": 4,
     "title": "Sun-Glass",
     "subTitle": "Current bid",
     "time": "07h 09m 12s",
@@ -32,6 +35,7 @@
     "rating": "1.75"
   },
   {
+    "id": 5,
     "title": "Sun-Glass",
     "subTitle": "Current bid",
     "time": "07h 09m 12s",
@@ -40,6 +44,7 @@
     "rating": "1.75"
   },
   {
+    "id": 6,
     "title": "Sun-Glass",
     "subTitle": "Current bid",
     "time": "07h 09m 12s",
@@ -48,6 +53,7 @@
     "rating": "1.75"
   },
   {
+    "id": 7,
     "title": "Sun-Glass",
     "subTitle": "Current bid",
     "time": "07h 09m 12s",
@@ -56,6 +62,7 @@
     "rating": "1.75"
   },
   {
+    "id": 8,
     "title": "Sun-Glass",
     "subTitle": "Current bid",
     "time": "07h 09m 12s",

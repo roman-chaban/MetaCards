@@ -1,0 +1,137 @@
+@import "../../assets/styles/stack.scss";
+
+.cards__container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 67px 40px;
+   justify-items: center;
+   padding-top: rem(120px);
+   padding-bottom: rem(120px);
+}
+
+.card {
+   display: flex;
+   flex-direction: column;
+   width: 282px;
+   height: 403px;
+   border-radius: rem(24px);
+   box-shadow: 39px 12px 59px 0 rgba(199, 199, 199, 0.6);
+   background: $color-white;
+   padding: rem(15px);
+}
+
+.image__block {
+   display: flex;
+   justify-content: center;
+   position: relative;
+}
+
+.image__block_time {
+   font-size: $font-size-subtitle-small;
+   line-height: 150%;
+   letter-spacing: 0.01em;
+   color: $color-white;
+   font-weight: 500;
+   padding: 7px 12px;
+   border-radius: 10px;
+   border: 1.18px solid rgba(28, 29, 32, 0.08);
+   backdrop-filter: blur(4.72005033493042px);
+   box-shadow: 0 5px 14px 0 rgba(28, 29, 32, 0.08);
+   background: rgba(28, 29, 32, 0.35);
+   display: block;
+   top: 10px;
+   right: 10px;
+   position: absolute;
+}
+
+.card__image {
+   object-fit: cover;
+   object-position: center;
+   border-radius: 24px;
+   cursor: pointer;
+   transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+   &:hover {
+      transform: scale(0.9);
+   }
+}
+
+.card__titles {
+   padding-top: rem(18px);
+   padding-bottom: rem(14px);
+   display: flex;
+}
+
+.card__title {
+   font-size: $font-size-card-title;
+   color: $color-button-bg;
+   font-weight: 600;
+   line-height: 140%;
+}
+
+.card__information {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.card__information_titles {
+   display: flex;
+   flex-direction: column;
+   gap: rem(5px);
+}
+
+.card__subTitle {
+   line-height: 1.5;
+   letter-spacing: 0.01em;
+   color: $color-card-subTitle;
+}
+
+.card__rating {
+   display: flex;
+   align-items: center;
+   gap: rem(7px);
+   color: $color-button-bg;
+   line-height: 1.5;
+   font-weight: 600;
+}
+
+.card__cardButton {
+   @include button(179px);
+   max-width: 121px;
+   padding-left: 24px;
+   padding-right: 24px;
+   height: 51px;
+}
+
+@media (max-width: 1100px) {
+   .cards__container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px 30px;
+   }
+   .card {
+      max-width: 255px;
+      max-height: 360px;
+   }
+   .card__image {
+      max-width: 220px;
+      max-height: 220px;
+   }
+   .card__title {
+      font-size: $font-size-subtitle;
+   };
+   .card__cardButton {};
+}
+
+@media (max-width: 768px) {
+   .cards__container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   .cards__container {
+      grid-template-columns: 1fr;
+      gap: 30px 15px;
+   }
+}
