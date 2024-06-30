@@ -6,5 +6,20 @@
 
 .discover__container {
   @include container;
-  padding: 0 90px;
+}
+
+
+@media (max-width: 1440px) {
+  .discover__container {
+    padding-left: 70px;
+    padding-right: 70px;
+  };
+}
+
+
+@media (max-width: 720px) {
+  .discover__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  };
 }
