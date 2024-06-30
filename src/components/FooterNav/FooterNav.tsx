@@ -12,7 +12,7 @@ interface FooterNavProps {
 export const FooterNav: FC<FooterNavProps> = ({ navItem }) => {
   return (
     <li className={styles.nav__menu_listItem}>
-      <Link href={navItem.title} className={styles.nav__menu_listLink}>
+      <Link  href={navItem.title} className={styles.nav__menu_listLink} >
         {navItem.title}
       </Link>
     </li>
