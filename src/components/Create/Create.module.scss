@@ -247,4 +247,17 @@
   .create__banner {
     filter: blur(5px);
   }
+  .bannerContainer {
+    max-width: 250px;
+  }
+  .createInfo__title {
+    font-size: 1.6rem;
+  }
+  .banner {
+    max-width: 80%;
+    left: -40px;
+  }
+  .create__banner {
+    max-width: 80%;
+  }
 }

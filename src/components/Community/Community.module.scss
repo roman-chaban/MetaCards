@@ -395,14 +395,49 @@
   }
 }
 
-
 @media (max-width: 375px) {
   .community__firstBlock {
-    max-width: 200px;
+    max-width: 390px;
   }
 
   .community__secondBlock {
-    max-width: 150px;
+    max-width: 250px;
     padding: 15px;
+  }
+  .community__infoBlock {
+    gap: rem(15px);
+  }
+  .community__infoBlock_title {
+    font-size: 1.5rem;
+  }
+  .community__infoBlock_button {
+    padding: 12px;
+    font-size: 0.8rem;
+  }
+  .first__icon {
+    right: 55px;
+  }
+  .five__icon {
+    top: 125px;
+  }
+  .eight__icon {
+    left: 60px;
+    bottom: 97px;
+  }
+  .nine__icon {
+    top: 165px;
+  }
+  .four__icon {
+    top: -71px;
+    left: -135px;
+    z-index: 2;
+  }
+  .third__icon {
+    top: 105px;
+    right: 70px;
+    z-index: 3;
+  }
+  .six__icon {
+    right: -195px;
   }
 }
