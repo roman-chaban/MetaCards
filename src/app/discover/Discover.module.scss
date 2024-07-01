@@ -1,25 +1,28 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .discover {
-  min-height: 100vh;
+  background: $color-explore-background;
 }
 
-.discover__container {
+.productDetail {
+  background: $color-explore-background;
+}
+
+.discover__container,
+.productDetail {
   @include container;
 }
-
 
 @media (max-width: 1440px) {
   .discover__container {
     padding-left: 70px;
     padding-right: 70px;
-  };
+  }
 }
-
 
 @media (max-width: 720px) {
   .discover__container {
     padding-left: 10px;
     padding-right: 10px;
-  };
+  }
 }

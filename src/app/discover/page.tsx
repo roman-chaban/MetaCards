@@ -5,15 +5,11 @@ import { DiscoverNav } from '@/components/DiscoverNav/DiscoverNav';
 import { buttonLabels } from '@/constants/navButtonLabels';
 
 
-
-
-
 export const metadata: Metadata = {
   title: 'DivSea NFT | Discover',
 };
 
 export default function Discover() {
-
 
   return (
     <section className={styles.discover}>

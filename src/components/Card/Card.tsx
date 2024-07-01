@@ -3,6 +3,8 @@ import type { FC } from "react";
 import styles from './Card.module.scss';
 import { Button } from "../UI/Button/Button";
 import Image from "next/image";
+import Link from "next/link";
+import { LinkNext } from "grommet-icons";
 
 
 interface CardProps {
@@ -60,7 +62,10 @@ export const Card: FC<CardProps> = ({card, classNames}) => {
        type='button'
        className={`${styles.card__button} ${classNames.cardButton}`}
      >
+      <Link href={`/discover/${card.id}`} className={styles.card__link}>
        {card.buttonLabel}
+       <LinkNext color="white" className={styles.nextIcon} />
+      </Link>
      </Button>
    </div>
  </div>
