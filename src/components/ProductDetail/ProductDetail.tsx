@@ -22,7 +22,9 @@ export const ProductDetail: FC<ProductDetailsProps> = ({product}) => {
             <h4 className={styles.nav__title}>Product Detail</h4>
       </div>
       <div className={styles.productDetail__information}>
-            <Image src={product.image} alt={product.title}  width={560} height={560} className={styles.productDetail__image} />
+         <div>
+            <Image src={product.image} alt={product.title}  width={460} height={460} className={styles.productDetail__image} />
+         </div>
             <div className={styles.details}>
                <div className={styles.details__titles}>
                <h4 className={styles.details__title}>{product.title}</h4>
@@ -34,7 +36,7 @@ export const ProductDetail: FC<ProductDetailsProps> = ({product}) => {
                   <ul className={styles.list__details}>
                      {detailsList.map((detail, index) => (
                         <li key={index + 1} className={styles.list__details_item}>
-                           <Image src={detail.icon} alt={detail.title} width={65} height={65} />
+                           <Image src={detail.icon} alt={detail.title} width={65} height={65} className={styles.detail__icon} />
                            <div className={styles.titles}>
                            <h5 className={styles.title} >{detail.title}</h5>
                            <p className={styles.subTitle} >{detail.subTitle}</p>

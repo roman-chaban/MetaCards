@@ -1,4 +1,5 @@
 export interface CreatorCardItem {
+  id: number;
   image: string
   title: string
   iconPrimary: string

@@ -1,0 +1,25 @@
+@import '../../assets/styles/stack.scss';
+
+
+.creatorCards {
+   display: flex;
+   flex-direction: column;
+   gap: rem(45px);
+   overflow-x: hidden;
+}
+
+
+.cards__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: rem(40px);
+   margin-bottom: rem(120px);
+}
+
+.creator__title {
+   line-height: 89%;
+   font-weight: 600;
+   color: $color-creator-title;
+   font-size: $font-size-media-title;
+}

@@ -1,7 +1,6 @@
 @import "../../assets/styles/stack.scss";
 
 .productDetail {
-   min-height: 100vh;
    display: flex;
    flex-direction: column;
    gap: rem(90px);
@@ -159,7 +158,8 @@
 }
 
 .bid__button {
-   width: 472px;
+   width: 100%;
+   max-width: 472px;
    height: 78px;
    line-height: 153%;
    font-weight: 700;
@@ -180,9 +180,49 @@
    }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
+   .productDetail__image {
+      max-width: 350px;
+      max-height: 350px;
+   }
+   .details__title {
+      font-size: $font-size-subtitle-large;
+   }
+   .details__subTitle {
+      font-size: $font-size-card-subtitle;
+   }
+   .detail__icon {
+      max-width: 45px;
+      max-height: 45px;
+   }
+   .list__details {
+      gap: rem(50px);
+      justify-content: start;
+   }
+   .title {
+      font-size: $font-size-subtitle-small;
+   }
+   .subTitle {
+      font-size: $font-size-base;
+   }
+   .details {
+      gap: rem(30px);
+   }
+   .productDetail__information {
+      max-height: 450px;
+   }
+}
+
+@media (max-width: 1100px) {
+   .productDetail__information {
+      max-width: 100%;
+   }
    .productDetail__image {
       max-width: 250px;
       max-height: 250px;
+   }
+   .bid__button {
+      max-height: 50px;
+      max-width: 100%;
    }
 }

@@ -1,0 +1,117 @@
+@import "../../assets/styles/stack.scss";
+
+.card {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 297px;
+   background: $color-white;
+   border-radius: 17px;
+   padding: 13px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   transition: all 0.3s ease-in-out;
+}
+
+.card__container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   max-width: 300px;
+}
+
+.card__image {
+   border-radius: 17px;
+   object-fit: contain;
+   object-position: center;
+   width: 200px;
+   height: 200px;
+   background-size: cover;
+   background-position: center;
+}
+
+.card__title {
+   font-size: $font-size-link;
+   font-weight: 600;
+   line-height: 157%;
+   color: $color-button-bg;
+}
+
+.cardInfo__items {
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
+}
+
+.perperzon__block {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+}
+
+.perperzon__block_title {
+   line-height: 157%;
+   font-weight: 700;
+   font-size: $font-size-card-subtitle;
+   color: $color-button-bg;
+}
+
+.cardInfo__block {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.rating {
+   color: $color-button-bg;
+   font-weight: 500;
+   line-height: 144%;
+   font-size: $font-size-subtitle;
+}
+
+.likes {
+   color: $color-likes-counter;
+   font-weight: 600;
+   line-height: 144%;
+}
+
+.card__rating,
+.likesBlock {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+@media (max-width: 768px) {
+   .card {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+   }
+
+   .card__container {
+      max-width: 100%;
+   }
+
+   .card__image {
+      max-height: 150px;
+   }
+}
+
+@media (max-width: 480px) {
+   .card {
+      padding: 8px;
+   }
+
+   .card__title {
+      font-size: calc($font-size-link - 2px);
+   }
+
+   .rating,
+   .likes {
+      font-size: calc($font-size-subtitle - 2px);
+   }
+
+   .perperzon__block_title {
+      font-size: calc($font-size-card-subtitle - 2px);
+   }
+}
