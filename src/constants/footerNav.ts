@@ -1,23 +1,23 @@
 export interface NavItem {
-  title: string;
-  href: string;
+  title: string
+  href: string
 }
 
 export const footerNavItems: NavItem[] = [
   {
     title: 'Privacy Policy',
-    href: '/privacyPolicy',
+    href: '/privacyPolicy'
   },
   {
     title: 'Term & Conditions',
-    href: '/termConditions',
+    href: '/termConditions'
   },
   {
     title: 'About Us',
-    href: '/aboutUs',
+    href: '/aboutUs'
   },
   {
     title: 'Contact',
-    href: '/contact',
-  },
-];
+    href: '/contact'
+  }
+]

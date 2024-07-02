@@ -1,4 +1,4 @@
-import styles from '@/components/Explore/Explore.module.scss';
+import styles from '@/components/Explore/Explore.module.scss'
 
 export const nftCardClasses = {
   container: styles.weekly__nftCardsGridContainer,
@@ -7,6 +7,5 @@ export const nftCardClasses = {
   cardTitle: styles.weekly__cardTitle,
   cardSubtitle: styles.weekly__cardSubtitle,
   cardRating: styles.weekly__cardRating,
-  cardButton: styles.weekly__cardButton,
-};
-
+  cardButton: styles.weekly__cardButton
+}

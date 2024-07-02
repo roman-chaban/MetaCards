@@ -1,9 +1,9 @@
-import styles from '@/components/Header/Header.module.scss';
-import Link from 'next/link';
-import type { FC } from 'react';
+import styles from '@/components/Header/Header.module.scss'
+import Link from 'next/link'
+import type { FC } from 'react'
 
 interface NavItemProps {
-  navLink: { label: string; href: string };
+  navLink: { label: string; href: string }
   className: string
 }
 
@@ -14,5 +14,5 @@ export const NavItem: FC<NavItemProps> = ({ navLink, className }) => {
         {navLink.label}
       </Link>
     </li>
-  );
-};
+  )
+}

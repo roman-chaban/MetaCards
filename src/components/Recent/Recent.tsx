@@ -1,12 +1,12 @@
-import type { FC } from 'react';
-import styles from './Recent.module.scss';
-import { recentItems } from '@/constants/recentItems';
-import { RecentItem } from '../RecentItem/RecentItem';
+import type { FC } from 'react'
+import styles from './Recent.module.scss'
+import { recentItems } from '@/constants/recentItems'
+import { RecentItem } from '../RecentItem/RecentItem'
 
 interface RecentProps {
   classNames: {
-    container: string;
-  };
+    container: string
+  }
 }
 
 export const Recent: FC<RecentProps> = ({ classNames }) => {
@@ -23,5 +23,5 @@ export const Recent: FC<RecentProps> = ({ classNames }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

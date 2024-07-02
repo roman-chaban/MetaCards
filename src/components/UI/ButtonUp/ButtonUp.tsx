@@ -1,19 +1,19 @@
-'use client';
+'use client'
 
-import styles from './ButtonUp.module.scss';
-import { FC } from 'react';
-import { useScrollObserver } from '@/hooks/useScrollObserver';
-import { FormNextLink } from 'grommet-icons';
+import styles from './ButtonUp.module.scss'
+import { FC } from 'react'
+import { useScrollObserver } from '@/hooks/useScrollObserver'
+import { FormNextLink } from 'grommet-icons'
 
 export const ButtonUp: FC = () => {
-  const { isScrolledNav } = useScrollObserver();
+  const { isScrolledNav } = useScrollObserver()
 
   const handleUppPage = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
-    });
-  };
+      behavior: 'smooth'
+    })
+  }
 
   return (
     <button
@@ -22,10 +22,10 @@ export const ButtonUp: FC = () => {
       style={{ display: isScrolledNav ? 'block' : 'none' }}
     >
       <FormNextLink
-        color='white'
+        color="white"
         className={styles.arrow__top}
         style={{ transform: 'rotate(-90deg)', width: 20, height: 20 }}
       />
     </button>
-  );
-};
+  )
+}

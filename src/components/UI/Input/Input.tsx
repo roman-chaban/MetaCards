@@ -1,13 +1,13 @@
-import { ChangeEvent, FC } from 'react';
+import { ChangeEvent, FC } from 'react'
 
 interface InputProps {
-  type: string;
-  name?: string;
-  value: string;
-  id?: string;
-  className: string;
-  placeholder: string;
-  setValue: (event: ChangeEvent<HTMLInputElement>) => void;
+  type: string
+  name?: string
+  value: string
+  id?: string
+  className: string
+  placeholder: string
+  setValue: (event: ChangeEvent<HTMLInputElement>) => void
 }
 
 export const Input: FC<InputProps> = ({
@@ -17,7 +17,7 @@ export const Input: FC<InputProps> = ({
   type,
   value,
   className,
-  placeholder,
+  placeholder
 }) => {
   return (
     <input
@@ -29,5 +29,5 @@ export const Input: FC<InputProps> = ({
       value={value}
       onChange={setValue}
     />
-  );
-};
+  )
+}

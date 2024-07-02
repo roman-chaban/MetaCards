@@ -1,6 +1,6 @@
-import { FeatureItem, featuresItems } from '@/constants/heroFeatures';
-import { type FC } from 'react';
-import styles from '@/components/Hero/Hero.module.scss';
+import { FeatureItem, featuresItems } from '@/constants/heroFeatures'
+import { type FC } from 'react'
+import styles from '@/components/Hero/Hero.module.scss'
 
 export const HeroFeatures: FC = () => {
   return (
@@ -12,5 +12,5 @@ export const HeroFeatures: FC = () => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}

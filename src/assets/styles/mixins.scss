@@ -16,7 +16,7 @@
   width: 100%;
   max-width: $maxWidth;
   height: 57px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   line-height: 1.5;
   text-transform: uppercase;
@@ -28,7 +28,7 @@
 
 @mixin secondaryButton() {
   padding: 18px 21px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   letter-spacing: 0.01em;
   text-transform: uppercase;
@@ -59,4 +59,3 @@
   padding-left: 30px;
   padding-right: 30px;
 }
-

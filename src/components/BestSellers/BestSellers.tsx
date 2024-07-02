@@ -1,12 +1,12 @@
-import type { FC } from 'react';
-import styles from './BestSellers.module.scss';
-import Image from 'next/image';
+import type { FC } from 'react'
+import styles from './BestSellers.module.scss'
+import Image from 'next/image'
 import {
   BestSellersListItem,
-  bestSellersList,
-} from '@/constants/bestSellersList';
-import { Button } from '../UI/Button/Button';
-import { Notification } from '../Notification/Notification';
+  bestSellersList
+} from '@/constants/bestSellersList'
+import { Button } from '../UI/Button/Button'
+import { Notification } from '../Notification/Notification'
 
 export const BestSellers: FC = () => {
   return (
@@ -44,14 +44,14 @@ export const BestSellers: FC = () => {
                 <Button
                   style={{ background: '#e6e8ec' }}
                   className={styles.bestSellers__followButton}
-                  type='button'
+                  type="button"
                 >
                   {item.buttonLabel}
                 </Button>
               ) : (
                 <Button
                   className={styles.bestSellers__followButton}
-                  type='button'
+                  type="button"
                 >
                   {item.buttonLabel}
                 </Button>
@@ -61,12 +61,12 @@ export const BestSellers: FC = () => {
         </div>
       </div>
       <Image
-        src='/images/unleash/dots.svg'
-        alt='Dots Decoration Icon'
+        src="/images/unleash/dots.svg"
+        alt="Dots Decoration Icon"
         width={300}
         height={300}
         className={styles.dots__decoration}
       />
     </div>
-  );
-};
+  )
+}

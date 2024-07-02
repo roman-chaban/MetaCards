@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .create {
   background: $color-explore-background;
@@ -95,7 +95,7 @@
   height: 100%;
   filter: blur(52.874610900878906px);
   z-index: 1;
-  background: url("/images/exploreIcons/banner.svg") no-repeat center center;
+  background: url('/images/exploreIcons/banner.svg') no-repeat center center;
   background-size: cover;
 }
 

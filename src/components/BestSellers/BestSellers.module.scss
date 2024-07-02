@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .bestSellers {
   position: relative;
@@ -131,16 +131,15 @@
   }
 }
 
-
 @media (max-width: 575px) {
   .bestSellers__block {
-      max-width: 275px;
-  } 
+    max-width: 275px;
+  }
   .dots__decoration {
     max-width: 250px;
     max-height: 250px;
     right: -80px;
-  } 
+  }
 }
 
 @include onMobile {

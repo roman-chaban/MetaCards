@@ -1,21 +1,21 @@
 export interface CollectionNavItem {
-  title: string;
+  title: string
 }
 
 export const collectionsNav: CollectionNavItem[] = [
   {
-    title: 'Volume',
+    title: 'Volume'
   },
   {
-    title: '24h %',
+    title: '24h %'
   },
   {
-    title: 'Floor Price',
+    title: 'Floor Price'
   },
   {
-    title: 'Owners',
+    title: 'Owners'
   },
   {
-    title: 'Items',
-  },
-];
+    title: 'Items'
+  }
+]

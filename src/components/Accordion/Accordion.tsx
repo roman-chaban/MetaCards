@@ -1,34 +1,34 @@
-import React, { type FC } from 'react';
-import styles from './Accordion.module.scss';
-import { Add, Subtract } from 'grommet-icons';
+import React, { type FC } from 'react'
+import styles from './Accordion.module.scss'
+import { Add, Subtract } from 'grommet-icons'
 
 interface AccordionProps {
-  onToggle: () => void;
-  title: string;
+  onToggle: () => void
+  title: string
   subTitles: {
-    secondSubTitle: string;
-  };
-  isOpen: boolean;
+    secondSubTitle: string
+  }
+  isOpen: boolean
 }
 
 export const Accordion: FC<AccordionProps> = ({
   onToggle,
   subTitles,
   title,
-  isOpen,
+  isOpen
 }) => {
   return (
     <div onClick={onToggle} className={styles.accordion}>
       <h3 className={styles.title}>
         {title}
         <span
-          className='icon'
+          className="icon"
           style={{ transform: isOpen ? 'rotate(0deg)' : 'rotate(90deg)' }}
         >
           {isOpen ? (
-            <Subtract color='white' className={styles.circle__icon} />
+            <Subtract color="white" className={styles.circle__icon} />
           ) : (
-            <Add color='white' className={styles.circle__icon} />
+            <Add color="white" className={styles.circle__icon} />
           )}
         </span>
       </h3>
@@ -40,5 +40,5 @@ export const Accordion: FC<AccordionProps> = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

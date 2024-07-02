@@ -1,15 +1,15 @@
 export interface TableBodyItem {
-  icon: string;
-  title: string;
-  subTitle: string;
-  volume: string;
-  percent: string;
-  rating: string;
-  owners: string;
-  items: string;
+  icon: string
+  title: string
+  subTitle: string
+  volume: string
+  percent: string
+  rating: string
+  owners: string
+  items: string
 }
 
-export type TabletBodyItems = TableBodyItem[];
+export type TabletBodyItems = TableBodyItem[]
 
 export const tableBodyItems: TabletBodyItems = [
   {
@@ -20,7 +20,7 @@ export const tableBodyItems: TabletBodyItems = [
     percent: '+ 27.78%',
     rating: '7,9',
     owners: '2.2K',
-    items: '500',
+    items: '500'
   },
   {
     icon: '/images/collections/second-icon.svg',
@@ -30,7 +30,7 @@ export const tableBodyItems: TabletBodyItems = [
     percent: '+ 27.78%',
     rating: '3,5',
     owners: '3.4K',
-    items: '900',
+    items: '900'
   },
   {
     icon: '/images/collections/first-icon.svg',
@@ -40,7 +40,7 @@ export const tableBodyItems: TabletBodyItems = [
     percent: '+ 27.78%',
     rating: '3,5',
     owners: '2.2K',
-    items: '500',
+    items: '500'
   },
   {
     icon: '/images/collections/second-icon.svg',
@@ -50,6 +50,6 @@ export const tableBodyItems: TabletBodyItems = [
     percent: '+ 27.78%',
     rating: '7,9',
     owners: '3.4K',
-    items: '900',
-  },
-];
+    items: '900'
+  }
+]

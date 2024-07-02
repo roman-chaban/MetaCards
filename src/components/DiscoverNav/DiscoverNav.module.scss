@@ -1,58 +1,58 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .discover__nav {
-   padding-top: rem(120px);
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   gap: rem(45px);
-   &_title {
-      line-height: 67%;
-      font-weight: 600;
-      color: $color-button-bg;
-      font-size: $font-size-section-heading;
-   }
+  padding-top: rem(120px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(45px);
+  &_title {
+    line-height: 67%;
+    font-weight: 600;
+    color: $color-button-bg;
+    font-size: $font-size-section-heading;
+  }
 }
 
 .nav__buttons {
-   display: flex;
-   align-items: center;
-   gap: rem(35px);
-   max-height: 59px;
+  display: flex;
+  align-items: center;
+  gap: rem(35px);
+  max-height: 59px;
 }
 
 .button__primary {
-   width: 100%;
-   display: flex;
-   align-items: center;
-   flex-direction: row-reverse;
-   font-size: $font-size-link;
-   color: $color-recent-title;
-   border: 2.35px solid $color-button-bg;
-   gap: rem(15px);
-   border-radius: rem(14px);
-   padding: rem(18px);
-   padding-top: rem(15px);
-   padding-bottom: rem(15px);
-   font-weight: 600;
-   line-height: 150%;
-   letter-spacing: 0.01em;
-   background: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-size: $font-size-link;
+  color: $color-recent-title;
+  border: 2.35px solid $color-button-bg;
+  gap: rem(15px);
+  border-radius: rem(14px);
+  padding: rem(18px);
+  padding-top: rem(15px);
+  padding-bottom: rem(15px);
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  background: transparent;
 }
 
 @media (max-width: rem(500px)) {
-   .nav__buttons {
-      gap: rem(14px);
-   }
-   .button__primary {
-      border-radius: 9px;
-      padding: 11px;
-      max-width: 105px;
-      max-height: 36px;
-      font-size: $font-size-subtitle-small;
-   }
-   .primaryButton__icon {
-      max-width: 16px;
-      max-height: 16px;
-   }
+  .nav__buttons {
+    gap: rem(14px);
+  }
+  .button__primary {
+    border-radius: 9px;
+    padding: 11px;
+    max-width: 105px;
+    max-height: 36px;
+    font-size: $font-size-subtitle-small;
+  }
+  .primaryButton__icon {
+    max-width: 16px;
+    max-height: 16px;
+  }
 }

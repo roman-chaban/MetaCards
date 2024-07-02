@@ -1,7 +1,7 @@
-import type { FC } from 'react';
-import styles from './Community.module.scss';
-import { Button } from '../UI/Button/Button';
-import Image from 'next/image';
+import type { FC } from 'react'
+import styles from './Community.module.scss'
+import { Button } from '../UI/Button/Button'
+import Image from 'next/image'
 
 export const Community: FC = () => {
   return (
@@ -10,36 +10,36 @@ export const Community: FC = () => {
         <div className={styles.community__firstBlock}>
           <div className={styles.firstBlock__icons}>
             <Image
-              src='/images/community/first-icon.svg'
-              alt='NFT Icon'
+              src="/images/community/first-icon.svg"
+              alt="NFT Icon"
               width={65}
               height={65}
               className={styles.first__icon}
             />
             <Image
-              src='/images/community/second-icon.svg'
-              alt='NFT Icon'
+              src="/images/community/second-icon.svg"
+              alt="NFT Icon"
               width={50}
               height={50}
               className={styles.second__icon}
             />
             <Image
-              src='/images/community/third-icon.svg'
-              alt='NFT Icon'
+              src="/images/community/third-icon.svg"
+              alt="NFT Icon"
               width={50}
               height={50}
               className={styles.third__icon}
             />
             <Image
-              src='/images/community/four-icon.svg'
-              alt='NFT Icon'
+              src="/images/community/four-icon.svg"
+              alt="NFT Icon"
               width={50}
               height={50}
               className={styles.four__icon}
             />
             <Image
-              src='/images/community/five-icon.svg'
-              alt='NFT Icon'
+              src="/images/community/five-icon.svg"
+              alt="NFT Icon"
               width={50}
               height={50}
               className={styles.five__icon}
@@ -48,29 +48,29 @@ export const Community: FC = () => {
           <div className={styles.community__secondBlock}>
             <div className={styles.secondBlock__icons}>
               <Image
-                src='/images/community/six-icon.svg'
-                alt='NFT Icon'
+                src="/images/community/six-icon.svg"
+                alt="NFT Icon"
                 width={50}
                 height={50}
                 className={styles.six__icon}
               />
               <Image
-                src='/images/community/seven-icon.svg'
-                alt='NFT Icon'
+                src="/images/community/seven-icon.svg"
+                alt="NFT Icon"
                 width={50}
                 height={50}
                 className={styles.seven__icon}
               />
               <Image
-                src='/images/community/eight-icon.svg'
-                alt='NFT Icon'
+                src="/images/community/eight-icon.svg"
+                alt="NFT Icon"
                 width={50}
                 height={50}
                 className={styles.eight__icon}
               />
               <Image
-                src='/images/community/ten-icon.svg'
-                alt='NFT Icon'
+                src="/images/community/ten-icon.svg"
+                alt="NFT Icon"
                 width={50}
                 height={50}
                 className={styles.nine__icon}
@@ -88,7 +88,7 @@ export const Community: FC = () => {
                 enthusiasts who share a passion for one-of-a-kind digital.
               </p>
               <Button
-                type='button'
+                type="button"
                 className={styles.community__infoBlock_button}
               >
                 Join Our Community
@@ -98,5 +98,5 @@ export const Community: FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

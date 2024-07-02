@@ -1,7 +1,7 @@
-import type { FC } from 'react';
-import styles from './Create.module.scss';
-import { Button } from '../UI/Button/Button';
-import Image from 'next/image';
+import type { FC } from 'react'
+import styles from './Create.module.scss'
+import { Button } from '../UI/Button/Button'
+import Image from 'next/image'
 
 export const Create: FC = () => {
   return (
@@ -15,10 +15,10 @@ export const Create: FC = () => {
             </p>
           </div>
           <div className={styles.createInfo__buttons}>
-            <Button type='button' className={styles.createInfo__buttonExplore}>
+            <Button type="button" className={styles.createInfo__buttonExplore}>
               Explore More
             </Button>
-            <Button type='button' className={styles.createInfo__buttonSell}>
+            <Button type="button" className={styles.createInfo__buttonSell}>
               Sell Artwork
             </Button>
           </div>
@@ -26,17 +26,17 @@ export const Create: FC = () => {
         <div className={styles.bannerContainer}>
           <div className={styles.create__banner} />
           <Image
-            src='/images/exploreIcons/banner.svg'
-            alt='NFT Banner Image'
+            src="/images/exploreIcons/banner.svg"
+            alt="NFT Banner Image"
             width={390}
             height={249}
             className={styles.banner}
-            objectFit='cover'
+            objectFit="cover"
             quality={100}
             priority
           />
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

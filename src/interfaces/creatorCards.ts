@@ -1,5 +1,5 @@
 export interface CreatorCardItem {
-  id: number;
+  id: number
   image: string
   title: string
   iconPrimary: string
@@ -9,6 +9,3 @@ export interface CreatorCardItem {
   rating: string
   likes: string
 }
-
-
-

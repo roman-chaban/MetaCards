@@ -1,19 +1,19 @@
 export interface FeatureItem {
-  views: string;
-  subTitle: string;
+  views: string
+  subTitle: string
 }
 
 export const featuresItems: FeatureItem[] = [
   {
     views: '430K+',
-    subTitle: 'Art Works',
+    subTitle: 'Art Works'
   },
   {
     views: '159K+',
-    subTitle: 'Creators',
+    subTitle: 'Creators'
   },
   {
     views: '87K+',
-    subTitle: 'Collections',
-  },
-];
+    subTitle: 'Collections'
+  }
+]

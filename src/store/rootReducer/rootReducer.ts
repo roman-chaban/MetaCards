@@ -1,9 +1,9 @@
-import { combineReducers } from 'redux';
-import { sliderSlice } from '../slices/sliderSlice';
+import { combineReducers } from 'redux'
+import { sliderSlice } from '../slices/sliderSlice'
 
 const rootReducer = combineReducers({
-  sliderSlice: sliderSlice,
-});
+  sliderSlice: sliderSlice
+})
 
-export default rootReducer;
-export type RootState = ReturnType<typeof rootReducer>;
+export default rootReducer
+export type RootState = ReturnType<typeof rootReducer>

@@ -1,7 +1,7 @@
-import { Fragment, type FC } from 'react';
-import styles from '@/components/Footer/Footer.module.scss';
-import Link from 'next/link';
-import { footerSocialMedias } from '@/constants/footerSocialMedias';
+import { Fragment, type FC } from 'react'
+import styles from '@/components/Footer/Footer.module.scss'
+import Link from 'next/link'
+import { footerSocialMedias } from '@/constants/footerSocialMedias'
 
 export const FooterSocial: FC = () => {
   return (
@@ -20,5 +20,5 @@ export const FooterSocial: FC = () => {
         </Fragment>
       ))}
     </ul>
-  );
-};
+  )
+}

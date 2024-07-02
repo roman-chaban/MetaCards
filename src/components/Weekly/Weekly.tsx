@@ -1,8 +1,8 @@
-import type { FC } from 'react';
-import styles from './Weekly.module.scss';
-import { SliderButtons } from '../SliderButtons/SliderButtons';
-import { Recent } from '../Recent/Recent';
-import { NFTCards } from '../NFTCards/NFTCards';
+import type { FC } from 'react'
+import styles from './Weekly.module.scss'
+import { SliderButtons } from '../SliderButtons/SliderButtons'
+import { Recent } from '../Recent/Recent'
+import { NFTCards } from '../NFTCards/NFTCards'
 
 export const Weekly: FC = () => {
   const nftCardClasses = {
@@ -12,11 +12,11 @@ export const Weekly: FC = () => {
     cardTitle: styles.weekly__cardTitle,
     cardSubtitle: styles.weekly__cardSubtitle,
     cardRating: styles.weekly__cardRating,
-    cardButton: styles.weekly__cardButton,
-  };
+    cardButton: styles.weekly__cardButton
+  }
   const recentStyles = {
-    container: styles.recent__container,
-  };
+    container: styles.recent__container
+  }
   return (
     <section className={styles.weekly}>
       <div className={styles.weekly__container}>
@@ -30,5 +30,5 @@ export const Weekly: FC = () => {
       </div>
       <Recent classNames={recentStyles} />
     </section>
-  );
-};
+  )
+}

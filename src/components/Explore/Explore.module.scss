@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .explore {
   padding: rem(100px) 0;
@@ -116,14 +116,13 @@
     justify-items: center;
     padding: 4.25rem 0;
   }
-  .additionalButtonNone  {
+  .additionalButtonNone {
     display: none;
   }
   .exploreBlock {
     padding-bottom: 3rem;
   }
 }
-
 
 @media (max-width: 370px) {
   .explore__title {

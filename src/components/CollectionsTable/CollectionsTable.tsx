@@ -1,12 +1,12 @@
-import { collectionsNav } from '@/constants/collectionsNav';
-import { type FC } from 'react';
-import styles from '@/components/Collections/Collections.module.scss';
+import { collectionsNav } from '@/constants/collectionsNav'
+import { type FC } from 'react'
+import styles from '@/components/Collections/Collections.module.scss'
 import {
   TableBodyItem,
-  tableBodyItems,
-} from '@/constants/collectionsTableItems';
-import Image from 'next/image';
-import dynamic from 'next/dynamic';
+  tableBodyItems
+} from '@/constants/collectionsTableItems'
+import Image from 'next/image'
+import dynamic from 'next/dynamic'
 
 const CollectionsTable: FC = () => {
   return (
@@ -56,20 +56,22 @@ const CollectionsTable: FC = () => {
             <td className={styles.owners}>{tableItem.owners}</td>
             <td className={styles.items}>{tableItem.items}</td>
             <tr>
-          <td className={styles.volumeTitle}>
-              <Image src='/images/collections/ethereum.svg' alt='Ethereum Icon' width={18} height={18} />
+              <td className={styles.volumeTitle}>
+                <Image
+                  src="/images/collections/ethereum.svg"
+                  alt="Ethereum Icon"
+                  width={18}
+                  height={18}
+                />
                 {tableItem.volume}
-          </td>
-      <td className={styles.percentTitle}>
-            {tableItem.percent}
-      </td>
-    </tr>
+              </td>
+              <td className={styles.percentTitle}>{tableItem.percent}</td>
+            </tr>
           </tr>
         ))}
       </tbody>
     </table>
-  );
-};
+  )
+}
 
-
-export default dynamic(() => Promise.resolve(CollectionsTable), {ssr: false});
+export default dynamic(() => Promise.resolve(CollectionsTable), { ssr: false })

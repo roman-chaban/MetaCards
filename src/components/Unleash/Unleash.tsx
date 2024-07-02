@@ -1,16 +1,16 @@
-import type { FC } from 'react';
-import styles from './Unleash.module.scss';
-import { UnleashListItem, unleashList } from '@/constants/unleashList';
-import { FormNextLink } from 'grommet-icons';
-import { Button } from '../UI/Button/Button';
-import Image from 'next/image';
-import { BestSellers } from '../BestSellers/BestSellers';
-import { Recent } from '../Recent/Recent';
+import type { FC } from 'react'
+import styles from './Unleash.module.scss'
+import { UnleashListItem, unleashList } from '@/constants/unleashList'
+import { FormNextLink } from 'grommet-icons'
+import { Button } from '../UI/Button/Button'
+import Image from 'next/image'
+import { BestSellers } from '../BestSellers/BestSellers'
+import { Recent } from '../Recent/Recent'
 
 export const Unleash: FC = () => {
   const recentStyles = {
-    container: styles.unleash__recentContainer,
-  };
+    container: styles.unleash__recentContainer
+  }
 
   return (
     <section className={styles.unleash}>
@@ -27,8 +27,8 @@ export const Unleash: FC = () => {
               <div key={index} className={styles.unleash__listItemsBlock}>
                 <Image
                   className={styles.icon}
-                  src='/images/exploreIcons/check.svg'
-                  alt='Check Icon'
+                  src="/images/exploreIcons/check.svg"
+                  alt="Check Icon"
                   width={20}
                   height={20}
                 />
@@ -36,8 +36,9 @@ export const Unleash: FC = () => {
               </div>
             ))}
           </ul>
-          <Button type='button' className={styles.explore__button}>
-            Explore more <FormNextLink className={styles.next__icon} color='white' />
+          <Button type="button" className={styles.explore__button}>
+            Explore more{' '}
+            <FormNextLink className={styles.next__icon} color="white" />
           </Button>
         </article>
         <div className={styles.unleash__itemsBlock}>
@@ -46,5 +47,5 @@ export const Unleash: FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

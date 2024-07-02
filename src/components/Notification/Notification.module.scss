@@ -93,7 +93,6 @@
   }
 }
 
-
 @media (max-width: 575px) {
   .notification__container {
     max-width: 17.5rem;
@@ -118,15 +117,14 @@
 }
 
 @media (max-width: 440px) {
-    .notification__container {
-      left: 70px;
-      bottom: 25px;
-    }
+  .notification__container {
+    left: 70px;
+    bottom: 25px;
+  }
 }
 
 @media (max-width: 380px) {
   .notification__container {
     left: 35px;
   }
-  
 }

@@ -1,6 +1,5 @@
-import  type { FC } from "react";
-
+import type { FC } from 'react'
 
 export const Burger: FC = () => {
-   return <nav></nav>
+  return <nav></nav>
 }

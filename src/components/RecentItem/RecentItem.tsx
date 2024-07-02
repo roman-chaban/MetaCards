@@ -1,21 +1,21 @@
-import type { FC } from 'react';
-import styles from '@/components/Recent/Recent.module.scss';
-import Image from 'next/image';
+import type { FC } from 'react'
+import styles from '@/components/Recent/Recent.module.scss'
+import Image from 'next/image'
 
 interface RecentItemProps {
   item: {
-    icon: string;
-    percent: string;
-    rating: string;
-    subTitle: string;
-    title: string;
-    subIcon: string;
-  };
-  index: number;
+    icon: string
+    percent: string
+    rating: string
+    subTitle: string
+    title: string
+    subIcon: string
+  }
+  index: number
 }
 
 export const RecentItem: FC<RecentItemProps> = ({ item, index }) => {
-  const percentValue = parseFloat(item.percent.replace('%', ''));
+  const percentValue = parseFloat(item.percent.replace('%', ''))
   return (
     <div className={styles.recentItem}>
       <div className={styles.recent__iconBlock} data-number={index}>
@@ -42,10 +42,13 @@ export const RecentItem: FC<RecentItemProps> = ({ item, index }) => {
           />
           {item.rating}
         </span>
-        <span  className={styles.percent} style={{ color: percentValue < 1 ? '#e23333' : '#10c352' }}>
+        <span
+          className={styles.percent}
+          style={{ color: percentValue < 1 ? '#e23333' : '#10c352' }}
+        >
           {item.percent}
         </span>
       </div>
     </div>
-  );
-};
+  )
+}

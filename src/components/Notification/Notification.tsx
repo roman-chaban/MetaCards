@@ -1,6 +1,6 @@
-import type { FC } from 'react';
-import styles from './Notification.module.scss';
-import Image from 'next/image';
+import type { FC } from 'react'
+import styles from './Notification.module.scss'
+import Image from 'next/image'
 
 export const Notification: FC = () => {
   return (
@@ -10,15 +10,15 @@ export const Notification: FC = () => {
           <span className={styles.notification__dot}></span>
           <div className={styles.notification__imageBlock}>
             <Image
-              src='/images/notification/avatar.svg'
-              alt='NFT Avatar icon'
+              src="/images/notification/avatar.svg"
+              alt="NFT Avatar icon"
               width={45}
               height={45}
               className={styles.avatar__icon}
             />
             <Image
-              src='/images/notification/check.svg'
-              alt='Green Check icon'
+              src="/images/notification/check.svg"
+              alt="Green Check icon"
               width={17}
               height={17}
               className={styles.check__icon}
@@ -37,8 +37,8 @@ export const Notification: FC = () => {
             </span>
           </div>
           <Image
-            src='/images/notification/avatar-large.svg'
-            alt='NFT Avatar'
+            src="/images/notification/avatar-large.svg"
+            alt="NFT Avatar"
             width={60}
             height={60}
             className={styles.notification__nftIcon}
@@ -46,5 +46,5 @@ export const Notification: FC = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

@@ -1,16 +1,16 @@
-'use client';
+'use client'
 
-import { FC, useState } from 'react';
-import styles from './Asked.module.scss';
-import { AskedListItem, askedList } from '@/constants/askedList';
-import { Accordion } from '../Accordion/Accordion';
+import { FC, useState } from 'react'
+import styles from './Asked.module.scss'
+import { AskedListItem, askedList } from '@/constants/askedList'
+import { Accordion } from '../Accordion/Accordion'
 
 export const Asked: FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const handleToggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+    setOpenIndex(openIndex === index ? null : index)
+  }
 
   return (
     <section className={styles.asked}>
@@ -25,7 +25,7 @@ export const Asked: FC = () => {
               <Accordion
                 title={item.title}
                 subTitles={{
-                  secondSubTitle: item.subTitle,
+                  secondSubTitle: item.subTitle
                 }}
                 isOpen={openIndex === index}
                 onToggle={() => handleToggle(index)}
@@ -35,5 +35,5 @@ export const Asked: FC = () => {
         </ul>
       </div>
     </section>
-  );
-};
+  )
+}

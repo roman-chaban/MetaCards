@@ -1,0 +1,127 @@
+@import '../../assets/styles/stack.scss';
+
+.history {
+  display: flex;
+  gap: rem(55px);
+}
+
+.history > .history__container {
+  padding: rem(28px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: rem(65px);
+  width: 100%;
+  border: 1.14px solid #edf2f7;
+  border-radius: 18px;
+  max-width: 846px;
+  height: 400px;
+  box-shadow: 20px 20px 70px 0 rgba(0, 0, 0, 0.12);
+  background: $color-white;
+}
+
+.history__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &_title {
+    color: $color-recent-title;
+    font-weight: 600;
+    font-size: $font-size-create-subtitle;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+  }
+}
+
+.express__block {
+  &_title {
+    display: flex;
+    align-items: center;
+    gap: rem(8px);
+    color: $color-recent-title;
+    font-size: $font-size-card-subtitle;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    &::before {
+      display: block;
+      content: '';
+      border-radius: 57px;
+      width: 13px;
+      height: 4px;
+      background-color: $color-button-bg;
+    }
+  }
+}
+
+.statistic__banner {
+  width: 100%;
+  object-position: -80px;
+}
+
+.express__block {
+  display: flex;
+  align-items: center;
+  gap: rem(40px);
+}
+
+.select {
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  font-size: $font-size-card-subtitle;
+  padding: rem(8px);
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+
+  &:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+  }
+
+  option {
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    font-size: $font-size-card-subtitle;
+    padding: rem(8px);
+    background-color: $color-white;
+    color: #333;
+  }
+}
+
+@media (max-width: 1350px) {
+  .history > .history__container {
+    max-width: 600px;
+  }
+
+  .statistic__banner {
+    max-width: 560px;
+    object-fit: contain;
+    object-position: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .express__block {
+    flex-direction: column;
+    gap: rem(5px);
+  }
+  .history > .history__container {
+    padding: rem(20px);
+  }
+}
+
+@media (max-width: 930px) {
+  .history {
+    flex-direction: column;
+  }
+  .history > .history__container {
+    max-width: 100%;
+  }
+  .statistic__banner {
+    max-width: 100%;
+  }
+}

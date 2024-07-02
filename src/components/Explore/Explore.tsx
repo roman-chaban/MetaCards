@@ -1,10 +1,10 @@
-import type { FC } from 'react';
-import styles from './Explore.module.scss';
-import { ExploreNav } from '../ExploreNav/ExploreNav';
-import { Button } from '../UI/Button/Button';
-import { FormNextLink } from 'grommet-icons';
-import { NFTCards } from '../NFTCards/NFTCards';
-import { nftCardClasses } from '@/constants/nfrCardsClasses';
+import type { FC } from 'react'
+import styles from './Explore.module.scss'
+import { ExploreNav } from '../ExploreNav/ExploreNav'
+import { Button } from '../UI/Button/Button'
+import { FormNextLink } from 'grommet-icons'
+import { NFTCards } from '../NFTCards/NFTCards'
+import { nftCardClasses } from '@/constants/nfrCardsClasses'
 
 export const Explore: FC = () => {
   return (
@@ -14,12 +14,12 @@ export const Explore: FC = () => {
         <ExploreNav />
         <NFTCards classNames={nftCardClasses} />
         <div className={styles.exploreBlock}>
-          <Button type='button' className={styles.exploreBlock__button}>
+          <Button type="button" className={styles.exploreBlock__button}>
             Explore All{' '}
           </Button>
-          <FormNextLink color='#acadb9' style={{ width: 20, height: 20 }} />
+          <FormNextLink color="#acadb9" style={{ width: 20, height: 20 }} />
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

@@ -1,11 +1,11 @@
-import type { FC } from 'react';
-import styles from './Footer.module.scss';
-import Image from 'next/image';
-import { footerNavItems } from '@/constants/footerNav';
-import { FooterNav } from '../FooterNav/FooterNav';
-import { FooterSocial } from '../FooterSocial/FooterSocial';
-import Link from 'next/link';
-import { Instagram, Github, Linkedin } from 'grommet-icons';
+import type { FC } from 'react'
+import styles from './Footer.module.scss'
+import Image from 'next/image'
+import { footerNavItems } from '@/constants/footerNav'
+import { FooterNav } from '../FooterNav/FooterNav'
+import { FooterSocial } from '../FooterSocial/FooterSocial'
+import Link from 'next/link'
+import { Instagram, Github, Linkedin } from 'grommet-icons'
 
 export const Footer: FC = () => {
   return (
@@ -14,8 +14,8 @@ export const Footer: FC = () => {
         <div className={styles.footer__top}>
           <div className={styles.footer__top__logo}>
             <Image
-              src='/images/footer/footerLogo.svg'
-              alt='NFT Icon'
+              src="/images/footer/footerLogo.svg"
+              alt="NFT Icon"
               width={65}
               height={65}
               priority
@@ -24,13 +24,19 @@ export const Footer: FC = () => {
             <h2 className={styles.footer__top__title}>DiveSea</h2>
           </div>
           <div className={styles.footer__top_social}>
-            <Link href='/'><Instagram color='white'/> </Link>
-            <Link href='/'><Github color='white' /></Link>
-            <Link href='/'><Linkedin color='white' /></Link>
+            <Link href="/">
+              <Instagram color="white" />{' '}
+            </Link>
+            <Link href="/">
+              <Github color="white" />
+            </Link>
+            <Link href="/">
+              <Linkedin color="white" />
+            </Link>
           </div>
           <nav className={styles.nav}>
             <ul className={styles.nav__menu}>
-              {footerNavItems.map((item) => (
+              {footerNavItems.map(item => (
                 <FooterNav key={item.href} navItem={item} />
               ))}
             </ul>
@@ -44,5 +50,5 @@ export const Footer: FC = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
