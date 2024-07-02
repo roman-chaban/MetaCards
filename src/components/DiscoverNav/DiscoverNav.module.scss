@@ -22,6 +22,7 @@
 }
 
 .button__primary {
+   width: 100%;
    display: flex;
    align-items: center;
    flex-direction: row-reverse;
@@ -37,4 +38,21 @@
    line-height: 150%;
    letter-spacing: 0.01em;
    background: transparent;
+}
+
+@media (max-width: rem(500px)) {
+   .nav__buttons {
+      gap: rem(14px);
+   }
+   .button__primary {
+      border-radius: 9px;
+      padding: 11px;
+      max-width: 105px;
+      max-height: 36px;
+      font-size: $font-size-subtitle-small;
+   }
+   .primaryButton__icon {
+      max-width: 16px;
+      max-height: 16px;
+   }
 }

@@ -45,7 +45,6 @@
    box-shadow: 18px 18px 61px 0 rgba(0, 0, 0, 0.12);
    background: $color-background;
    border-radius: 24px;
-   margin-bottom: rem(132px);
 }
 
 .details {
@@ -173,14 +172,14 @@
    gap: rem(16px);
 }
 
-@media (max-width: 1440px) {
+@media (max-width: rem(1440px)) {
    .productDetail__image {
       max-width: 400px;
       max-height: 400px;
    }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: rem(1250px)) {
    .productDetail__image {
       max-width: 350px;
       max-height: 350px;
@@ -213,16 +212,86 @@
    }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: rem(1100px)) {
+   .productDetail__navBlock {
+      padding-top: rem(100px);
+      gap: rem(25px);
+   }
+   .nav__title {
+      font-size: $font-size-collection-subtitle;
+   }
+   .previous__button {
+      max-width: 30px;
+      max-height: 30px;
+   }
+   .previous__icon {
+      max-width: 12px;
+      max-height: 12px;
+   }
    .productDetail__information {
       max-width: 100%;
+      max-height: 380px;
    }
    .productDetail__image {
       max-width: 250px;
       max-height: 250px;
    }
    .bid__button {
-      max-height: 50px;
+      max-height: 52px;
       max-width: 100%;
+   }
+   .bid__rating {
+      font-size: $font-size-subtitle;
+   }
+
+   .ethereum__icon {
+      max-width: 20px;
+      max-height: 20px;
+   }
+   .endIn__time {
+      font-size: $font-size-card-subtitle;
+   }
+   .wallet__icon {
+      max-width: 22px;
+      max-height: 20px;
+   }
+}
+
+@media (max-width: rem(930px)) {
+   .productDetail__information {
+      flex-direction: column;
+      max-height: 900px;
+      gap: rem(30px);
+   }
+   .details {
+      gap: rem(14px);
+   }
+   .bid__button {
+      max-height: 45px;
+   }
+}
+
+@media (max-width: rem(610px)) {
+   .productDetail__navBlock {
+      padding-top: rem(80px);
+   }
+   .productDetail {
+      gap: rem(50px);
+   }
+   .productDetail__information {
+      box-shadow: none;
+      background: none;
+      padding: 0;
+      margin-bottom: rem(100px);
+   }
+   .productDetail__image {
+      max-width: 270px;
+   }
+   .details {
+      gap: rem(40px);
+   }
+   .list > .list__details {
+      flex-direction: column;
+      align-items: start;
    }
 }

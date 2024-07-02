@@ -18,15 +18,15 @@ export const DiscoverNav: FC<DiscoverNavProps> = ({title, buttonLabels}) => {
       <div className={styles.nav__buttons}>
          <Button type='button' className={styles.button__primary}>
             {buttonLabels.primary}
-            <Image src='/images/exploreIcons/list.svg' alt='List Icon' width={22} height={22} />
+            <Image src='/images/exploreIcons/list.svg' alt='List Icon' width={22} height={22}  className={styles.primaryButton__icon} />
          </Button>
          <Button type='button' className={styles.button__primary}>
             {buttonLabels.secondary}
-            <Image src='/images/exploreIcons/collection.svg' alt='Collection Icon' width={22} height={22} />
+            <Image src='/images/exploreIcons/collection.svg' alt='Collection Icon' width={22} height={22} className={styles.primaryButton__icon} />
             </Button>
          <Button type='button' className={styles.button__primary}>
             {buttonLabels.thirdary}
-            <Image src='/images/exploreIcons/price.svg' alt='Price Icon' width={22} height={22} />
+            <Image src='/images/exploreIcons/price.svg' alt='Price Icon' width={22} height={22} className={styles.primaryButton__icon} />
             </Button>
       </div>
    </div>

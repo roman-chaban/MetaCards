@@ -22,7 +22,7 @@ export const ProductDetail: FC<ProductDetailsProps> = ({product}) => {
             <h4 className={styles.nav__title}>Product Detail</h4>
       </div>
       <div className={styles.productDetail__information}>
-         <div>
+         <div className={styles.detailsImage}>
             <Image src={product.image} alt={product.title}  width={460} height={460} className={styles.productDetail__image} />
          </div>
             <div className={styles.details}>
@@ -49,7 +49,7 @@ export const ProductDetail: FC<ProductDetailsProps> = ({product}) => {
                   <div className={styles.bid__block}>
                      <h6 className={styles.bid__title}>Current Bid</h6>
                      <div className={styles.bid__info}>
-                        <Image src='/images/details/ethereum.svg' alt="Ethereum icon" width={25} height={25} />
+                        <Image src='/images/details/ethereum.svg' alt="Ethereum icon" width={25} height={25} className={styles.ethereum__icon} />
                         <span className={styles.bid__rating}>{product.rating}</span>
                      </div>
                   </div>
@@ -59,7 +59,7 @@ export const ProductDetail: FC<ProductDetailsProps> = ({product}) => {
                   </div>
                </div>
                   <Button type="button" className={styles.bid__button} >
-                     <Image src='/images/details/wallet.svg' alt="Wallet Icon" width={25} height={25} />
+                     <Image src='/images/details/wallet.svg' alt="Wallet Icon" width={25} height={25} className={styles.wallet__icon} />
                      Place Bid
                      </Button>
             </div>

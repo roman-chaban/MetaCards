@@ -5,6 +5,9 @@
 }
 
 .productDetail {
+  display: flex;
+  flex-direction: column;
+  gap: rem(100px);
   background: $color-explore-background;
 }
 
@@ -24,5 +27,9 @@
   .discover__container {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .productDetail {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
