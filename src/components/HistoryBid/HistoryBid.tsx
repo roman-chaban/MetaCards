@@ -8,7 +8,7 @@ import { Button } from '../UI/Button/Button'
 import { Select } from '../UI/Select/Select'
 
 interface HistoryBidProps {
-  onClose: () => void
+  onClose?: () => void
 }
 
 export const HistoryBid: FC<HistoryBidProps> = ({ onClose }) => {
