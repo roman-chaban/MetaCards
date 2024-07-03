@@ -5,10 +5,6 @@
   position: relative;
 }
 
-// .weekly__container {
-//   // @include container;
-// }
-
 .weekly__titleBlock {
   display: flex;
   justify-content: center;
@@ -34,7 +30,6 @@
 .weekly__nftCardsContainer {
   width: 100%;
   padding: rem(120px) rem(30px);
-  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;

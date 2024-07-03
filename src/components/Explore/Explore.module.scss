@@ -87,7 +87,7 @@
     max-height: 20px;
   }
   .weekly__nftCardsGridContainer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
 }
@@ -95,6 +95,12 @@
 @include onTablet {
   .explore__title {
     font-size: $font-size-media-title;
+  }
+}
+
+@media (max-width: rem(1060px)) {
+  .weekly__nftCardsGridContainer {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

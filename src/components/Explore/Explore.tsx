@@ -12,7 +12,7 @@ export const Explore: FC = () => {
       <div className={styles.explore__container}>
         <h2 className={styles.explore__title}>Explore Marketplace</h2>
         <ExploreNav />
-        <NFTCards classNames={nftCardClasses} />
+        <NFTCards classNames={nftCardClasses} settings={false} />
         <div className={styles.exploreBlock}>
           <Button type="button" className={styles.exploreBlock__button}>
             Explore All{' '}

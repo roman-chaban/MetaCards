@@ -70,5 +70,22 @@
     "image": "/images/productsImages/thirdNFT.svg",
     "buttonLabel": "PLACE BID",
     "rating": "1.75"
+  } , {
+    "id": 9,
+    "title": "Sun-Glass",
+    "subTitle": "Current bid",
+    "time": "07h 09m 12s",
+    "image": "/images/productsImages/secondNFT.svg",
+    "buttonLabel": "PLACE BID",
+    "rating": "1.75"
+  },
+  {
+    "id": 10,
+    "title": "Sun-Glass",
+    "subTitle": "Current bid",
+    "time": "07h 09m 12s",
+    "image": "/images/productsImages/thirdNFT.svg",
+    "buttonLabel": "PLACE BID",
+    "rating": "1.75"
   }
 ]

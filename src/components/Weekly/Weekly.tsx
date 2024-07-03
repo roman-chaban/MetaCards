@@ -23,7 +23,7 @@ export const Weekly: FC = () => {
         <div className={styles.weekly__titleBlock}>
           <h2 className={styles.weekly__title}>Weekly - Top NFT</h2>
         </div>
-        <NFTCards classNames={nftCardClasses} />
+        <NFTCards classNames={nftCardClasses} settings={true} />
         <div className={styles.slider__buttons}>
           <SliderButtons />
         </div>

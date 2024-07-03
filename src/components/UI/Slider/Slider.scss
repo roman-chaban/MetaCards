@@ -1,0 +1,24 @@
+.swiper {
+   overflow: hidden;
+   width: 100%;
+   max-width: 1440px;
+   cursor: grab;
+}
+
+.swiper-wrapper {
+   gap: 40px;
+}
+
+.swiper-slide {
+   width: 100%;
+   max-width: 270px;
+}
+
+@media (max-width: 1200px) {
+   .swiper-slide {
+      max-width: 200px;
+   }
+   .swiper-wrapper {
+      gap: 20px;
+   }
+}
