@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .explore {
   padding: rem(100px) 0;
@@ -30,6 +30,7 @@
 }
 
 .nav__button {
+  width: 100%;
   border: 2.21px solid $color-button-bg;
   border-radius: 13px;
   padding: 17px;
@@ -127,5 +128,11 @@
 @media (max-width: 370px) {
   .explore__title {
     line-height: 120%;
+  }
+  .explore__nav > .explore__nav_menu {
+    flex-direction: column;
+  }
+  .nav__button {
+    max-width: 150px;
   }
 }

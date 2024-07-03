@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .weekly {
   background: $color-section-background;
@@ -260,7 +260,7 @@
     }
 
     .card {
-      padding: 0.25rem;
+      padding: 1rem;
       border-radius: 0.625rem;
     }
 

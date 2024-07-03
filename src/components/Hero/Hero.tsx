@@ -25,7 +25,7 @@ export const Hero: FC = () => {
               Explore More
             </Button>
             <Button type="button" className={styles.create__button}>
-              create NFT
+              Create NFT
             </Button>
           </div>
           <HeroFeatures />

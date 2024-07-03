@@ -25,13 +25,13 @@ export const Footer: FC = () => {
           </div>
           <div className={styles.footer__top_social}>
             <Link href="/">
-              <Instagram color="white" />{' '}
+              <Instagram color="white" className={styles.social__icon} />{' '}
             </Link>
             <Link href="/">
-              <Github color="white" />
+              <Github color="white" className={styles.social__icon} />
             </Link>
             <Link href="/">
-              <Linkedin color="white" />
+              <Linkedin color="white" className={styles.social__icon} />
             </Link>
           </div>
           <nav className={styles.nav}>

@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .create {
   background: $color-explore-background;
@@ -95,7 +95,7 @@
   height: 100%;
   filter: blur(52.874610900878906px);
   z-index: 1;
-  background: url('/images/exploreIcons/banner.svg') no-repeat center center;
+  background: url("/images/exploreIcons/banner.svg") no-repeat center center;
   background-size: cover;
 }
 
@@ -244,20 +244,40 @@
 }
 
 @media (max-width: 375px) {
+  .create {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 8rem;
+  }
+  .create__container {
+    gap: rem(25px);
+  }
   .create__banner {
     filter: blur(5px);
   }
   .bannerContainer {
     max-width: 250px;
+    left: 30px;
   }
   .createInfo__title {
     font-size: 1.6rem;
   }
   .banner {
     max-width: 80%;
-    left: -40px;
+    left: -5px;
+    top: -15px;
   }
   .create__banner {
     max-width: 80%;
+    left: -45px;
+  }
+  .createInfo__buttonExplore {
+    padding: rem(12px);
+  }
+  .createInfo__buttonSell {
+    padding: rem(12px);
+  }
+  .createInfo__block {
+    bottom: 5px;
   }
 }

@@ -1,9 +1,9 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .historyBid {
   width: 100%;
   max-width: 450px;
-  height: 400px;
+  height: 450px;
   border-radius: 15px;
   background: $color-white;
   box-shadow: 17px 17px 58px 0 rgba(0, 0, 0, 0.12);
@@ -115,6 +115,41 @@
     background: $color-button-bg;
     color: $color-white;
   }
+}
+
+.select__container {
+  width: 100%;
+  border: 0.85px solid $color-button-bg;
+  border-radius: rem(18px);
+  position: relative;
+}
+
+.select {
+  border-radius: 14px 0 0 14px;
+  padding: 18px 28px;
+  font-weight: 600;
+  width: 118px;
+  height: 53px;
+  background-color: $color-button-bg;
+  color: $color-white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.select__container::after {
+  content: "";
+  position: absolute;
+  left: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("/images/historyBid/select-check.svg");
+  background-size: 10px 15px;
+  width: 10px;
+  height: 15px;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 @media (max-width: 1200px) {

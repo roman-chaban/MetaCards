@@ -1,10 +1,30 @@
-import type { FC } from 'react'
+'use client'
+
+import { useState, type FC } from 'react'
 import styles from './HistoryBid.module.scss'
 import { BidListItem, bidList } from '@/constants/bidList'
 import Image from 'next/image'
 import { Button } from '../UI/Button/Button'
+import { Select } from '../UI/Select/Select'
 
-export const HistoryBid: FC = () => {
+interface HistoryBidProps {
+  onClose: () => void
+}
+
+export const HistoryBid: FC<HistoryBidProps> = ({ onClose }) => {
+  const [checkSelectValue, setCheckSelectValue] = useState('')
+  const classNames = {
+    select: styles.select,
+    option: styles.option
+  }
+
+  const options = [
+    {
+      value: 'ETH',
+      label: 'ETH'
+    }
+  ]
+
   return (
     <div className={styles.historyBid}>
       <div className={styles.historyBid__container}>
@@ -53,7 +73,22 @@ export const HistoryBid: FC = () => {
         </div>
         <div className={styles.your__bid}>
           <h5 className={styles.your__bid_title}>Your Bid</h5>
-          <Button type="button" className={styles.your__bid_button}>
+          <div className={styles.select__container}>
+            <Select
+              ariaLabel="bid-check"
+              name="select"
+              classNames={classNames}
+              selectedValue={checkSelectValue}
+              onChange={setCheckSelectValue}
+              options={options}
+              id={styles.select}
+            />
+          </div>
+          <Button
+            type="button"
+            className={styles.your__bid_button}
+            onClick={onClose}
+          >
             <Image
               src="/images/historyBid/wallet.svg"
               alt="Wallet Icon"

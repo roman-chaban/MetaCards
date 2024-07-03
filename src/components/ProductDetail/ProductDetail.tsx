@@ -1,4 +1,6 @@
-import type { FC } from 'react'
+'use client'
+
+import { type FC } from 'react'
 import { Product } from '@/interfaces/nft-product'
 import Image from 'next/image'
 import styles from './ProductDetail.module.scss'
@@ -9,9 +11,13 @@ import { NavigationLinks } from '@/enums/navigation'
 
 interface ProductDetailsProps {
   product: Product
+  openModal: () => void
 }
 
-export const ProductDetail: FC<ProductDetailsProps> = ({ product }) => {
+export const ProductDetail: FC<ProductDetailsProps> = ({
+  product,
+  openModal
+}) => {
   return (
     <div className={styles.productDetail}>
       <div className={styles.productDetail__navBlock}>
@@ -89,7 +95,11 @@ export const ProductDetail: FC<ProductDetailsProps> = ({ product }) => {
               </time>
             </div>
           </div>
-          <Button type="button" className={styles.bid__button}>
+          <Button
+            type="button"
+            className={styles.bid__button}
+            onClick={openModal}
+          >
             <Image
               src="/images/details/wallet.svg"
               alt="Wallet Icon"

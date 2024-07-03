@@ -1,4 +1,4 @@
-@import '../../assets/styles/stack.scss';
+@import "../../assets/styles/stack.scss";
 
 .history {
   display: flex;
@@ -15,7 +15,7 @@
   border: 1.14px solid #edf2f7;
   border-radius: 18px;
   max-width: 846px;
-  height: 400px;
+  height: 450px;
   box-shadow: 20px 20px 70px 0 rgba(0, 0, 0, 0.12);
   background: $color-white;
 }
@@ -45,7 +45,7 @@
     letter-spacing: 0.03em;
     &::before {
       display: block;
-      content: '';
+      content: "";
       border-radius: 57px;
       width: 13px;
       height: 4px;
