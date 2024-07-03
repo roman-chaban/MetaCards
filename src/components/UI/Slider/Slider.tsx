@@ -1,5 +1,6 @@
-import type { FC, ReactNode } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { useRef, type FC, type ReactNode } from 'react'
+import Swiper from 'swiper'
+import { SwiperSlide, Swiper as CustomSwiper } from 'swiper/react'
 import {
   Navigation,
   Pagination,
@@ -9,7 +10,8 @@ import {
 } from 'swiper/modules'
 import 'swiper/css'
 import './Slider.scss'
-
+import { useAppDispatch } from '@/hooks/useAppDispatch'
+import { setSwiperRef } from '@/store/slices/swiperSlice'
 interface SliderProps {
   navigation?: boolean
   pagination?: boolean | { clickable: boolean }
@@ -19,6 +21,7 @@ interface SliderProps {
   slidesPerView?: number
   spaceBetween?: number
   [key: string]: any
+  speed: number
   children: ReactNode[]
   width?: string | number
 }
@@ -28,8 +31,10 @@ export const Slider: FC<SliderProps> = ({
   children,
   width = '100%'
 }) => {
+  const swiperRef = useRef<Swiper | null>(null)
+  const dispatch = useAppDispatch()
   return (
-    <Swiper
+    <CustomSwiper
       modules={[Navigation, Pagination, Autoplay, A11y, Scrollbar]}
       navigation={settings.navigation}
       pagination={settings.pagination}
@@ -39,11 +44,16 @@ export const Slider: FC<SliderProps> = ({
       slidesPerView={settings.slidesPerView}
       spaceBetween={settings.spaceBetween}
       {...settings}
-      style={{ maxWidth: '1440px' }}
+      onSwiper={(swiper: any) => {
+        swiperRef.current = swiper
+        dispatch(setSwiperRef(swiper))
+      }}
     >
       {children.map((child, index) => (
-        <SwiperSlide key={index}>{child}</SwiperSlide>
+        <SwiperSlide style={{ marginRight: 0 }} key={index}>
+          {child}
+        </SwiperSlide>
       ))}
-    </Swiper>
+    </CustomSwiper>
   )
 }

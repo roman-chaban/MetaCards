@@ -1,24 +1,34 @@
 .swiper {
-   overflow: hidden;
    width: 100%;
-   max-width: 1440px;
+   max-width: 100%;
+   height: 320px;
    cursor: grab;
-}
+   display: block;
+   list-style: none;
+   margin-left: auto;
+   margin-right: auto;
+   overflow: hidden;
+   padding: 0;
+   position: relative;
+   z-index: 1;
 
-.swiper-wrapper {
-   gap: 40px;
-}
+   &-wrapper {
+      gap: 40px;
 
-.swiper-slide {
-   width: 100%;
-   max-width: 270px;
-}
-
-@media (max-width: 1200px) {
-   .swiper-slide {
-      max-width: 200px;
+      @media (max-width: 1200px) {
+         gap: 20px;
+         max-height: 290px;
+      }
    }
-   .swiper-wrapper {
-      gap: 20px;
+
+   &-slide {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 270px;
+      margin-right: 0 !important;
+
+      @media (max-width: 1200px) {
+         max-width: 200px;
+      }
    }
 }

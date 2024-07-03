@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux'
-import { sliderSlice } from '../slices/sliderSlice'
+import { swiperSlice } from '../slices/swiperSlice'
+import { store } from '../store'
 
 const rootReducer = combineReducers({
-  sliderSlice: sliderSlice
+  swiperSlice: swiperSlice.reducer
 })
 
+export type RootState = ReturnType<typeof store.getState>
 export default rootReducer
-export type RootState = ReturnType<typeof rootReducer>

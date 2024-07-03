@@ -4,6 +4,7 @@ interface ButtonProps {
   children: ReactNode
   type: 'button' | 'submit'
   className: string
+  title?: string
   style?: CSSProperties
   onClick?: () => void
 }
@@ -13,10 +14,17 @@ export const Button: FC<ButtonProps> = ({
   className,
   type,
   style,
+  title,
   onClick
 }) => {
   return (
-    <button onClick={onClick} type={type} style={style} className={className}>
+    <button
+      title={title}
+      onClick={onClick}
+      type={type}
+      style={style}
+      className={className}
+    >
       {children}
     </button>
   )

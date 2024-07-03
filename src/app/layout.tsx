@@ -21,12 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${poppins.className}`}>
-        {/* <Providers> */}
-        <Header />
-        <main className="main">{children}</main>
-        <Footer />
-        <ButtonUp />
-        {/* </Providers> */}
+        <Providers>
+          <Header />
+          <main className="main">{children}</main>
+          <Footer />
+          <ButtonUp />
+        </Providers>
       </body>
     </html>
   )
