@@ -22,6 +22,7 @@ export interface Bio {
 
 export interface Profile {
   mainImage: string
+  checkImage: string
   profileName: string
   profileTag: string
   followLabel: string

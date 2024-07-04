@@ -4,26 +4,58 @@ import styles from './ProfileInformation.module.scss'
 import { Button } from '../UI/Button/Button'
 import { Instagram, Linkedin, Facebook, Twitter } from 'grommet-icons'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const ProfileInformation: FC = ({}) => {
   const socialMedias = [
-    { component: <Instagram color="black" />, link: 'https://instagram.com' },
-    { component: <Linkedin color="black" />, link: 'https://linkedin.com' },
-    { component: <Facebook color="black" />, link: 'https://facebook.com' },
-    { component: <Twitter color="black" />, link: 'https://twitter.com' }
+    {
+      component: (
+        <Instagram color="black" className={styles.socialLink__icon} />
+      ),
+      link: 'https://instagram.com'
+    },
+    {
+      component: <Linkedin color="black" className={styles.socialLink__icon} />,
+      link: 'https://linkedin.com'
+    },
+    {
+      component: <Facebook color="black" className={styles.socialLink__icon} />,
+      link: 'https://facebook.com'
+    },
+    {
+      component: <Twitter color="black" className={styles.socialLink__icon} />,
+      link: 'https://twitter.com'
+    }
   ]
   return (
-    <div>
+    <div className={styles.profileInformation}>
       {profile.map((prof, indx) => (
         <div key={indx + 1} className={styles.profile__information}>
           <div className={styles.profile__information_titles}>
-            <div className={styles.titles}>
-              <h2 className={styles.profileName}>{prof.profileName}</h2>
-              <p className={styles.profileTag}>@Harryknft</p>
+            <div className={styles.profile__imageBlock}>
+              <Image
+                src={prof.mainImage}
+                alt="Profile Image"
+                width={165}
+                height={165}
+              />
+              <Image
+                className={styles.check__icon}
+                src={prof.checkImage}
+                alt="Check Icon"
+                width={29}
+                height={29}
+              />
             </div>
-            <Button type="button" className={styles.profileFollow__button}>
-              {prof.followLabel}
-            </Button>
+            <div className={styles.titles__buttonBlock}>
+              <div className={styles.titles}>
+                <h2 className={styles.profileName}>{prof.profileName}</h2>
+                <p className={styles.profileTag}>@Harryknft</p>
+              </div>
+              <Button type="button" className={styles.profileFollow__button}>
+                {prof.followLabel}
+              </Button>
+            </div>
           </div>
           <div className={styles.profile__stats}>
             <div className={styles.firstBlock}>
@@ -57,7 +89,12 @@ export const ProfileInformation: FC = ({}) => {
           </div>
           <div className={styles.social__medias}>
             {socialMedias.map((media, index) => (
-              <Link key={index} href={media.link} passHref>
+              <Link
+                className={styles.socialLink__icon}
+                key={index}
+                href={media.link}
+                passHref
+              >
                 {media.component}
               </Link>
             ))}

@@ -1,0 +1,43 @@
+@import "../../assets/styles/stack.scss";
+
+.profile__nav {
+   width: 100%;
+   max-width: 600px;
+   position: relative;
+   top: 73px;
+}
+
+.profile__nav_menu {
+   display: flex;
+   gap: rem(35px);
+}
+
+.menu__listItem {
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.button {
+   line-height: 153%;
+   font-weight: 600;
+   color: $color-button-bg;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: rem(5px);
+   max-width: 332px;
+   height: 43px;
+   background: transparent;
+   border-bottom: 2px solid $color-button-bg;
+   border-radius: rem(1px);
+   padding-bottom: rem(20px);
+}
+
+.active {
+   opacity: 0.5;
+}
+
+.inactive {
+   opacity: 1;
+}

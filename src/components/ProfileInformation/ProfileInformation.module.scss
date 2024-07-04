@@ -1,0 +1,128 @@
+@import "../../assets/styles/stack.scss";
+
+.profileInformation {
+   display: flex;
+   position: relative;
+   left: 90px;
+   bottom: 70px;
+}
+
+.profile__imageBlock {
+   max-width: 200px;
+   position: relative;
+}
+
+.check__icon {
+   position: absolute;
+   right: 45px;
+   bottom: 15px;
+}
+
+.profile__information {
+   display: flex;
+   flex-direction: column;
+   gap: rem(50px);
+   width: 100%;
+   max-width: 400px;
+}
+
+.profile__information_titles {
+   display: flex;
+   flex-direction: column;
+   gap: rem(30px);
+}
+
+.titles__buttonBlock {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: rem(40px);
+   border-bottom: 1.5px solid $color-profile-border-bottom;
+}
+
+.profileFollow__button {
+   width: 100%;
+   border-radius: 11px;
+   max-width: 121px;
+   height: 46px;
+   background: $color-black;
+   color: $color-white;
+   letter-spacing: 0.01em;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+.titles {
+   display: flex;
+   flex-direction: column;
+}
+
+.profileName {
+   font-weight: 600;
+   line-height: 130%;
+   letter-spacing: 0.01em;
+   font-size: $font-size-subtitle-large;
+   color: $color-profile-title;
+}
+
+.profileTag {
+   line-height: 130%;
+   letter-spacing: 0.01em;
+   font-size: $font-size-subtitle;
+   color: $color-gray-collection;
+}
+
+.profile__stats {
+   display: flex;
+   align-items: center;
+   gap: rem(67px);
+   padding-bottom: rem(110px);
+}
+
+.profile__stats_title {
+   line-height: 125%;
+   text-align: center;
+   color: $color-button-bg;
+   font-weight: 600;
+   font-size: $font-size-media-title;
+}
+
+.profile__stats_subTitle {
+   font-weight: 500;
+   line-height: 150%;
+   text-align: center;
+   color: $color-gray-light-alt;
+   font-size: $font-size-explore-button-tablet;
+}
+
+.bio__block {
+   display: flex;
+   flex-direction: column;
+   gap: rem(7px);
+   padding-bottom: rem(50px);
+   border-bottom: 1.5px solid $color-profile-border-bottom;
+}
+
+.bio__block_title {
+   font-weight: 700;
+   line-height: 161%;
+   color: $color-unleash-mark;
+   font-size: $font-size-detail-title;
+}
+
+.bio__block_subTitle {
+   font-size: $font-size-card-subtitle;
+   line-height: 177%;
+   text-transform: capitalize;
+   color: $color-notification-title;
+}
+
+.social__medias {
+   display: flex;
+   align-items: center;
+   gap: rem(65px);
+}
+
+.socialLink__icon {
+   max-width: 20px;
+   max-height: 20px;
+}

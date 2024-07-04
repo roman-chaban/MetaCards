@@ -2,7 +2,8 @@ import { TypeProfile } from '@/interfaces/profile'
 
 export const profile: TypeProfile = [
   {
-    mainImage: '',
+    mainImage: '/images/profile/profile.svg',
+    checkImage: '/images/profile/check.svg',
     profileName: 'Harry K.',
     profileTag: '@Harryknft',
     followLabel: 'Follow +',
