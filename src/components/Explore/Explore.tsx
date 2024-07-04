@@ -5,6 +5,7 @@ import { Button } from '../UI/Button/Button'
 import { FormNextLink } from 'grommet-icons'
 import { NFTCards } from '../NFTCards/NFTCards'
 import { nftCardClasses } from '@/constants/nfrCardsClasses'
+import Link from 'next/link'
 
 export const Explore: FC = () => {
   return (
@@ -15,7 +16,9 @@ export const Explore: FC = () => {
         <NFTCards classNames={nftCardClasses} settings={false} />
         <div className={styles.exploreBlock}>
           <Button type="button" className={styles.exploreBlock__button}>
-            Explore All{' '}
+            <Link style={{ color: '#acadb9' }} href="/discover">
+              Explore All{' '}
+            </Link>
           </Button>
           <FormNextLink color="#acadb9" style={{ width: 20, height: 20 }} />
         </div>

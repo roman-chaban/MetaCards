@@ -9,8 +9,8 @@ export const navLinks: NavLink[] = [
     href: '/discover'
   },
   {
-    label: 'Creators',
-    href: '/creators'
+    label: 'Profile',
+    href: '/profile'
   },
   {
     label: 'Sell',

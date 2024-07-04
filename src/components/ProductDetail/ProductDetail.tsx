@@ -32,7 +32,9 @@ export const ProductDetail: FC<ProductDetailsProps> = ({
             />
           </Button>
         </Link>
-        <h4 className={styles.nav__title}>Product Detail</h4>
+        <h4 className={styles.nav__title}>
+          Product Detail <p>{product.title}</p>{' '}
+        </h4>
       </div>
       <div className={styles.productDetail__information}>
         <div className={styles.detailsImage}>
