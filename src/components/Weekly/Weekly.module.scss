@@ -55,6 +55,7 @@
   border-radius: 20px;
   cursor: pointer;
   transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+
   &:hover {
     transform: scale(0.9);
   }
@@ -78,6 +79,7 @@
 
 .image__block {
   position: relative;
+
   &_time {
     font-size: $font-size-subtitle-small;
     line-height: 150%;
@@ -139,6 +141,7 @@
   right: 80px;
 }
 
+
 @media (max-width: 1200px) {
   .weekly__nftCardsContainer {
     padding: 6rem 25px;
@@ -154,16 +157,19 @@
   .card__image {
     border-radius: 1rem;
   }
+
   .card__button {
     max-width: rem(110px);
     font-size: $font-size-card-subtitle;
     padding: 11px 8px;
     max-height: rem(45px);
   }
+
   .recent__container {
     max-height: rem(245px);
     right: 25px;
   }
+
   .weekly__nftCardsContainer {
     display: flex;
     gap: rem(50px);
@@ -171,32 +177,45 @@
     padding-left: 0;
     padding-right: 0;
   }
+
   .card__image {
     max-width: 179px;
     max-height: 179px;
   }
+
   .card__title {
     font-size: $font-size-placeholder;
   }
+
   .card__subTitle,
   .card__rating {
     font-size: $font-size-explore-button-tablet;
   }
+
   .card__button {
     padding: 10px 12px;
     font-size: $font-size-bid-medium;
   }
+
   .card__titles {
     padding-top: 13px;
     padding-bottom: 13px;
   }
+
   .card__icon {
     max-width: 16px;
     max-height: 16px;
   }
+
   .card__information_titles {
     gap: rem(3px);
     justify-content: start;
+  }
+
+  .image__block>.image__block_time {
+    padding: 5px 8px;
+    font-size: $font-size-circle-small;
+    right: 5px;
   }
 }
 
@@ -214,6 +233,7 @@
   .card__image {
     border-radius: 0.875rem;
   }
+
   .recent__container {
     max-width: 259px;
     max-height: 170px;
@@ -236,6 +256,7 @@
     padding: 3rem 2rem;
     gap: 2rem;
   }
+
   .weekly__title {
     font-size: $font-size-media-title;
   }

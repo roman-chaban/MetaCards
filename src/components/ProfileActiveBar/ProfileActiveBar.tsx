@@ -18,7 +18,8 @@ export const ProfileActiveBar: FC = () => {
     cardTitle: styles.collection__cardTitle,
     cardSubtitle: styles.collection__cardSubtitle,
     cardRating: styles.collection__cardRating,
-    cardButton: styles.collection__cardButton
+    cardButton: styles.collection__cardButton,
+    cardTime: styles.collection__time
   }
 
   const renderContent = (): JSX.Element => {

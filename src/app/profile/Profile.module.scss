@@ -6,6 +6,7 @@
 
 .profile__container {
    @include container;
+
 }
 
 .profile__banner {
@@ -36,12 +37,43 @@
    width: 100%;
    max-width: 1200px;
    display: flex;
-   gap: 13.5rem;
+   gap: 11.5rem;
    padding-bottom: rem(200px);
 }
 
+@media (max-width: 1300px) {
+   .profile__container {
+      padding-left: 20px;
+      padding-right: 20px;
+
+   }
+}
+
+
 @media (max-width: 1160px) {
    .profile__banner {
-      max-height: 280px;
+      max-height: 300px;
+   }
+
+   .profile__statsInfo {
+      gap: 8rem;
+   }
+}
+
+@media (max-width: 1020px) {
+   .profile__statsInfo {
+      flex-direction: column;
+      max-width: 100%;
+   }
+
+   .profile__container {
+      padding-left: 30px;
+      padding-right: 30px;
+   }
+}
+
+@media (max-width: 620px) {
+   .profile__banner {
+      display: none;
    }
 }

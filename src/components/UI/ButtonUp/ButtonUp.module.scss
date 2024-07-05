@@ -8,7 +8,7 @@
   height: 30px;
   display: none;
   z-index: 2;
-  background: $color-gray-collection;
+  background: $color-button-bg;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   transition:
     opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
@@ -27,6 +27,7 @@
   top: 2px;
 }
 
+
 .upButton::before {
   content: '';
   position: absolute;
@@ -34,6 +35,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+
+.upButton::before {
+  content: 'Scroll to Up!';
+  display: flex;
+  font-size: $font-size-subtitle-small;
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(5px);
+  color: $color-white;
+  left: -50px;
+  width: 85px;
+  padding: 5px 10px;
+  background: $color-button-bg;
+  display: none;
+}
+
+.upButton:hover::before {
+  display: block;
 }
 
 .upButton.show {
@@ -45,6 +66,7 @@
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.3);
   }

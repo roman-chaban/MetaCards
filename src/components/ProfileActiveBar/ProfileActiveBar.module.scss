@@ -45,8 +45,7 @@
 .collections__container {
    display: grid;
    gap: rem(30px);
-   justify-items: center;
-   grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(3, 1fr);
 }
 
 .collection__card {
@@ -54,5 +53,127 @@
 }
 
 .collection__cardImage {
-   max-width: 250px;
+   max-width: 200px;
+   max-height: 200px;
+}
+
+
+.collections__container {
+   gap: 3rem;
+   padding-bottom: 0;
+}
+
+.collection__card {
+   border-radius: 1rem;
+   max-height: rem(435px);
+}
+
+.card__image {
+   border-radius: 1rem;
+}
+
+.card__button {
+   max-width: rem(110px);
+   font-size: $font-size-card-subtitle;
+   padding: 11px 8px;
+   max-height: rem(45px);
+}
+
+.recent__container {
+   max-height: rem(245px);
+   right: 25px;
+}
+
+
+.card__image {
+   max-width: 179px;
+   max-height: 179px;
+}
+
+.collection__cardTitle {
+   font-size: $font-size-placeholder;
+}
+
+.collection__cardSubtitle,
+.collection__cardRating {
+   font-size: $font-size-explore-button-tablet;
+}
+
+.collection__cardButton {
+   padding: 10px 12px;
+   font-size: $font-size-bid-medium;
+}
+
+.card__titles {
+   padding-top: 13px;
+   padding-bottom: 13px;
+}
+
+.card__icon {
+   max-width: 16px;
+   max-height: 16px;
+}
+
+.card__information_titles {
+   gap: rem(3px);
+   justify-content: start;
+}
+
+.collection__cardButton {
+   padding: 8px 10px !important;
+   font-size: $font-size-subtitle-small !important;
+}
+
+
+@media (max-width: 1275px) {
+   .collection__cardImage {
+      max-width: 175px;
+      max-height: 175px;
+   }
+}
+
+
+@media (max-width: 1160px) {
+   .collections__container {
+      justify-items: center;
+   }
+
+   .profile__nav {
+      max-width: 570px;
+   }
+
+   .collection__cardImage {
+      max-width: 150px !important;
+      max-height: 150px !important;
+   }
+}
+
+@media (max-width: 1020px) {
+   .collections__container {
+      grid-template-columns: repeat(4, 1fr);
+   }
+
+   .profile__nav {
+      max-width: 100%;
+   }
+}
+
+
+@media (max-width: 800px) {
+   .collections__container {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media (max-width: 600px) {
+   .collections__container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(15px);
+   }
+}
+
+@media (max-width: 425px) {
+   .collections__container {
+      grid-template-columns: repeat(1, 1fr);
+   }
 }

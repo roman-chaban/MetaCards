@@ -12,6 +12,17 @@
    position: relative;
 }
 
+.profile__image {
+   cursor: pointer;
+   transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+
+   &:hover {
+      transform: scale(1.1);
+   }
+}
+
+
+
 .check__icon {
    position: absolute;
    right: 45px;
@@ -125,4 +136,53 @@
 .socialLink__icon {
    max-width: 20px;
    max-height: 20px;
+}
+
+
+@media (max-width: 1160px) {
+   .profileInformation {
+      left: 55px;
+      bottom: 50px;
+   }
+
+   .profile__information {
+      max-width: 300px;
+   }
+
+   .profile__imageBlock>.profile__image {
+      max-width: 125px;
+      max-height: 125px;
+   }
+
+   .check__icon {
+      right: 80px;
+      max-width: 24px;
+      max-height: 24px;
+   }
+
+   .profile__stats_title {
+      font-size: $font-size-stats-title;
+   }
+}
+
+
+@media (max-width: 800px) {
+   .profileInformation {
+      left: 15px;
+   }
+
+   .profile__stats {
+      padding-bottom: rem(30px);
+   }
+}
+
+
+@media (max-width: 620px) {
+   .profileInformation {
+      bottom: -65px;
+   }
+
+   .profile__information {
+      max-width: 500px;
+   }
 }

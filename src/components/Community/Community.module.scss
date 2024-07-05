@@ -117,6 +117,7 @@
   align-items: center;
   gap: rem(31px);
   justify-content: center;
+
   &_title {
     max-width: 279px;
     text-align: center;
@@ -126,15 +127,18 @@
     text-transform: capitalize;
     font-weight: 700;
   }
+
   &_titleMark {
     color: $color-gray-light;
   }
+
   &_subTitle {
     line-height: 1.77778;
     text-align: center;
     color: $color-community-title;
     opacity: 0.7;
   }
+
   &_button {
     margin-top: rem(12px);
     padding: 18px 22px;
@@ -146,6 +150,12 @@
     text-align: center;
     color: $color-white;
     border-radius: rem(12px);
+    transition: background 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, transform 0.3s ease-in-out 0s;
+
+    &:hover {
+      transform: scale(1.1);
+      background: $color-card-subTitle;
+    }
   }
 }
 
@@ -163,33 +173,41 @@
     bottom: 250px;
     right: 155px;
   }
+
   .second__icon {
     bottom: 190px;
     right: -330px;
   }
+
   .third__icon {
     top: 285px;
     right: 215px;
   }
+
   .four__icon {
     left: -50px;
     top: 355px;
   }
+
   .five__icon {
     left: 170px;
     top: 220px;
   }
+
   .six__icon {
     bottom: 160px;
     right: 120px;
   }
+
   .seven__icon {
     bottom: 225px;
   }
+
   .eight__icon {
     bottom: 30px;
     left: 220px;
   }
+
   .nine__icon {
     top: 155px;
   }
@@ -201,37 +219,47 @@
     max-height: 45px;
     right: 145px;
   }
+
   .second__icon {
     right: -345px;
   }
+
   .third__icon {
     top: 275px;
   }
+
   .four__icon {
     top: 350px;
   }
+
   .seven__icon {
     bottom: 280px;
   }
+
   .six__icon {
     bottom: 130px;
     right: 195px;
   }
+
   .eight__icon {
     bottom: 0;
     left: 272px;
   }
+
   .nine__icon {
     top: 280px;
     left: 20px;
   }
+
   .community__infoBlock_title {
     font-size: $font-size-media-title;
   }
+
   .community__infoBlock_subTitle {
     font-size: $font-size-card-subtitle;
     line-height: 1.5;
   }
+
   .community__infoBlock_button {
     max-width: 144px;
     font-size: $font-size-subtitle-small;
@@ -259,29 +287,34 @@
     max-width: 400px;
     padding: 50px;
   }
+
   .first__icon {
     right: 35px;
     bottom: 226px;
     max-width: 35px;
     max-height: 35px;
   }
+
   .second__icon {
     max-width: 35px;
     max-height: 35px;
     right: -245px;
     bottom: 135px;
   }
+
   .third__icon {
     max-width: 30px;
     max-height: 30px;
     top: 120px;
     right: 220px;
   }
+
   .four__icon {
     max-width: 35px;
     max-height: 35px;
     top: 248px;
   }
+
   .five__icon {
     max-width: 35px;
     max-height: 35px;
@@ -289,22 +322,26 @@
     z-index: 50;
     left: -200px;
   }
+
   .six__icon {
     max-width: 35px;
     max-height: 35px;
     bottom: 115px;
     right: 170px;
   }
+
   .seven__icon {
     max-width: 35px;
     max-height: 35px;
     bottom: 221px;
   }
+
   .eight__icon {
     max-width: 35px;
     max-height: 35px;
     left: 180px;
   }
+
   .nine__icon {
     max-width: 35px;
     max-height: 35px;
@@ -325,6 +362,7 @@
     padding-left: 0;
     padding-right: 0;
   }
+
   .community__firstBlock {
     max-width: 600px;
   }
@@ -333,28 +371,36 @@
     max-width: 405px;
     padding: 30px;
   }
+
   .community__infoBlock {
     font-size: $font-size-collection-card-title;
   }
+
   .community__infoBlock_subTitle {
     font-size: $font-size-explore-button-tablet;
   }
+
   .first__icon {
     bottom: 259px;
   }
+
   .second__icon {
     right: -180px;
     z-index: 55;
   }
+
   .third__icon {
     top: 170px;
   }
+
   .four__icon {
     left: 100px;
   }
+
   .seven__icon {
     bottom: 250px;
   }
+
   .six__icon {
     right: 203px;
   }
@@ -365,31 +411,40 @@
     bottom: 140px;
     z-index: 5;
   }
+
   .second__icon {
     right: -240px;
   }
+
   .third__icon {
     top: 120px;
   }
+
   .seven__icon {
     bottom: 220px;
   }
+
   .four__icon {
     top: 175px;
     left: 145px;
   }
+
   .six__icon {
     right: 170px;
   }
+
   .five__icon {
     top: 110px;
   }
+
   .eight__icon {
     left: 155px;
   }
+
   .nine__icon {
     top: 235px;
   }
+
   .community__secondBlock {
     max-width: 345px;
   }
@@ -404,39 +459,49 @@
     max-width: 250px;
     padding: 15px;
   }
+
   .community__infoBlock {
     gap: rem(15px);
   }
+
   .community__infoBlock_title {
     font-size: 1.5rem;
   }
+
   .community__infoBlock_button {
     padding: 12px;
     font-size: 0.8rem;
   }
+
   .first__icon {
     right: 55px;
   }
+
   .five__icon {
     top: 125px;
   }
+
   .eight__icon {
     left: 60px;
     bottom: 97px;
   }
+
   .nine__icon {
     top: 165px;
   }
+
   .four__icon {
     top: -71px;
     left: -135px;
     z-index: 2;
   }
+
   .third__icon {
     top: 105px;
     right: 70px;
     z-index: 3;
   }
+
   .six__icon {
     right: -195px;
   }

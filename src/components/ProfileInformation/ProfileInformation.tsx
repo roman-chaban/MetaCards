@@ -34,6 +34,7 @@ export const ProfileInformation: FC = ({}) => {
           <div className={styles.profile__information_titles}>
             <div className={styles.profile__imageBlock}>
               <Image
+                className={styles.profile__image}
                 src={prof.mainImage}
                 alt="Profile Image"
                 width={165}

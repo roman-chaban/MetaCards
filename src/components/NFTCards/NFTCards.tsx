@@ -8,6 +8,7 @@ import styles from '@/components/Weekly/Weekly.module.scss'
 import { Button } from '../UI/Button/Button'
 import { Slider } from '../UI/Slider/Slider'
 import { sliderSettings } from '@/constants/sliderSettings'
+import Link from 'next/link'
 
 interface NFTCardsProps {
   classNames: {
@@ -18,6 +19,7 @@ interface NFTCardsProps {
     cardSubtitle: string
     cardRating: string
     cardButton: string
+    cardTime: string
   }
   settings?: boolean
 }
@@ -44,7 +46,11 @@ export const NFTCards: FC<NFTCardsProps> = ({ classNames, settings }) => {
                   width={250}
                   height={250}
                 />
-                <span className={styles.image__block_time}>{product.time}</span>
+                <span
+                  className={`${styles.image__block_time} ${styles.profile__time} ${classNames.cardTime}`}
+                >
+                  {product.time}
+                </span>
               </div>
               <div className={styles.card__titles}>
                 <h3 className={`${styles.card__title} ${classNames.cardTitle}`}>
@@ -71,12 +77,14 @@ export const NFTCards: FC<NFTCardsProps> = ({ classNames, settings }) => {
                     {product.rating}
                   </span>
                 </div>
-                <Button
-                  type="button"
-                  className={`${styles.card__button} ${classNames.cardButton}`}
-                >
-                  {product.buttonLabel}
-                </Button>
+                <Link href={`/discover/${product.id}`}>
+                  <Button
+                    type="button"
+                    className={`${styles.card__button} ${classNames.cardButton}`}
+                  >
+                    {product.buttonLabel}
+                  </Button>
+                </Link>
               </div>
             </div>
           ))}
@@ -120,12 +128,14 @@ export const NFTCards: FC<NFTCardsProps> = ({ classNames, settings }) => {
                   {product.rating}
                 </span>
               </div>
-              <Button
-                type="button"
-                className={`${styles.card__button} ${classNames.cardButton}`}
-              >
-                {product.buttonLabel}
-              </Button>
+              <Link href={`/discover/${product.id}`}>
+                <Button
+                  type="button"
+                  className={`${styles.card__button} ${classNames.cardButton}`}
+                >
+                  {product.buttonLabel}
+                </Button>
+              </Link>
             </div>
           </div>
         ))
