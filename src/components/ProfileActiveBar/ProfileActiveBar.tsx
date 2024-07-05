@@ -4,16 +4,27 @@ import { useState, type FC } from 'react'
 import styles from './ProfileActiveBar.module.scss'
 import { Button } from '../UI/Button/Button'
 import Image from 'next/image'
+import { NFTCards } from '../NFTCards/NFTCards'
 
 export type MenuTabsItems = 'collection' | 'activity'
 
 export const ProfileActiveBar: FC = () => {
   const [activeTab, setActiveTab] = useState<MenuTabsItems>('collection')
 
+  const nftCardClasses = {
+    container: styles.collections__container,
+    card: styles.collection__card,
+    cardImage: styles.collection__cardImage,
+    cardTitle: styles.collection__cardTitle,
+    cardSubtitle: styles.collection__cardSubtitle,
+    cardRating: styles.collection__cardRating,
+    cardButton: styles.collection__cardButton
+  }
+
   const renderContent = (): JSX.Element => {
     switch (activeTab) {
       case 'collection':
-        return <div>Collection Content</div>
+        return <NFTCards classNames={nftCardClasses} />
       case 'activity':
         return <div>Activity Content</div>
       default:

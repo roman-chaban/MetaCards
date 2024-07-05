@@ -41,3 +41,18 @@
 .inactive {
    opacity: 1;
 }
+
+.collections__container {
+   display: grid;
+   gap: rem(30px);
+   justify-items: center;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.collection__card {
+   max-width: 200px;
+}
+
+.collection__cardImage {
+   max-width: 250px;
+}
