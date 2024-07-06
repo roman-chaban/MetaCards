@@ -185,4 +185,33 @@
    .profile__information {
       max-width: 500px;
    }
+
+   .titles__buttonBlock {
+      justify-content: start;
+      gap: rem(60px);
+   }
 }
+
+@media (max-width: 350px) {
+   .profileName {
+      font-size: 1.5rem;
+   }
+
+   .profileFollow__button {
+      max-width: 110px
+   }
+
+   .titles__buttonBlock {
+      justify-content: space-between;
+   }
+
+   .profile__stats_title {
+      font-size: 1.5rem;
+   }
+
+   .social__medias {
+      gap: 5.125rem;
+   }
+}
+
+;

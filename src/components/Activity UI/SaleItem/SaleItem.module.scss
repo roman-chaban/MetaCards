@@ -1,0 +1,7 @@
+@import '../../../assets/styles/stack.scss';
+
+.saleItem {
+   display: flex;
+   flex-direction: column;
+   gap: rem(5px);
+}

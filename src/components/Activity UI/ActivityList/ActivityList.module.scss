@@ -1,0 +1,8 @@
+@import '../../../assets/styles/stack.scss';
+
+
+.activityList {
+   display: flex;
+   flex-direction: column;
+   gap: rem(45px);
+}

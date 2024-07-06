@@ -5,6 +5,7 @@ import styles from './ProfileActiveBar.module.scss'
 import { Button } from '../UI/Button/Button'
 import Image from 'next/image'
 import { NFTCards } from '../NFTCards/NFTCards'
+import { Activity } from '../Activity UI/Activity/Activity'
 
 export type MenuTabsItems = 'collection' | 'activity'
 
@@ -27,9 +28,9 @@ export const ProfileActiveBar: FC = () => {
       case 'collection':
         return <NFTCards classNames={nftCardClasses} />
       case 'activity':
-        return <div>Activity Content</div>
+        return <Activity />
       default:
-        return <div>Collection Content</div>
+        return <div>Content is coming</div>
     }
   }
 

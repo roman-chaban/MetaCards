@@ -1,0 +1,44 @@
+@import '../../../assets/styles/stack.scss';
+
+
+.activityItem {
+   display: flex;
+   flex-direction: column
+}
+
+;
+
+.activityItem__container {
+   display: flex;
+   flex-direction: column;
+   gap: rem(45px);
+}
+
+.firstActivityBlock,
+.secondActivityBlock {
+   display: flex;
+   flex-direction: column;
+   gap: rem(20px);
+   padding: rem(15px);
+   width: 100%;
+   max-width: 674px;
+   border-radius: 12px;
+   box-shadow: 19px 13px 64px 0 rgba(97, 97, 97, 0.25);
+   background: $color-white;
+}
+
+.top__block {
+   display: flex;
+   justify-content: space-between;
+}
+
+.bottom__block {
+   display: flex;
+   justify-content: space-between;
+}
+
+.imageTitles__subBlock {
+   display: flex;
+   align-items: center;
+   gap: rem(15px);
+}
