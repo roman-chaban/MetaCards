@@ -74,7 +74,7 @@ export const activityItems: ActivityItemsType = [
   },
   {
     id: 2,
-    iconPrimary: '/images/activityItems/icon-first.svg',
+    iconPrimary: '/images/activityItems/icon-second.svg',
     iconSecondary: '/images/activityItems/check.svg',
     iconTertiary: '',
     iconFourth: '',

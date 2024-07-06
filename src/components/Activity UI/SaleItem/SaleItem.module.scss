@@ -5,3 +5,31 @@
    flex-direction: column;
    gap: rem(5px);
 }
+
+.saleBlock {
+   display: flex;
+   align-items: flex-end;
+   gap: rem(5px);
+   flex-direction: column;
+
+   &__title {
+      color: $color-dark-green;
+      font-size: $font-size-subtitle-small;
+      font-weight: 500;
+
+   }
+
+   &__subTitle {
+      display: flex;
+      align-items: center;
+      gap: rem(4px);
+      font-weight: 500;
+      color: $color-black;
+      font-size: $font-size-base;
+   }
+
+   &__time {
+      color: $color-subTitle-gray;
+      font-size: $font-size-subtitle-small;
+   }
+}

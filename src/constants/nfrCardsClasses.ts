@@ -7,5 +7,6 @@ export const nftCardClasses = {
   cardTitle: styles.weekly__cardTitle,
   cardSubtitle: styles.weekly__cardSubtitle,
   cardRating: styles.weekly__cardRating,
-  cardButton: styles.weekly__cardButton
+  cardButton: styles.weekly__cardButton,
+  cardTime: styles.weekly__cardTime
 }

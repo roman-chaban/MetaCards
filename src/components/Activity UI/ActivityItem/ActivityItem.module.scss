@@ -42,3 +42,18 @@
    align-items: center;
    gap: rem(15px);
 }
+
+.item__title {
+   font-weight: 600;
+   line-height: 157%;
+   text-align: center;
+   color: $color-black;
+   font-size: $font-size-base;
+}
+
+.item__subTitle {
+   display: flex;
+   align-items: center;
+   gap: rem(5px);
+   font-size: $font-size-subtitle-small;
+}

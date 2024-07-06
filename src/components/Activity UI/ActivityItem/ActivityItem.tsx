@@ -19,8 +19,16 @@ export const ActivityItem: FC<{ item: ActivityItemsType[number] }> = ({
             height={65}
           />
           <div>
-            <h3>{item.title}</h3>
-            <p>{item.subTitle}</p>
+            <h3 className={styles.item__title}>{item.title}</h3>
+            <p className={styles.item__subTitle}>
+              {item.subTitle}{' '}
+              <Image
+                src={item.iconSecondary}
+                alt="Check icon"
+                width={12}
+                height={12}
+              />
+            </p>
           </div>
         </div>
         <div className={styles.sale__block}>
