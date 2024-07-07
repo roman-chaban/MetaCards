@@ -2,8 +2,8 @@
 
 .saleItem {
    display: flex;
-   flex-direction: column;
-   gap: rem(5px);
+   align-items: center;
+   gap: rem(20px);
 }
 
 .saleBlock {

@@ -1,7 +1,7 @@
 export interface PriceDetails {
   title: string
   subTitle: string
-  icon?: string
+  icon?: string // зроблено необов'язковим
 }
 
 export interface PriceItem {
@@ -38,7 +38,7 @@ export const activityItems: ActivityItemsType = [
     id: 1,
     iconPrimary: '/images/activityItems/icon-first.svg',
     iconSecondary: '/images/activityItems/check.svg',
-    iconTertiary: '',
+    iconTertiary: '/images/activityItems/arrow.svg',
     iconFourth: '',
     iconFifth: '',
     title: 'Neave',
@@ -76,10 +76,10 @@ export const activityItems: ActivityItemsType = [
     id: 2,
     iconPrimary: '/images/activityItems/icon-second.svg',
     iconSecondary: '/images/activityItems/check.svg',
-    iconTertiary: '',
+    iconTertiary: '/images/activityItems/arrow.svg',
     iconFourth: '',
     iconFifth: '',
-    title: 'Neave',
+    title: 'NeuVey',
     subTitle: "Jennifer's",
     prices: {
       firstPrice: {

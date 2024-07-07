@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
 import styles from './Profile.module.scss'
-import Image from 'next/image'
 import { ProfileInformation } from '@/components/ProfileInformation/ProfileInformation'
 import { ProfileActiveBar } from '@/components/ProfileActiveBar/ProfileActiveBar'
 
 export const metadata: Metadata = {
-  title: 'DivSea | Profile'
+  title: 'MetaCards | Profile'
 }
 
 export default function Profile() {

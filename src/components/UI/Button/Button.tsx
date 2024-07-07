@@ -7,6 +7,7 @@ interface ButtonProps {
   title?: string
   style?: CSSProperties
   onClick?: () => void
+  isActive?: () => void
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -15,7 +16,8 @@ export const Button: FC<ButtonProps> = ({
   type,
   style,
   title,
-  onClick
+  onClick,
+  isActive
 }) => {
   return (
     <button

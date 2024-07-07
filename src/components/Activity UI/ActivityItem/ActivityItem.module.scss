@@ -19,17 +19,24 @@
    display: flex;
    flex-direction: column;
    gap: rem(20px);
-   padding: rem(15px);
+   padding: 15px 25px;
    width: 100%;
    max-width: 674px;
    border-radius: 12px;
-   box-shadow: 19px 13px 64px 0 rgba(97, 97, 97, 0.25);
    background: $color-white;
 }
 
 .top__block {
    display: flex;
    justify-content: space-between;
+   padding-bottom: rem(17px);
+   border-bottom: 1.5px solid $color-subTitle-gray;
+}
+
+.titlesBlock {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
 }
 
 .bottom__block {
@@ -56,4 +63,18 @@
    align-items: center;
    gap: rem(5px);
    font-size: $font-size-subtitle-small;
+}
+
+
+
+
+@media (max-width: 500px) {
+   .iconPrimary {
+      max-width: 45px;
+      max-height: 45px;
+   }
+
+   .firstActivityBlock {
+      padding: 10px;
+   }
 }

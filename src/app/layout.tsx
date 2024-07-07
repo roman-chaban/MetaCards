@@ -8,7 +8,7 @@ import { Providers } from '@/store/provider/provider'
 import { ButtonUp } from '@/components/UI/ButtonUp/ButtonUp'
 
 export const metadata: Metadata = {
-  title: 'DivSea NFT | Layout',
+  title: 'MetaCards | Layout',
   description: 'Discover And Create NFTs',
   icons: '/images/icons/Wave.svg'
 }

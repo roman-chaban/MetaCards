@@ -7,7 +7,8 @@ export const SaleItem: FC<{
   subTitle: string
   captureTime: string
   icon: string
-}> = ({ title, subTitle, captureTime, icon }) => (
+  arrowIcon: string
+}> = ({ title, subTitle, captureTime, icon, arrowIcon }) => (
   <div className={styles.saleItem}>
     <div className={styles.saleBlock}>
       <h4 className={styles.saleBlock__title}>{title}</h4>
@@ -17,5 +18,6 @@ export const SaleItem: FC<{
       </p>
       <time className={styles.saleBlock__time}>{captureTime}</time>
     </div>
+    <Image src={arrowIcon} alt="Arrow Icon" width={15} height={15} />
   </div>
 )

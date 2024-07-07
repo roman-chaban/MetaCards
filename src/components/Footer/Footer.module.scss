@@ -16,11 +16,13 @@
   padding-top: rem(95px);
   padding-bottom: rem(25px);
   border-bottom: 1px solid $color-footer-border-bottom;
+
   &__logo {
     display: flex;
     align-items: center;
     gap: rem(12px);
   }
+
   &__title {
     font-size: $font-size-footer-title;
     color: $color-white;
@@ -35,6 +37,7 @@
     align-items: center;
     gap: rem(70px);
   }
+
   &__menu_listLink {
     font-family: "Inter", sans-serif;
     color: $color-gray-footer-nav;
@@ -79,6 +82,7 @@
   justify-content: space-between;
   margin-top: rem(71.92px);
   padding-bottom: rem(80px);
+
   &_copyright {
     font-family: "Inter", sans-serif;
     color: $color-footer-copyright;
@@ -92,6 +96,7 @@
   display: flex;
   align-items: center;
   gap: rem(60px);
+
   &_listLink {
     display: flex;
     align-items: center;
@@ -106,15 +111,19 @@
     max-width: 53px;
     max-height: 53px;
   }
+
   .footer__top__title {
     font-size: $font-size-card-title;
   }
+
   .nav__menu_listLink {
     font-size: $font-size-base;
   }
+
   .footer__socialMedias_listLink {
     font-size: $font-size-card-subtitle;
   }
+
   .social__icon {
     max-width: 20px;
     max-height: 20px;
@@ -134,6 +143,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
   .footer__bottom {
     margin-top: rem(45px);
     gap: rem(20px);
@@ -148,29 +158,35 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .footer__top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     row-gap: rem(50px);
   }
+
   .nav__menu_listLink {
     font-size: $font-size-subtitle;
   }
+
   .nav__menu {
     flex-direction: column;
     gap: rem(30px);
     align-items: flex-start;
   }
+
   .footer__top_social {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: rem(20px);
   }
+
   .footer__socialMedias {
     display: none;
   }
+
   .footer__bottom {
     align-items: center;
   }
@@ -181,17 +197,21 @@
     font-weight: 600;
     font-size: $font-size-card-subtitle;
   }
+
   .footer__bottom_copyright {
     font-size: $font-size-card-subtitle;
   }
+
   .footer__container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
+
   .social__icon {
     max-width: 20px;
     max-height: 20px;
   }
+
   .footer__logo {
     max-width: 33px;
     max-height: 33px;

@@ -9,7 +9,7 @@ import { Weekly } from '@/components/Weekly/Weekly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'DivSea NFT | Home',
+  title: 'MetaCards | Home',
   icons: '/images/icons/Wave.svg'
 }
 

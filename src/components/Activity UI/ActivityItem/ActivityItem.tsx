@@ -13,12 +13,13 @@ export const ActivityItem: FC<{ item: ActivityItemsType[number] }> = ({
       <div className={styles.top__block}>
         <div className={styles.imageTitles__subBlock}>
           <Image
+            className={styles.iconPrimary}
             src={item.iconPrimary}
             alt="NFT Image"
             width={65}
             height={65}
           />
-          <div>
+          <div className={styles.titlesBlock}>
             <h3 className={styles.item__title}>{item.title}</h3>
             <p className={styles.item__subTitle}>
               {item.subTitle}{' '}
@@ -33,6 +34,7 @@ export const ActivityItem: FC<{ item: ActivityItemsType[number] }> = ({
         </div>
         <div className={styles.sale__block}>
           <SaleItem
+            arrowIcon={item.iconTertiary}
             title={item.sale.title}
             subTitle={item.sale.subTitle}
             captureTime={item.sale.captureTime}

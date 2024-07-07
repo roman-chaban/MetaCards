@@ -35,3 +35,10 @@
    font-weight: 500;
    color: $color-black;
 }
+
+
+@media (max-width: 500px) {
+   .activityNav {
+      padding-top: 30px;
+   }
+}

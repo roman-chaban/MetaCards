@@ -11,14 +11,20 @@ import { Button } from '../UI/Button/Button'
 import { useScrollObserver } from '@/hooks/useScrollObserver'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import MenuIcon from '@mui/icons-material/Menu'
+import { Burger } from '../Burger/Burger'
+import { BurgerButton } from '../UI/BurgerButton/BurgerButton'
 
 type InputValue = string
 
 export const Header: FC = () => {
   const [text, setText] = useState<InputValue>('')
   const { isScrolledNav } = useScrollObserver()
+  const [isMenuActive, setIsMenuActive] = useState<boolean>(false)
   const pathname = usePathname()
+
+  const handleToggleMenu = () => {
+    setIsMenuActive(!isMenuActive)
+  }
 
   return (
     <header
@@ -71,11 +77,10 @@ export const Header: FC = () => {
           <Button className={styles.connect__button} type="button">
             Connect Wallet
           </Button>
-          <Button type={'button'} className={styles.burger__button}>
-            <MenuIcon id={styles.burger__icon} />
-          </Button>
+          <BurgerButton isActive={isMenuActive} onClick={handleToggleMenu} />
         </div>
       </div>
+      {isMenuActive && <Burger onClose={handleToggleMenu} />}
     </header>
   )
 }
