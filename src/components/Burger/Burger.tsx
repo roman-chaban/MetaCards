@@ -62,9 +62,7 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
         />
       </div>
       <div
-        className={`${styles.burgerNavigation__wrapper} ${
-          isActive && styles.active
-        }`}
+        className={`${styles.burgerNavigation__wrapper} ${isActive && styles.active}`}
       >
         <nav className={styles.burgerNav}>
           <ul className={styles.burger__menu}>

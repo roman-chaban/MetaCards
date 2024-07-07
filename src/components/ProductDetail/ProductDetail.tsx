@@ -7,11 +7,14 @@ import styles from './ProductDetail.module.scss'
 import { Button } from '../UI/Button/Button'
 import { detailsList } from '@/constants/detailsList'
 import Link from 'next/link'
-import { NavigationLinks } from '@/enums/navigation'
 
 interface ProductDetailsProps {
   product: Product
   openModal: () => void
+}
+
+export const enum NavigationLinks {
+  DISCOVER = '/discover'
 }
 
 export const ProductDetail: FC<ProductDetailsProps> = ({

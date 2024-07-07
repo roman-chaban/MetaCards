@@ -3,7 +3,6 @@ import Image from 'next/image'
 import type { FC } from 'react'
 import styles from './CreatorCard.module.scss'
 import { Favorite } from 'grommet-icons'
-import { url } from 'inspector'
 
 interface CreatorCardProps {
   card: CreatorCardItem
