@@ -5,6 +5,10 @@ export interface SwiperState {
   swiperRef: Swiper | null
 }
 
+export interface RootState {
+  swiperSlice: SwiperState
+}
+
 const initialState: SwiperState = {
   swiperRef: null
 }

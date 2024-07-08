@@ -19,7 +19,8 @@ const store = configureStore({
           'persist/PERSIST',
           'persist/REHYDRATE',
           'persist/PURGE'
-        ]
+        ],
+        ignoredPaths: ['swiper.swiperRef']
       }
     })
 })

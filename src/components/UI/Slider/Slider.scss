@@ -1,16 +1,16 @@
-.swiper {
+.slider-container {
    width: 100%;
    max-width: 100%;
-   height: 320px;
-   cursor: grab;
-   display: block;
-   list-style: none;
-   margin-left: auto;
-   margin-right: auto;
    overflow: hidden;
-   padding: 0;
-   position: relative;
-   z-index: 1;
+
+   .swiper-wrapper {
+      display: flex;
+   }
+}
+
+.swiper {
+   height: 400px;
+   cursor: grab;
 
    &-wrapper {
       gap: 40px;

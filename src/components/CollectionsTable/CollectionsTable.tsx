@@ -1,5 +1,4 @@
-import { collectionsNav } from '@/constants/collectionsNav'
-import { type FC } from 'react'
+import { FC } from 'react'
 import styles from '@/components/Collections/Collections.module.scss'
 import {
   TableBodyItem,
@@ -7,6 +6,7 @@ import {
 } from '@/constants/collectionsTableItems'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
+import { collectionsNav } from '@/constants/collectionsNav'
 
 const CollectionsTable: FC = () => {
   return (
@@ -27,7 +27,10 @@ const CollectionsTable: FC = () => {
             </th>
           ))}
         </tr>
-        <tr className={styles.volume__title}>Volume</tr>
+        <tr className={styles.volume__title}>
+          <th>Volume</th>
+          <th>Percent</th>
+        </tr>
       </thead>
       <tbody className={styles.collections__table_body}>
         {tableBodyItems.map((tableItem: TableBodyItem, index) => (
@@ -55,18 +58,6 @@ const CollectionsTable: FC = () => {
             <td className={styles.rating}>{tableItem.rating}</td>
             <td className={styles.owners}>{tableItem.owners}</td>
             <td className={styles.items}>{tableItem.items}</td>
-            <tr>
-              <td className={styles.volumeTitle}>
-                <Image
-                  src="/images/collections/ethereum.svg"
-                  alt="Ethereum Icon"
-                  width={18}
-                  height={18}
-                />
-                {tableItem.volume}
-              </td>
-              <td className={styles.percentTitle}>{tableItem.percent}</td>
-            </tr>
           </tr>
         ))}
       </tbody>

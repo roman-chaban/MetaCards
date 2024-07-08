@@ -100,11 +100,13 @@
 }
 
 .banner {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  border-radius: rem(20px);
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   z-index: 2;
 }
 
@@ -112,33 +114,41 @@
   .create__banner {
     filter: blur(40px);
   }
+
   .createInfo__title {
     font-size: $font-size-subtitle-large;
   }
+
   .createInfo__subTitle {
     font-size: $font-size-base;
   }
+
   .createInfo__buttonExplore {
     padding: 16px 20px;
     font-size: $font-size-base;
     max-height: 50px;
   }
+
   .createInfo__buttonSell {
     padding: 14px 19px;
     font-size: $font-size-base;
     max-height: 50px;
   }
+
   .create__banner {
     max-width: 80%;
   }
+
   .banner {
     max-width: 88%;
   }
+
   .create__container {
     padding: 20px 22px 20px 65px;
     padding-bottom: 0;
     max-height: 280px;
   }
+
   .createInfo__block {
     gap: rem(65px);
   }
@@ -148,6 +158,7 @@
   .create__banner {
     filter: blur(30px);
   }
+
   .createInfo__title {
     font-size: $font-size-media-title;
   }
@@ -155,28 +166,35 @@
   .create__banner {
     max-width: 70%;
   }
+
   .banner {
     max-width: 70%;
   }
+
   .create__container {
     padding-top: 31px;
     align-items: center;
   }
+
   .bannerContainer {
     left: 100px;
   }
+
   .createInfo__block_titles {
     gap: rem(8px);
   }
+
   .createInfo__block {
     position: relative;
     bottom: 20px;
     gap: rem(35px);
   }
+
   .createInfo__buttonExplore {
     padding: 14px 12px;
     font-size: $font-size-placeholder;
   }
+
   .createInfo__buttonSell {
     padding: 14px 11px;
     font-size: $font-size-placeholder;
@@ -187,6 +205,7 @@
   .create {
     @include tabletContainerPaddings;
   }
+
   .create__container {
     padding-top: 0;
     padding-left: 30px;
@@ -194,19 +213,24 @@
     flex-direction: column;
     max-height: 300px;
   }
+
   .bannerContainer {
     left: 60px;
     height: 100%;
   }
+
   .createInfo__block {
     align-items: center;
   }
+
   .createInfo__block_titles {
     align-items: center;
   }
+
   .createInfo__title {
     padding-top: 30px;
   }
+
   .create__banner {
     position: relative;
     left: -65px;
@@ -223,6 +247,7 @@
   .create__banner {
     filter: blur(20px);
   }
+
   .createInfo__buttonSell {
     padding: 13px 11px;
   }
@@ -232,6 +257,7 @@
   .create__banner {
     filter: blur(10px);
   }
+
   .bannerContainer {
     max-width: 300px;
   }
@@ -249,34 +275,43 @@
     padding-right: 1rem;
     padding-bottom: 8rem;
   }
+
   .create__container {
     gap: rem(25px);
   }
+
   .create__banner {
     filter: blur(5px);
   }
+
   .bannerContainer {
     max-width: 250px;
     left: 30px;
   }
+
   .createInfo__title {
     font-size: 1.6rem;
   }
+
   .banner {
     max-width: 80%;
     left: -5px;
     top: -15px;
   }
+
   .create__banner {
     max-width: 80%;
     left: -45px;
   }
+
   .createInfo__buttonExplore {
     padding: rem(12px);
   }
+
   .createInfo__buttonSell {
     padding: rem(12px);
   }
+
   .createInfo__block {
     bottom: 5px;
   }
