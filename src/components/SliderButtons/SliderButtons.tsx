@@ -1,30 +1,37 @@
-'use client'
+'use client';
 
-import { useEffect, useRef, type FC } from 'react'
-import { Button } from '../UI/Button/Button'
-import { FormNextLink, FormPreviousLink } from 'grommet-icons'
-import styles from '@/components/Hero/Hero.module.scss'
-import { useAppDispatch } from '@/hooks/useAppDispatch'
-import { setSwiperRef, slideNext, slidePrev } from '@/store/slices/swiperSlice'
-import Swiper from 'swiper'
+import { FC } from 'react';
+import { Button } from '../UI/Button/Button';
+import { FormNextLink, FormPreviousLink } from 'grommet-icons';
+import styles from '@/components/Hero/Hero.module.scss';
+import { useAppDispatch } from '@/hooks/useAppDispatch';
+import { setSwiperIndex } from '@/store/slices/swiperSlice';
+import Swiper from 'swiper';
 
-export const SliderButtons: FC = ({}) => {
-  const swiperRef = useRef<Swiper | null>(null)
-  const dispatch = useAppDispatch()
+interface SliderButtonsProps {
+  swiperRef: React.MutableRefObject<Swiper | null>;
+}
 
-  useEffect(() => {
-    if (swiperRef.current) {
-      dispatch(setSwiperRef(swiperRef.current))
-    }
-  }, [swiperRef, dispatch])
+export const SliderButtons: FC<SliderButtonsProps> = ({ swiperRef }) => {
+  const dispatch = useAppDispatch();
 
   const handleNext = () => {
-    dispatch(slideNext())
-  }
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+      dispatch(setSwiperIndex(swiperRef.current.activeIndex));
+    }
+    console.log(swiperRef.current);
+    console.log('Next');
+  };
 
   const handlePrev = () => {
-    dispatch(slidePrev())
-  }
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
+      dispatch(setSwiperIndex(swiperRef.current.activeIndex));
+    }
+    console.log('Prev');
+  };
+
   return (
     <div className={styles.sliderButtons}>
       <Button
@@ -45,5 +52,5 @@ export const SliderButtons: FC = ({}) => {
         <FormNextLink />
       </Button>
     </div>
-  )
-}
+  );
+};

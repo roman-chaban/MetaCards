@@ -1,37 +1,18 @@
-import { createSlice } from '@reduxjs/toolkit'
-import { Swiper } from 'swiper'
+import { createSlice } from '@reduxjs/toolkit';
 
-export interface SwiperState {
-  swiperRef: Swiper | null
-}
+const initialState = {
+  currentIndex: 0,
+};
 
-export interface RootState {
-  swiperSlice: SwiperState
-}
-
-const initialState: SwiperState = {
-  swiperRef: null
-}
-
-export const swiperSlice = createSlice({
+const swiperSlice = createSlice({
   name: 'swiper',
   initialState,
   reducers: {
-    setSwiperRef: (state, action) => {
-      state.swiperRef = action.payload
+    setSwiperIndex: (state, action) => {
+      state.currentIndex = action.payload;
     },
-    slideNext: state => {
-      if (state.swiperRef) {
-        state.swiperRef.slideNext()
-      }
-    },
-    slidePrev: state => {
-      if (state.swiperRef) {
-        state.swiperRef.slidePrev()
-      }
-    }
-  }
-})
+  },
+});
 
-export const { setSwiperRef, slideNext, slidePrev } = swiperSlice.actions
-export default swiperSlice.reducer
+export const { setSwiperIndex } = swiperSlice.actions;
+export default swiperSlice.reducer;

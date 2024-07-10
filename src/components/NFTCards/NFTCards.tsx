@@ -1,40 +1,40 @@
-'use client'
+'use client';
 
-import nftProducts from '@/api/nft-products.json'
-import { Product } from '@/interfaces/nft-product'
-import Image from 'next/image'
-import { FC, useState, useEffect } from 'react'
-import styles from '@/components/Weekly/Weekly.module.scss'
-import { Button } from '../UI/Button/Button'
-import { Slider } from '../UI/Slider/Slider'
-import { sliderSettings } from '@/constants/sliderSettings'
-import Link from 'next/link'
+import nftProducts from '@/api/nft-products.json';
+import { Product } from '@/interfaces/nft-product';
+import Image from 'next/image';
+import { FC, useState, useEffect } from 'react';
+import styles from '@/components/Weekly/Weekly.module.scss';
+import { Button } from '../UI/Button/Button';
+import { sliderSettings } from '@/constants/sliderSettings';
+import Link from 'next/link';
+import Slider from '../UI/Slider/Slider';
 
 interface NFTCardsProps {
   classNames: {
-    container: string
-    card: string
-    cardImage: string
-    cardTitle: string
-    cardSubtitle: string
-    cardRating: string
-    cardButton: string
-    cardTime: string
-  }
-  settings?: boolean
+    container: string;
+    card: string;
+    cardImage: string;
+    cardTitle: string;
+    cardSubtitle: string;
+    cardRating: string;
+    cardButton: string;
+    cardTime: string;
+  };
+  settings?: boolean;
 }
 
 export const NFTCards: FC<NFTCardsProps> = ({ classNames, settings }) => {
-  const [products, setProducts] = useState<Product[]>(nftProducts)
+  const [products, setProducts] = useState<Product[]>(nftProducts);
 
   useEffect(() => {
-    setProducts(products)
-  }, [products])
+    setProducts(products);
+  }, [products]);
 
   return (
     <div className={classNames.container}>
       {settings ? (
-        <Slider settings={sliderSettings} speed={0}>
+        <Slider settings={sliderSettings}>
           {products.map((product: Product, index) => (
             <div className={`${styles.card} ${classNames.card}`} key={index}>
               <div className={styles.image__block}>
@@ -141,5 +141,5 @@ export const NFTCards: FC<NFTCardsProps> = ({ classNames, settings }) => {
         ))
       )}
     </div>
-  )
-}
+  );
+};

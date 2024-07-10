@@ -6,6 +6,8 @@ import { Footer } from '@/components/Footer/Footer'
 import { inter, poppins } from '@/constants/layoutFonts'
 import { Providers } from '@/store/provider/provider'
 import { ButtonUp } from '@/components/UI/ButtonUp/ButtonUp'
+import { PersistGate } from 'redux-persist/es/integration/react'
+import { persistor } from '@/store/store'
 
 export const metadata: Metadata = {
   title: 'MetaCards | Layout',
@@ -22,10 +24,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} ${poppins.className}`}>
         <Providers>
-          <Header />
-          <main className="main">{children}</main>
-          <Footer />
-          <ButtonUp />
+            <Header />
+            <main className="main">{children}</main>
+            <Footer />
+            <ButtonUp />
         </Providers>
       </body>
     </html>

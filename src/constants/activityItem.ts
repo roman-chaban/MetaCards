@@ -1,7 +1,7 @@
 export interface PriceDetails {
   title: string
   subTitle: string
-  icon?: string // зроблено необов'язковим
+  icon?: string
 }
 
 export interface PriceItem {
