@@ -1,9 +1,13 @@
-import type { FC } from 'react'
-import styles from '@/components/Hero/Hero.module.scss'
-import Image from 'next/image'
-import { SliderButtons } from '../SliderButtons/SliderButtons'
+'use client';
+
+import { useRef, type FC } from 'react';
+import styles from '@/components/Hero/Hero.module.scss';
+import Image from 'next/image';
+import { SliderButtons } from '../SliderButtons/SliderButtons';
+import Swiper from 'swiper';
 
 export const HeroGallery: FC = () => {
+  const swiperRef = useRef<Swiper | null>(null);
   return (
     <div className={styles.heroGallery}>
       <div className={styles.heroNft__banner}>
@@ -15,7 +19,7 @@ export const HeroGallery: FC = () => {
           width={391}
           height={394}
         />
-        <SliderButtons />
+        <SliderButtons swiperRef={swiperRef} />
       </div>
       <div className={styles.heroNft__subGallery}>
         <div className={styles.subGallery__items}>
@@ -46,5 +50,5 @@ export const HeroGallery: FC = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
