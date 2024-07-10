@@ -9,7 +9,7 @@ export interface SerializableStatePart {
   [key: string]: any
 }
 
-const filterNonSerializable = createTransform<RootState, RootState>(
+export const filterNonSerializable = createTransform<RootState, RootState>(
   inboundState => {
     if (inboundState) {
       const { nonSerializablePart, ...serializableState } = inboundState
@@ -20,4 +20,4 @@ const filterNonSerializable = createTransform<RootState, RootState>(
   outboundState => outboundState
 )
 
-export default filterNonSerializable
+ filterNonSerializable
