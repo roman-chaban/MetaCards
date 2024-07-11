@@ -1,5 +1,21 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .sell {
-   min-height: 100vh;
+  min-height: 100vh;
+}
+
+.sell__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(153px);
+  @include container;
+  padding-top: rem(150px);
+}
+
+.sell__title {
+  text-align: center;
+  line-height: 67%;
+  font-weight: 600;
+  color: $color-button-bg;
+  font-size: $font-size-section-heading;
 }

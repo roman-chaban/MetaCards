@@ -1,10 +1,27 @@
-import type { Metadata } from 'next'
-import styles from './Sell.module.scss'
+'use client';
 
-export const metadata: Metadata = {
-  title: 'DivSea | Sell'
-}
+import styles from './Sell.module.scss';
+import { SellCreate } from '@/components/SellCreate/SellCreate';
+import { useState } from 'react';
 
 export default function Sell() {
-  return <section className={styles.sell}></section>
+  const [inputs, setInputs] = useState({
+    ArtWorkName: '',
+    ArtWorkDescription: '',
+    Royalty: '',
+    Size: '',
+    Tags: '',
+    Price: '',
+    ETC: ''
+  });
+  return (
+    <section className={styles.sell}>
+      <div className={styles.sell__container}>
+        <div className={styles.sell__titles}>
+          <h1 className={styles.sell__title}>Create Your NFT</h1>
+        </div>
+        <SellCreate inputs={inputs} setInputs={setInputs} />
+      </div>
+    </section>
+  );
 }

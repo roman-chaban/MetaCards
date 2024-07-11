@@ -1,29 +1,33 @@
-'use client'
+'use client';
 
-import { useState, type FC } from 'react'
-import styles from './HistoryBid.module.scss'
-import { BidListItem, bidList } from '@/constants/bidList'
-import Image from 'next/image'
-import { Button } from '../UI/Button/Button'
-import { Select } from '../UI/Select/Select'
+import { ChangeEvent, useState, type FC } from 'react';
+import styles from './HistoryBid.module.scss';
+import { BidListItem, bidList } from '@/constants/bidList';
+import Image from 'next/image';
+import { Button } from '../UI/Button/Button';
+import { Select } from '../UI/Select/Select';
 
 interface HistoryBidProps {
-  onClose?: () => void
+  onClose?: () => void;
 }
 
 export const HistoryBid: FC<HistoryBidProps> = ({ onClose }) => {
-  const [checkSelectValue, setCheckSelectValue] = useState('')
+  const [checkSelectValue, setCheckSelectValue] = useState('');
   const classNames = {
     select: styles.select,
     option: styles.option
-  }
+  };
 
   const options = [
     {
       value: 'ETH',
       label: 'ETH'
     }
-  ]
+  ];
+
+  const handleSelectChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    setCheckSelectValue(event.target.value);
+  };
 
   return (
     <div className={styles.historyBid}>
@@ -79,7 +83,7 @@ export const HistoryBid: FC<HistoryBidProps> = ({ onClose }) => {
               name="select"
               classNames={classNames}
               selectedValue={checkSelectValue}
-              onChange={setCheckSelectValue}
+              onChange={handleSelectChange}
               options={options}
               id={styles.select}
             />
@@ -100,5 +104,5 @@ export const HistoryBid: FC<HistoryBidProps> = ({ onClose }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

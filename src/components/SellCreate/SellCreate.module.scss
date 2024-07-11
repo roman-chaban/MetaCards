@@ -1,0 +1,259 @@
+@import '../../assets/styles/stack.scss';
+
+.sellCreate {
+  width: 100%;
+  max-width: rem(702px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(35px);
+  padding-bottom: rem(210px);
+}
+
+.name,
+.description,
+.royalty,
+.size,
+.tags,
+.price,
+.stock {
+  font-weight: 600;
+  line-height: 125%;
+  color: $color-black;
+  font-size: $font-size-create-subtitle;
+  display: flex;
+  gap: rem(25px);
+  flex-direction: column;
+}
+
+.artwork__input {
+  background: transparent;
+  &::placeholder {
+    line-height: 125%;
+    font-size: $font-size-placeholder;
+    color: $color-input-placeholder-create;
+  }
+}
+
+.inputBlock,
+.AreaBlock,
+.tagsBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 12px;
+  background: $color-input-background-create;
+  padding: rem(25px);
+}
+
+.AreaBlock {
+  align-items: flex-start;
+  height: rem(165px);
+}
+
+.create__textArea {
+  resize: none;
+  width: 100%;
+  background: transparent;
+  border-radius: rem(12px);
+  &::placeholder {
+    line-height: 125%;
+    font-size: $font-size-placeholder;
+    color: $color-input-placeholder-create;
+  }
+}
+
+.royalty,
+.size {
+  width: 50%;
+  max-width: 150px;
+}
+
+.size__input {
+  width: 100%;
+  max-width: 492px;
+  height: 63px;
+  background: $color-input-background-create;
+  border-radius: rem(12px);
+  padding: rem(20px);
+}
+
+.tags__input {
+  background: transparent;
+  line-height: 125%;
+  width: 100%;
+  max-width: 250px;
+}
+
+.royaltySizeBlock {
+  display: flex;
+  align-items: center;
+  gap: rem(35px);
+}
+
+.select {
+  width: 100%;
+  max-width: 146px;
+  height: 63px;
+  border-radius: rem(12px);
+  background: $color-input-background-create;
+  line-height: 125%;
+  font-size: $font-size-placeholder;
+  color: $color-input-placeholder-create;
+  letter-spacing: -0.02em;
+  padding: rem(20px);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+
+.price {
+  width: 100%;
+}
+
+.stockBlock {
+  width: 100%;
+  max-width: 200px;
+}
+
+.price__select {
+  width: 100%;
+  max-width: 200px;
+  height: 63px;
+  border-radius: rem(12px);
+  background: $color-input-background-create;
+  line-height: 125%;
+  font-size: $font-size-placeholder;
+  color: $color-input-placeholder-create;
+  letter-spacing: -0.02em;
+  padding: rem(20px);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+
+.select__container {
+  width: 100%;
+  max-width: 146px;
+  position: relative;
+}
+
+.select__container::after {
+  content: '';
+  position: absolute;
+  left: 115px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('/images/inputs/arrow.svg');
+  background-size: 10px 15px;
+  width: 10px;
+  height: 15px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.select__priceContainer {
+  width: 100%;
+  max-width: 100px;
+  position: relative;
+}
+
+.select__priceContainer::after {
+  content: '';
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('/images/inputs/arrow.svg');
+  background-size: 10px 15px;
+  width: 10px;
+  height: 15px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.option {
+  line-height: 125%;
+  font-size: $font-size-placeholder;
+  color: $color-input-placeholder-create;
+  letter-spacing: -0.02em;
+}
+
+.selectInput__block {
+  width: 100%;
+  max-width: 492px;
+  border-radius: rem(12px);
+  background: $color-input-background-create;
+  display: flex;
+  align-items: center;
+}
+
+.select__priceContainer::before {
+  position: absolute;
+  content: '';
+  height: 39px;
+  width: 2px;
+  background: $color-border-decoration;
+  display: block;
+  z-index: 55;
+  left: 95px;
+  top: 19%;
+}
+
+.priceStockBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(40px);
+  width: 100%;
+}
+
+.stock__selectContainer {
+  position: relative;
+}
+
+.stock__selectContainer::after {
+  content: '';
+  position: absolute;
+  left: 180px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('/images/inputs/arrow.svg');
+  background-size: 10px 15px;
+  width: 10px;
+  height: 15px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.stock__select {
+  width: 100%;
+  max-width: 200px;
+  height: 63px;
+  border-radius: rem(12px);
+  background: $color-input-background-create;
+  line-height: 125%;
+  font-size: $font-size-placeholder;
+  color: $color-input-placeholder-create;
+  letter-spacing: -0.02em;
+  padding: rem(20px);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+
+.create__button {
+  width: 100%;
+  line-height: 115%;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: $font-size-base;
+  background: $color-black;
+  color: $color-white;
+  height: rem(70px);
+  border-radius: 12px;
+}
