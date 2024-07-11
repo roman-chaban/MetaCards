@@ -1,25 +1,29 @@
-'use client'
+'use client';
 
-import { useState, type FC } from 'react'
-import styles from './History.module.scss'
-import Image from 'next/image'
-import { Select } from '../UI/Select/Select'
-import { HistoryBid } from '../HistoryBid/HistoryBid'
+import { ChangeEvent, useState, type FC } from 'react';
+import styles from './History.module.scss';
+import Image from 'next/image';
+import { Select } from '../UI/Select/Select';
+import { HistoryBid } from '../HistoryBid/HistoryBid';
 
 export const History: FC = () => {
-  const [dateChange, setDateChange] = useState('Jun 10 - Jun 16')
+  const [dateChange, setDateChange] = useState('Jun 10 - Jun 16');
 
   const options = [
     { value: 'Jun 10 - Jun 16', label: 'Jun 10 - Jun 16' },
     { value: 'Jun 17 - Jun 23', label: 'Jun 17 - Jun 23' },
     { value: 'Jun 24 - Jun 30', label: 'Jun 24 - Jun 30' },
     { value: 'Jul 1 - Jul 7', label: 'Jul 1 - Jul 7' }
-  ]
+  ];
 
   const selectClasses = {
     select: styles.select,
     option: styles.option
-  }
+  };
+
+  const handleSelectChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    setDateChange(event.target.value);
+  };
 
   return (
     <article className={styles.history}>
@@ -32,7 +36,7 @@ export const History: FC = () => {
               classNames={selectClasses}
               options={options}
               ariaLabel="date-select"
-              onChange={setDateChange}
+              onChange={handleSelectChange}
               id={styles.select}
               name="date-select"
               selectedValue={dateChange}
@@ -49,5 +53,5 @@ export const History: FC = () => {
       </div>
       <HistoryBid />
     </article>
-  )
-}
+  );
+};
