@@ -2,6 +2,7 @@
 
 import styles from './Sell.module.scss';
 import { SellCreate } from '@/components/SellCreate/SellCreate';
+import { UploadImage } from '@/components/UploadImage/UploadImage';
 import { useState } from 'react';
 
 export default function Sell() {
@@ -21,7 +22,10 @@ export default function Sell() {
         <div className={styles.sell__titles}>
           <h1 className={styles.sell__title}>Create Your NFT</h1>
         </div>
-        <SellCreate inputs={inputs} setInputs={setInputs} />
+        <div className={styles.sell__block}>
+          <SellCreate inputs={inputs} setInputs={setInputs} />
+          <UploadImage />
+        </div>
       </div>
     </section>
   );

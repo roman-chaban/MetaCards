@@ -1,0 +1,68 @@
+@import '../../assets/styles/stack.scss';
+
+.upload {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(50px);
+}
+
+.upload__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 31px;
+  padding: 81px 9px;
+  max-width: 468px;
+  height: 413px;
+  box-shadow:
+    0 82px 82px -61px rgba(15, 15, 15, 0.1),
+    0 -82px 80px 0 rgba(0, 0, 0, 0.05);
+  background: $color-slider-buttons-background;
+}
+
+.upload__button {
+  @include button(327px);
+  line-height: 153%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-size: $font-size-base;
+  font-weight: 500;
+}
+
+.upload__title {
+  max-width: rem(180px);
+  line-height: 167%;
+  text-align: center;
+  color: $color-bestSellers-subTitle;
+}
+
+.upload__preview {
+  object-fit: cover;
+  border: rem(20px);
+}
+
+.upload__input {
+  display: none;
+}
+
+.upload__label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(20px);
+  justify-content: center;
+}
+
+.upload__fileName {
+  margin-top: 10px;
+  font-size: 16px;
+  color: $color-bestSellers-subTitle;
+  font-weight: 500;
+  text-align: center;
+}
