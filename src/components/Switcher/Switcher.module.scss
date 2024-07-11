@@ -1,0 +1,26 @@
+@import '../../assets/styles/stack.scss';
+
+.switcher__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switcher__titles {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12px);
+}
+
+.switcher__title {
+  font-weight: 500;
+  font-size: $font-size-create-subtitle;
+  line-height: 125%;
+  color: $color-black;
+}
+
+.switcher__subTitle {
+  font-size: $font-size-bid-medium;
+  color: $color-gray-collection;
+  line-height: 125%;
+}

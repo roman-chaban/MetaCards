@@ -1,16 +1,17 @@
-'use client'
+'use client';
 
-import { type FC } from 'react'
-import { Product } from '@/interfaces/nft-product'
-import Image from 'next/image'
-import styles from './ProductDetail.module.scss'
-import { Button } from '../UI/Button/Button'
-import { detailsList } from '@/constants/detailsList'
-import Link from 'next/link'
+import { type FC } from 'react';
+import { Product } from '@/interfaces/nft-product';
+import Image from 'next/image';
+import styles from './ProductDetail.module.scss';
+import { Button } from '../UI/Button/Button';
+import { detailsList } from '@/constants/detailsList';
+import Link from 'next/link';
+import { useChangePageTitle } from '@/hooks/useChangePageTitle';
 
 interface ProductDetailsProps {
-  product: Product
-  openModal: () => void
+  product: Product;
+  openModal: () => void;
 }
 
 export const enum NavigationLinks {
@@ -21,6 +22,7 @@ export const ProductDetail: FC<ProductDetailsProps> = ({
   product,
   openModal
 }) => {
+  useChangePageTitle(`MetaCards | ${product.title}`)
   return (
     <div className={styles.productDetail}>
       <div className={styles.productDetail__navBlock}>
@@ -117,5 +119,5 @@ export const ProductDetail: FC<ProductDetailsProps> = ({
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -12,7 +12,8 @@ export default function Sell() {
     Size: '',
     Tags: '',
     Price: '',
-    ETC: ''
+    ETC: '',
+    Stock: ''
   });
   return (
     <section className={styles.sell}>

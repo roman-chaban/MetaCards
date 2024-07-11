@@ -8,6 +8,8 @@ import { TextArea } from '../UI/TextArea/TextArea';
 import Image from 'next/image';
 import { Select } from '../UI/Select/Select';
 import { Button } from '../UI/Button/Button';
+import { Switcher } from '../Switcher/Switcher';
+import { switcherOn, switcherOff } from '../Switcher/switcherIcons';
 
 interface SellCreateProps {
   inputs: {
@@ -18,6 +20,7 @@ interface SellCreateProps {
     Tags: string;
     Price: string;
     ETC: string;
+    Stock: string;
   };
   setInputs: React.Dispatch<
     React.SetStateAction<{
@@ -28,6 +31,7 @@ interface SellCreateProps {
       Tags: string;
       Price: string;
       ETC: string;
+      Stock: string;
     }>
   >;
 }
@@ -197,7 +201,7 @@ export const SellCreate: FC<SellCreateProps> = ({ inputs, setInputs }) => {
                 name="Stock"
                 id="Stock"
                 options={priceOptions}
-                selectedValue={inputs.Royalty}
+                selectedValue={inputs.Stock}
                 onChange={handleSelectChange}
                 ariaLabel="ETH"
                 classNames={{
@@ -209,6 +213,11 @@ export const SellCreate: FC<SellCreateProps> = ({ inputs, setInputs }) => {
           </label>
         </div>
       </div>
+      <Switcher
+        title="Put On Sale"
+        subTitle="People Will Bids On Your NFT Project"
+      />
+      <Switcher title="Direct Sale" subTitle="No Bids - Only Direct Selling" />
       <Button type="button" className={styles.create__button}>
         Create
       </Button>

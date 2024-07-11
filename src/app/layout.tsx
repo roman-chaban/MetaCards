@@ -6,8 +6,6 @@ import { Footer } from '@/components/Footer/Footer'
 import { inter, poppins } from '@/constants/layoutFonts'
 import { Providers } from '@/store/provider/provider'
 import { ButtonUp } from '@/components/UI/ButtonUp/ButtonUp'
-import { PersistGate } from 'redux-persist/es/integration/react'
-import { persistor } from '@/store/store'
 
 export const metadata: Metadata = {
   title: 'MetaCards | Layout',
