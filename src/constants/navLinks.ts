@@ -1,6 +1,6 @@
 export interface NavLink {
-  label: string
-  href: string
+  label: string;
+  href: string;
 }
 
 export const navLinks: NavLink[] = [
@@ -19,5 +19,9 @@ export const navLinks: NavLink[] = [
   {
     label: 'Stats',
     href: '/stats'
+  },
+  {
+    label: 'Creators',
+    href: '/creators'
   }
-]
+];
