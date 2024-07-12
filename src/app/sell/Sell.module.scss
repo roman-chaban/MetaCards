@@ -25,3 +25,30 @@
   gap: rem(60px);
   justify-content: space-between;
 }
+
+@media (max-width: 1200px) {
+  .sell__container {
+    padding-top: rem(100px);
+    gap: rem(70px);
+  }
+}
+
+@media (max-width: rem(890px)) {
+  .sell__block {
+    flex-direction: column-reverse;
+  }
+  .sell__container {
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+  }
+}
+
+
+@media (max-width: rem(520px)) {
+  .sell__container {
+    padding-top: rem(50px);
+  }
+  .sell__title {
+    font-size: $font-size-collection-card-title;
+  }
+}

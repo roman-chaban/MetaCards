@@ -258,3 +258,37 @@
   height: rem(70px);
   border-radius: 12px;
 }
+
+@media (max-width: rem(1200px)) {
+  .name,
+  .description,
+  .royalty,
+  .size,
+  .tags,
+  .price,
+  .stock {
+    font-size: $font-size-placeholder;
+  }
+  .inputBlock,
+  .AreaBlock,
+  .tagsBlock {
+    padding: 16px 20px;
+  }
+  .priceStockBlock {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .stock__select, .select, .size__input {
+    max-height: 50px;
+  }
+  .sellCreate {
+    margin-bottom: rem(80px);
+  }
+}
+
+
+@media (max-width: rem(890px)) {
+  .block {
+    flex-direction: column;
+  }
+}

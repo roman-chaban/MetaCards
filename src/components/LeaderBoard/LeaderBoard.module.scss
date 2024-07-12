@@ -1,0 +1,10 @@
+@import '../../assets/styles/stack.scss';
+
+.board__title {
+  padding-top: rem(155px);
+  text-align: center;
+  color: $color-button-bg;
+  font-weight: 600;
+  font-size: $font-size-section-heading;
+  line-height: 67%;
+}

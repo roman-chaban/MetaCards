@@ -1,16 +1,17 @@
-import type { FC } from 'react'
-import styles from './Unleash.module.scss'
-import { UnleashListItem, unleashList } from '@/constants/unleashList'
-import { FormNextLink } from 'grommet-icons'
-import { Button } from '../UI/Button/Button'
-import Image from 'next/image'
-import { BestSellers } from '../BestSellers/BestSellers'
-import { Recent } from '../Recent/Recent'
+import type { FC } from 'react';
+import styles from './Unleash.module.scss';
+import { UnleashListItem, unleashList } from '@/constants/unleashList';
+import { FormNextLink } from 'grommet-icons';
+import { Button } from '../UI/Button/Button';
+import Image from 'next/image';
+import { BestSellers } from '../BestSellers/BestSellers';
+import { Recent } from '../Recent/Recent';
+import Link from 'next/link';
 
 export const Unleash: FC = () => {
   const recentStyles = {
     container: styles.unleash__recentContainer
-  }
+  };
 
   return (
     <section className={styles.unleash}>
@@ -36,8 +37,11 @@ export const Unleash: FC = () => {
               </div>
             ))}
           </ul>
+
           <Button type="button" className={styles.explore__button}>
-            Explore more{' '}
+            <Link href="/stats" style={{ color: '#fff' }}>
+              Explore more{' '}
+            </Link>
             <FormNextLink className={styles.next__icon} color="white" />
           </Button>
         </article>
@@ -47,5 +51,5 @@ export const Unleash: FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

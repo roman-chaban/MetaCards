@@ -1,0 +1,64 @@
+@import '../../assets/styles/stack.scss';
+
+.statsTable {
+  width: 100%;
+  padding-bottom: rem(100px);
+}
+
+.stats__table_body {
+  display: flex;
+  flex-direction: column;
+  gap: rem(45px);
+}
+
+.stats__table_bodyRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: rem(25px);
+  border-bottom: 1.5px solid $color-table-border-bottom;
+}
+
+.stats__table_dataCell {
+  display: flex;
+  align-items: center;
+  gap: rem(22px);
+}
+
+.stats__table_dataTitles {
+  display: flex;
+  flex-direction: column;
+  gap: rem(3px);
+}
+
+.table__first_title {
+  max-width: 150px;
+  color: $color-button-bg;
+  font-size: $font-size-detail-title;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.table__second_title {
+  line-height: 150%;
+  color: $color-table-subTitle;
+  font-size: $font-size-create-subtitle;
+}
+
+.volume,
+.rating,
+.owners,
+.items {
+  color: $color-button-bg;
+  font-weight: 600;
+  font-size: $font-size-create-subtitle;
+  line-height: 140%;
+}
+
+.percent {
+  color: $color-dark-green;
+  font-weight: 600;
+  font-size: $font-size-create-subtitle;
+  line-height: 140%;
+}
+

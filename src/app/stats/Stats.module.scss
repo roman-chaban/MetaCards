@@ -1,0 +1,26 @@
+@import '../../assets/styles/stack.scss';
+
+.stats {
+  min-height: 100vh;
+}
+
+.stats__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(120px);
+  @include container;
+}
+
+@media (max-width: rem(1250px)) {
+  .stats__container {
+    padding-left: rem(40px);
+    padding-right: rem(40px);
+  }
+}
+
+
+@media  (max-width: rem(1100px)) {
+    .stats__container {
+      gap: rem(60px);
+    }
+}

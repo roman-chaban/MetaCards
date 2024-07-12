@@ -1,0 +1,112 @@
+[
+    {
+        "image": "/images/statsIcons/nft-first.svg",
+        "title": "Alex Ca.",
+        "subTitle": "By Alex",
+        "rating": "8,456",
+        "percent": "+ 27.78%",
+        "price": "3,5",
+        "owner": "2,2K",
+        "items": 500
+    },
+    {
+        "image": "/images/statsIcons/nft-second.svg",
+        "title": "Dura Gx.",
+        "subTitle": "By Dura",
+        "rating": "4,486",
+        "percent": "+ 09.78%",
+        "price": "2,4",
+        "owner": "2,2K",
+        "items": 900
+    },
+    {
+        "image": "/images/statsIcons/nft-third.svg",
+        "title": "Michal Yu.",
+        "subTitle": "By Michal",
+        "rating": "9,124",
+        "percent": "+ 11.78%",
+        "price": "3,5",
+        "owner": "2,2K",
+        "items": 920
+    },
+    {
+        "image": "/images/statsIcons/nft-four.svg",
+        "title": "Differy Da.",
+        "subTitle": "By Tom",
+        "rating": "3,657",
+        "percent": "+ 22.78%",
+        "price": "2,4",
+        "owner": "2,2K",
+        "items": 300
+    },
+    {
+        "image": "/images/statsIcons/nft-five.svg",
+        "title": "Union Ca.",
+        "subTitle": "By Jerry",
+        "rating": "4,486",
+        "percent": "+ 27.78%",
+        "price": "2,4",
+        "owner": "2,2K",
+        "items": 800
+    },
+    {
+        "image": "/images/statsIcons/nft-second.svg",
+        "title": "Dura Gx.",
+        "subTitle": "By Dura",
+        "rating": "4,486",
+        "percent": "+ 09.78%",
+        "price": "2,4",
+        "owner": "2,2K",
+        "items": 900
+    },
+    {
+        "image": "/images/statsIcons/nft-third.svg",
+        "title": "Michal Yu.",
+        "subTitle": "By Michal",
+        "rating": "9,124",
+        "percent": "+ 11.78%",
+        "price": "3,5",
+        "owner": "2,2K",
+        "items": 920
+    },
+    {
+        "image": "/images/statsIcons/nft-four.svg",
+        "title": "Differy Da.",
+        "subTitle": "By Tom",
+        "rating": "3,657",
+        "percent": "+ 22.78%",
+        "price": "2,4",
+        "owner": "2,2K",
+        "items": 300
+    },
+    {
+        "image": "/images/statsIcons/nft-four.svg",
+        "title": "Alex Ca.",
+        "subTitle": "By Alex",
+        "rating": "8,456",
+        "percent": "+ 27.78%",
+        "price": "3,5",
+        "owner": "2,2K",
+        "items": 900
+    },
+    {
+        "image": "/images/statsIcons/nft-five.svg",
+        "title": "Alex Ca.",
+        "subTitle": "By Alex",
+        "rating": "8,456",
+        "percent": "+ 27.78%",
+        "price": "3,5",
+        "owner": "2,2K",
+        "items": 900
+    },
+    {
+        "image": "/images/statsIcons/nft-six.svg",
+        "title": "Alex Ca.",
+        "subTitle": "By Alex",
+        "rating": "8,456",
+        "percent": "+ 27.78%",
+        "price": "3,5",
+        "owner": "2,2K",
+        "items": 900
+    }
+]
