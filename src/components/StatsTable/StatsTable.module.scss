@@ -1,37 +1,51 @@
 @import '../../assets/styles/stack.scss';
 
+.tableContainer {
+  overflow-x: auto;
+  margin-bottom: rem(20px);
+}
+
 .statsTable {
   width: 100%;
-  padding-bottom: rem(100px);
+  border-collapse: collapse;
 }
 
-.stats__table_body {
+.tableBody {
   display: flex;
   flex-direction: column;
-  gap: rem(45px);
+  gap: rem(30px);
+  margin-bottom: rem(200px);
 }
 
-.stats__table_bodyRow {
+.statsTableRow {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: rem(25px);
   border-bottom: 1.5px solid $color-table-border-bottom;
+  padding: rem(20px) 0;
+  flex-wrap: wrap;
 }
 
-.stats__table_dataCell {
+.statsTableDataCell {
   display: flex;
   align-items: center;
-  gap: rem(22px);
+  gap: rem(10px);
+  flex: 1;
+  min-width: rem(100px);
 }
 
-.stats__table_dataTitles {
+.statsTableDataTitles {
   display: flex;
   flex-direction: column;
   gap: rem(3px);
 }
 
-.table__first_title {
+.tableIcon {
+  width: 85px;
+  height: 85px;
+}
+
+.tableFirstTitle {
   max-width: 150px;
   color: $color-button-bg;
   font-size: $font-size-detail-title;
@@ -39,7 +53,7 @@
   line-height: 140%;
 }
 
-.table__second_title {
+.tableSecondTitle {
   line-height: 150%;
   color: $color-table-subTitle;
   font-size: $font-size-create-subtitle;
@@ -48,17 +62,88 @@
 .volume,
 .rating,
 .owners,
-.items {
+.items,
+.percent {
   color: $color-button-bg;
   font-weight: 600;
   font-size: $font-size-create-subtitle;
   line-height: 140%;
+  text-align: center;
+  flex: 1;
+  min-width: rem(50px);
 }
 
 .percent {
   color: $color-dark-green;
-  font-weight: 600;
-  font-size: $font-size-create-subtitle;
-  line-height: 140%;
 }
 
+@media (max-width: rem(1300px)) {
+  .tableIcon {
+    width: 55px;
+    height: 55px;
+  }
+  .tableFirstTitle {
+    font-size: $font-size-subtitle;
+  }
+  .tableSecondTitle {
+    font-size: $font-size-placeholder;
+  }
+  .volume,
+  .rating,
+  .owners,
+  .items,
+  .percent {
+    font-size: $font-size-base;
+  }
+}
+
+@media (max-width: rem(768px)) {
+  .tableIcon {
+    width: 45px;
+    height: 45px;
+  }
+  .tableFirstTitle {
+    font-size: $font-size-placeholder;
+  }
+  .tableSecondTitle {
+    font-size: $font-size-placeholder;
+  }
+  .volume,
+  .rating,
+  .owners,
+  .items,
+  .percent {
+    font-size: $font-size-subtitle-small;
+    min-width: rem(40px);
+  }
+}
+
+@media (max-width: rem(320px)) {
+  .tableIcon {
+    width: 35px;
+    height: 35px;
+  }
+  .tableFirstTitle,
+  .tableSecondTitle {
+    font-size: $font-size-subtitle-small;
+    max-width: 100px;
+  }
+  .volume,
+  .rating,
+  .owners,
+  .items,
+  .percent {
+    font-size: $font-size-subtitle-small;
+    min-width: rem(30px);
+  }
+  .statsTableRow {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: rem(5px) 0;
+    gap: rem(5px);
+  }
+  .statsTableDataCell {
+    gap: rem(5px);
+  }
+}

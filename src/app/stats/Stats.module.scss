@@ -1,7 +1,7 @@
 @import '../../assets/styles/stack.scss';
 
 .stats {
-  min-height: 100vh;
+  display: flex;
 }
 
 .stats__container {
@@ -11,10 +11,11 @@
   @include container;
 }
 
-@media (max-width: rem(1250px)) {
+@media (max-width: rem(1300px)) {
   .stats__container {
     padding-left: rem(40px);
     padding-right: rem(40px);
+    gap: rem(25px);
   }
 }
 

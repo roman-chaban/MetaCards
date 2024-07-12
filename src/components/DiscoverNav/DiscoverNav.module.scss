@@ -40,6 +40,14 @@
   background: transparent;
 }
 
+
+@media (max-width: rem(1100px)) {
+  .discover__nav {
+    padding-top: rem(60px);
+  }
+}
+
+
 @media (max-width: rem(500px)) {
   .nav__buttons {
     gap: rem(14px);
