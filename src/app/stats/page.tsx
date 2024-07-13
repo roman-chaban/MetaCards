@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import styles from './Stats.module.scss';
 import { LeaderBoard } from '@/components/LeaderBoard/LeaderBoard';
-import { StatsNav } from '@/components/StatsNav/StatsNav';
 import { navItemsTitles } from '@/constants/statsNavTitles';
 import { StatsTable } from '@/components/StatsTable/StatsTable';
 
