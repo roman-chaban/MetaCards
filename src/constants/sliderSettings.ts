@@ -1,14 +1,13 @@
-export interface SliderSettings {
+type SliderSettings = {
   navigation?: boolean;
   pagination?: boolean | { clickable: boolean };
   autoplay?: boolean | { delay: number };
   scrollbar?: boolean;
   loop?: boolean;
-  speed?: number;
-  slidesPerView?: number | 'auto';
+  slidesPerView?: number | "auto" | undefined;
   spaceBetween?: number;
-  [key: string]: any;
-}
+  speed?: number;
+};
 
 export const sliderSettings: SliderSettings = {
   navigation: true,
@@ -16,6 +15,6 @@ export const sliderSettings: SliderSettings = {
   autoplay: { delay: 3000 },
   loop: false,
   speed: 900,
-  slidesPerView: 'auto',
+  slidesPerView: 'auto', 
   spaceBetween: 10
 };

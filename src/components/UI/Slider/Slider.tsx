@@ -23,7 +23,7 @@ interface SliderProps {
     autoplay?: boolean | { delay: number };
     scrollbar?: boolean;
     loop?: boolean;
-    slidesPerView?: number;
+    slidesPerView?: number | 'auto';
     spaceBetween?: number;
     speed?: number;
   };
