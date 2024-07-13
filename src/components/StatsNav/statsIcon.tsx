@@ -1,4 +1,4 @@
-import styles from './StatsNav.module.scss';
+import styles from '../../components/StatsTable/StatsTable.module.scss';
 
 export const statsIcon = (
   <svg

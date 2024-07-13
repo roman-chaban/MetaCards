@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .collections {
   background: $color-explore-background;
@@ -116,130 +116,9 @@
   }
 }
 
-@media (max-width: rem(1200px)) {
-  .collection__title {
-    font-size: $font-size-subtitle-large;
-  }
-
-  .collections__table_title,
-  .collections__table_item {
-    font-size: $font-size-link;
-  }
-
-  .collections__table_menu {
-    gap: 12.5rem;
-  }
-
-  .table__icon {
-    max-width: 60px;
-    max-height: 60px;
-  }
-
-  .table__first_title {
-    font-size: $font-size-create-subtitle;
-  }
-
-  .table__second_title {
-    font-size: $font-size-subtitle;
-  }
-
-  .volume,
-  .rating,
-  .items,
-  .owners,
-  .percent {
-    font-size: $font-size-link;
-  }
-}
-
-@media (min-width: 630px) {
-  .volumeTitle,
-  .volume__title {
-    display: none;
-  }
-  .percentTitle {
-    display: none;
-  }
-}
-
-@include onTablet {
-  .collection__title {
-    font-size: $font-size-media-title;
-  }
-  .collections__table_menu {
-    gap: 9rem;
-  }
-  .collection__table_dataCell {
-    gap: 1.5rem;
-  }
-  .collections__table_header {
-    gap: rem(50px);
-  }
-
-  .collections__table_bodyRow {
-    gap: rem(30px);
-  }
-  .collection__table_item {
-    font-size: $font-size-bid-medium;
-  }
-}
-
-@include onTabletMedium {
+@media (max-width: rem(1180px)) {
   .collection__container {
-    @include tabletContainerPaddings;
-  }
-  .collections__table_bodyRow {
-    gap: rem(10px);
-  }
-}
-
-@include onMobileLarge {
-  .items,
-  .rating,
-  .percent,
-  .owners,
-  .volume {
-    display: none;
-  }
-  .collections__table_bodyRow {
-    justify-content: space-between;
-    align-items: center;
-  }
-  .collections__table_header {
-    display: none;
-  }
-  .collections__table_menu {
-    justify-content: space-between;
-    align-items: center;
-  }
-  .volume__title {
-    line-height: 130%;
-    letter-spacing: 0.01em;
-    font-weight: 500;
-    font-size: $font-size-link;
-    color: $color-gray-collection;
-  }
-  .volumeTitle {
-    display: flex;
-    align-items: center;
-
-    font-weight: 600;
-    line-height: 140%;
-    color: $color-button-bg;
-  }
-  .percentTitle {
-    color: $color-green-light;
-    font-weight: 600;
-    line-height: 140%;
-  }
-}
-
-@include onMobile {
-  .collections {
-    padding-top: 0;
-  }
-  .collection__container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: rem(30px);
+    padding-right: rem(30px);
   }
 }

@@ -48,6 +48,12 @@
 }
 
 
+@media (max-width: rem(600px)) {
+  .discover__nav_title {
+    font-size: $font-size-media-title;
+  }
+}
+
 @media (max-width: rem(500px)) {
   .nav__buttons {
     gap: rem(14px);

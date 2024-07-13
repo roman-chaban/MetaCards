@@ -160,20 +160,19 @@
   height: 33px;
 }
 
+@media (max-width: rem(1440px)) {
+  .search__input {display: none;}
+}
+
 @media (max-width: rem(1295px)) {
   .connect__button {
     padding: rem(16px);
     font-size: $font-size-placeholder;
   }
-  .search__input {
-    max-width: rem(225px);
-    gap: rem(10px);
-  }
 }
 
 @media (max-width: rem(1180px)) {
   .header__container {
-    padding-right: rem(25px);
     gap: rem(50px);
   }
   .header__logo {
@@ -189,7 +188,7 @@
   .connect__button {
     padding: rem(12px);
     max-height: 50px;
-    font-size: 0.70rem;
+    font-size: 0.7rem;
   }
   .search__input {
     max-height: 50px;

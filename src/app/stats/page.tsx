@@ -14,8 +14,7 @@ export default function Stats() {
     <section className={styles.stats}>
       <div className={styles.stats__container}>
         <LeaderBoard />
-        <StatsNav navItemsLabels={navItemsTitles} title="Collection" />
-        <StatsTable />
+        <StatsTable navItemsLabels={navItemsTitles} />
       </div>
     </section>
   );

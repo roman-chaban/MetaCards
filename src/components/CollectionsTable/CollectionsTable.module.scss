@@ -50,6 +50,11 @@
 .firstCell {
   gap: rem(25px);
   width: 300px;
+  justify-content: start;
+}
+
+#first__row {
+  justify-content: start;
 }
 
 .statsTableDataTitles {
@@ -99,6 +104,16 @@
   }
   .gridTable {
     row-gap: rem(20px);
+  }
+  .firstCell {
+    max-width: 200px;
+  }
+  #first__row {
+    max-width: 200px;
+  }
+  .gridHeader,
+  .gridRow {
+    grid-template-columns: 200px repeat(5, 1fr);
   }
 }
 

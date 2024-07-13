@@ -4,6 +4,7 @@ interface navItemsLabels {
   tertiary: string;
   quaternary: string;
   quinary: string;
+  sixty: string;
 }
 
 export const navItemsTitles: navItemsLabels = {
@@ -11,5 +12,6 @@ export const navItemsTitles: navItemsLabels = {
   secondary: '24 H',
   tertiary: 'Floor Price',
   quaternary: 'Owner',
-  quinary: 'Items'
+  quinary: 'Items',
+  sixty: 'Collection'
 };
