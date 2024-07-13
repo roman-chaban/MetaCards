@@ -1,14 +1,13 @@
 export interface SliderSettings {
-  navigation?: boolean
-  pagination?: boolean | { clickable: boolean }
-  autoplay?: boolean | { delay: number }
-  scrollbar?: boolean
-  loop?: boolean
-  speed: number
-  slidesPerView?: number
-  spaceBetween?: number
-  [key: string]: any
-  width?: string | number
+  navigation?: boolean;
+  pagination?: boolean | { clickable: boolean };
+  autoplay?: boolean | { delay: number };
+  scrollbar?: boolean;
+  loop?: boolean;
+  speed?: number;
+  slidesPerView?: number | 'auto';
+  spaceBetween?: number;
+  [key: string]: any;
 }
 
 export const sliderSettings: SliderSettings = {
@@ -17,6 +16,6 @@ export const sliderSettings: SliderSettings = {
   autoplay: { delay: 3000 },
   loop: false,
   speed: 900,
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   spaceBetween: 10
-}
+};

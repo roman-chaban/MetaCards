@@ -30,9 +30,7 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
     setIsActive(false)
   }
 
-  const handleMenuCloseOnEscape: KeyboardEventHandler<
-    HTMLDivElement
-  > = event => {
+  const handleMenuCloseOnEscape: KeyboardEventHandler<HTMLDivElement> = event => {
     if (event.code === 'Escape' || event.code === 'Esc') {
       setIsActive(false)
     }
@@ -42,7 +40,7 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
     <nav
       tabIndex={0}
       onKeyDown={handleMenuCloseOnEscape}
-      className={`${styles.burgerContainer} ${isActive && styles.active}`}
+      className={`${styles.burgerContainer} ${isActive ? styles.active : ''}`}
     >
       <div className={styles.burger__logo}>
         <div className={styles.burger__logo__wrapper}>
@@ -62,7 +60,7 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
         />
       </div>
       <div
-        className={`${styles.burgerNavigation__wrapper} ${isActive && styles.active}`}
+        className={`${styles.burgerNavigation__wrapper} ${isActive ? styles.active : ''}`}
       >
         <nav className={styles.burgerNav}>
           <ul className={styles.burger__menu}>
@@ -80,7 +78,7 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
           </ul>
         </nav>
         <div className={styles.burger__copyright}>
-          &copy; 2024 MetaCards, inc. All Rights Reserved
+          &copy; 2024 MetaCards, Inc. All Rights Reserved
         </div>
       </div>
     </nav>

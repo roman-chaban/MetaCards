@@ -161,7 +161,12 @@
 }
 
 @media (max-width: rem(1440px)) {
-  .search__input {display: none;}
+  .search__input {
+    display: none;
+  }
+  .header__nav > .header__nav_menu {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: rem(1295px)) {
@@ -186,9 +191,7 @@
     width: 100%;
   }
   .connect__button {
-    padding: rem(12px);
     max-height: 50px;
-    font-size: 0.7rem;
   }
   .search__input {
     max-height: 50px;
