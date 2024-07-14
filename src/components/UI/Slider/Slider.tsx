@@ -15,6 +15,7 @@ import 'swiper/css/scrollbar';
 import './Slider.scss';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { setSwiperIndex } from '@/store/slices/swiperSlice';
+import { SliderButtons } from '@/components/SliderButtons/SliderButtons';
 
 interface SliderProps {
   settings?: {
@@ -40,7 +41,7 @@ const SliderWithButtons: FC<SliderProps> = ({
   const dispatch = useAppDispatch();
 
   return (
-    <div className="slider-container" style={{ width }}>
+    <div className="slider-container hero__slider" style={{ width }}>
       <CustomSwiper
         modules={[Navigation, Pagination, Autoplay, A11y, Scrollbar]}
         navigation={settings.navigation}
@@ -67,6 +68,7 @@ const SliderWithButtons: FC<SliderProps> = ({
           </SwiperSlide>
         ))}
       </CustomSwiper>
+      <SliderButtons swiperRef={swiperRef} />
     </div>
   );
 };

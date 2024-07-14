@@ -219,7 +219,7 @@ export const SellCreate: FC<SellCreateProps> = ({ inputs, setInputs }) => {
       />
       <Switcher title="Direct Sale" subTitle="No Bids - Only Direct Selling" />
       <Button type="button" className={styles.create__button}>
-        Create
+        <span>Create</span>
       </Button>
     </div>
   );

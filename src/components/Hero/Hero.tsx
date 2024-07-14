@@ -1,8 +1,10 @@
-import type { FC } from 'react'
-import styles from './Hero.module.scss'
-import { Button } from '../UI/Button/Button'
-import { HeroFeatures } from '../HeroFeatures/HeroFeatures'
-import { HeroGallery } from '../HeroGallery/HeroGallery'
+import type { FC } from 'react';
+import styles from './Hero.module.scss';
+import { Button } from '../UI/Button/Button';
+import { HeroFeatures } from '../HeroFeatures/HeroFeatures';
+import { HeroGallery } from '../HeroGallery/HeroGallery';
+import Link from 'next/link';
+import { Links } from '@/enums/links';
 
 export const Hero: FC = () => {
   return (
@@ -21,9 +23,14 @@ export const Hero: FC = () => {
             </p>
           </div>
           <div className={styles.hero__information__buttons}>
-            <Button type="button" className={styles.explore__button}>
-              Explore More
-            </Button>
+            <Link href={Links.DISCOVER}>
+              <Button type="button" className={styles.explore__button}>
+                <span>
+                Explore More
+
+                </span>
+              </Button>
+            </Link>
             <Button type="button" className={styles.create__button}>
               Create NFT
             </Button>
@@ -33,5 +40,5 @@ export const Hero: FC = () => {
         <HeroGallery />
       </div>
     </section>
-  )
-}
+  );
+};

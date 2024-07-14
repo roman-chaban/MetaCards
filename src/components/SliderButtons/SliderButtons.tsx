@@ -1,6 +1,6 @@
 'use client';
 
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { Button } from '../UI/Button/Button';
 import { FormNextLink, FormPreviousLink } from 'grommet-icons';
 import styles from '@/components/Hero/Hero.module.scss';
@@ -15,42 +15,47 @@ interface SliderButtonsProps {
 export const SliderButtons: FC<SliderButtonsProps> = ({ swiperRef }) => {
   const dispatch = useAppDispatch();
 
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.on('slideChange', () => {
+        dispatch(setSwiperIndex(swiperRef.current!.activeIndex));
+      });
+    }
+  }, [swiperRef, dispatch]);
+
   const handleNext = () => {
     if (swiperRef.current) {
       swiperRef.current.slideNext();
-      dispatch(setSwiperIndex(swiperRef.current.activeIndex));
     }
-    console.log(swiperRef.current);
-    console.log('Next');
   };
 
   const handlePrev = () => {
     if (swiperRef.current) {
       swiperRef.current.slidePrev();
-      dispatch(setSwiperIndex(swiperRef.current.activeIndex));
     }
-    console.log('Prev');
   };
 
   return (
-    <div className={styles.sliderButtons}>
-      <Button
-        title="Prev Slide"
-        type="button"
-        className={styles.prev__button}
-        onClick={handlePrev}
-      >
-        <FormPreviousLink />
-      </Button>
-      <span className={styles.slider__decoration}></span>
-      <Button
-        title="Next Slide"
-        type="button"
-        className={styles.next__button}
-        onClick={handleNext}
-      >
-        <FormNextLink />
-      </Button>
+    <div className={styles.sliderButtons__container}>
+      <div className={styles.sliderButtons}>
+        <Button
+          title="Prev Slide"
+          type="button"
+          className={styles.prev__button}
+          onClick={handlePrev}
+        >
+          <FormPreviousLink />
+        </Button>
+        <span className={styles.slider__decoration}></span>
+        <Button
+          title="Next Slide"
+          type="button"
+          className={styles.next__button}
+          onClick={handleNext}
+        >
+          <FormNextLink />
+        </Button>
+      </div>
     </div>
   );
 };

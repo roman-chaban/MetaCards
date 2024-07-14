@@ -11,7 +11,20 @@
   background: none !important;
 }
 
+.hero__slider {
+  max-width: 100% !important;
+}
+
+.swiper-scrollbar-drag,
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  display: none !important;
+}
+
 .slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -31,7 +44,7 @@
       margin-right: 0 !important;
 
       @media (max-width: 1200px) {
-        width: 250px !important;
+        width: 225px !important;
       }
 
       @media (max-width: 768px) {

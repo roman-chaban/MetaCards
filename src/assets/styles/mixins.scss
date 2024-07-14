@@ -12,18 +12,20 @@
   padding-left: rem(100px);
 }
 
-@mixin button($maxWidth) {
-  width: 100%;
-  max-width: $maxWidth;
-  height: 57px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: uppercase;
-  border-radius: rem(16px);
-  padding: 16px 25px;
-  background: $color-button-bg;
-  color: $color-white;
+@mixin button($width: 179px) {
+  width: $width;
+  padding: 0.8em 1.2em;
+  border-radius: 0.8em;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin secondaryButton() {

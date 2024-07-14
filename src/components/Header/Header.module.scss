@@ -122,6 +122,8 @@
 .connect__button {
   @include button(100%);
   font-size: $font-size-base;
+  background: $color-button-bg;
+  color: $color-white;
 }
 
 .header__scrollActive {

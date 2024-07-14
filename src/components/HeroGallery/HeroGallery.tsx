@@ -3,22 +3,69 @@
 import { useRef, type FC } from 'react';
 import styles from '@/components/Hero/Hero.module.scss';
 import Image from 'next/image';
-import { SliderButtons } from '../SliderButtons/SliderButtons';
+import { Swiper as ReactSwiper, SwiperSlide } from 'swiper/react';
 import Swiper from 'swiper';
+import 'swiper/css';
+import './HeroSwiper.scss';
+import { SliderButtons } from '../SliderButtons/SliderButtons';
+import { useAppDispatch } from '@/hooks/useAppDispatch';
+import { setSwiperIndex } from '@/store/slices/swiperSlice';
 
 export const HeroGallery: FC = () => {
   const swiperRef = useRef<Swiper | null>(null);
+  const dispatch = useAppDispatch();
   return (
     <div className={styles.heroGallery}>
       <div className={styles.heroNft__banner}>
-        <Image
-          priority
-          className={styles.nft__image}
-          src="/images/hero/nft-1.svg"
-          alt="NFT Banner Image"
-          width={391}
-          height={394}
-        />
+        <div className={styles.image__container}>
+          <ReactSwiper
+            onSwiper={(swiper: Swiper) => {
+              swiperRef.current = swiper;
+            }}
+            onSlideChange={() => {
+              if (swiperRef.current) {
+                dispatch(setSwiperIndex(swiperRef.current.activeIndex));
+              }
+            }}
+          >
+            <SwiperSlide>
+              <div className={styles.image__container}>
+                <Image
+                  priority
+                  className={styles.nft__image}
+                  src="/images/hero/nft-1.svg"
+                  alt="NFT Banner Image 2"
+                  width={310}
+                  height={394}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.image__container}>
+                <Image
+                  priority
+                  className={styles.nft__image}
+                  src="/images/hero/nft-1.svg"
+                  alt="NFT Banner Image 2"
+                  width={310}
+                  height={394}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.image__container}>
+                <Image
+                  priority
+                  className={styles.nft__image}
+                  src="/images/hero/nft-1.svg"
+                  alt="NFT Banner Image 2"
+                  width={310}
+                  height={394}
+                />
+              </div>
+            </SwiperSlide>
+          </ReactSwiper>
+        </div>
         <SliderButtons swiperRef={swiperRef} />
       </div>
       <div className={styles.heroNft__subGallery}>

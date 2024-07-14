@@ -1,14 +1,11 @@
 'use client';
 
-import { useRef, FC } from 'react';
-import Swiper from 'swiper';
+import {  FC } from 'react';
 import styles from './Weekly.module.scss';
-import { SliderButtons } from '../SliderButtons/SliderButtons';
 import { Recent } from '../Recent/Recent';
 import { NFTCards } from '../NFTCards/NFTCards';
 
 export const Weekly: FC = () => {
-  const swiperRef = useRef<Swiper | null>(null);
   const nftCardClasses = {
     container: styles.weekly__nftCardsContainer,
     card: styles.weekly__card,
@@ -31,7 +28,6 @@ export const Weekly: FC = () => {
         </div>
         <NFTCards classNames={nftCardClasses} settings={true} />
         <div className={styles.slider__buttons}>
-          <SliderButtons swiperRef={swiperRef} />
         </div>
       </div>
       <Recent classNames={recentStyles} />
