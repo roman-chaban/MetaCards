@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .weekly {
   background: $color-section-background;
@@ -53,7 +53,8 @@
 }
 
 .card__image {
-  height: 253px;
+  max-height: 253px;
+  height: auto;
   object-fit: cover;
   object-position: center;
   border-radius: 20px;
@@ -127,10 +128,12 @@
 
 .card__button {
   @include button(179px);
-  max-width: 121px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 9px 18px;
+  width: 121px;
   height: 51px;
+  padding: 6px 13px;
+  height: 51px;
+  font-size: $font-size-card-subtitle;
   background: $color-button-bg;
   color: $color-white;
 }
@@ -147,7 +150,6 @@
   bottom: -120px;
   right: 80px;
 }
-
 
 @media (max-width: 1200px) {
   .weekly__nftCardsContainer {
@@ -219,7 +221,7 @@
     justify-content: start;
   }
 
-  .image__block>.image__block_time {
+  .image__block > .image__block_time {
     padding: 5px 8px;
     font-size: $font-size-circle-small;
     right: 5px;

@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .unleash {
   background: $color-explore-background;
@@ -48,17 +48,21 @@
 }
 
 .explore__button {
-  @include button(179px);
+  @include button(164px);
   display: flex;
   align-items: center;
   gap: rem(12px);
   border-radius: rem(14px);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   max-width: 185px;
   margin-top: rem(25px);
   position: relative;
   overflow: hidden;
   transition: background-color 0.3s;
+  line-height: 125%;
+  font-weight: 500;
+  background: $color-black;
+  font-size: $font-size-card-subtitle;
   &:hover {
     background: $color-gray-subtitle;
   }
