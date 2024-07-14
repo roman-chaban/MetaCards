@@ -14,8 +14,8 @@
 
 @mixin button($width: 179px) {
   width: $width;
-  padding: 0.8em 1.2em;
   border-radius: 0.8em;
+  padding: 0 20px;
   font-family: inherit;
   font-weight: 500;
   font-size: 18px;
@@ -26,6 +26,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  height: 54px;
 }
 
 @mixin secondaryButton() {

@@ -71,10 +71,11 @@
   background: linear-gradient(
     to top,
     $color-gray-light,
-    $color-bestSellers-subTitle
+    $color-background
   );
   color: ghostwhite;
   transition: all 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  max-height: 50px;
 
   svg {
     width: 1.2em;
@@ -88,7 +89,7 @@
     transition: color 0.4s;
     display: inline-flex;
     align-items: center;
-    padding: 0.8em 1.2em 0.8em 1.05em;
+    height: 51px;
   }
 
   &::before,
@@ -112,7 +113,7 @@
   &:hover {
     color: $color-button-bg;
     scale: 1.1;
-    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
 
   &:active {
@@ -246,7 +247,7 @@
   .image__container {
     max-width: 200px;
   }
-};
+}
 
 @media (max-width: rem(1110px)) {
   .dots__decoration {
@@ -278,6 +279,10 @@
     align-items: center;
     font-size: $font-size-base;
     max-height: 51px;
+  }
+
+  .image__container {
+    max-width: 150px;
   }
 }
 
@@ -345,15 +350,16 @@
     gap: rem(3px);
   }
   .dots__decoration {
-    left: -55px;
+    left: -30px;
   }
   .arrow__icon {
     max-width: 90px;
     max-height: 90px;
-    right: 20px;
+    right: 35px;
   }
   .secondaryImage {
     max-width: 300px;
+    bottom: 155px;
   }
 }
 
@@ -385,7 +391,7 @@
     display: none;
   }
   .nft__image {
-    max-width: 80%;
+    max-width: 100%;
   }
   .secondaryImage {
     bottom: 215px;

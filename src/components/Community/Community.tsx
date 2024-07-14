@@ -1,7 +1,9 @@
-import type { FC } from 'react'
-import styles from './Community.module.scss'
-import { Button } from '../UI/Button/Button'
-import Image from 'next/image'
+import type { FC } from 'react';
+import styles from './Community.module.scss';
+import { Button } from '../UI/Button/Button';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Links } from '@/enums/links';
 
 export const Community: FC = () => {
   return (
@@ -87,16 +89,18 @@ export const Community: FC = () => {
                 Our vibrant community is full of collectors, artists, and
                 enthusiasts who share a passion for one-of-a-kind digital.
               </p>
-              <Button
-                type="button"
-                className={styles.community__infoBlock_button}
-              >
-                Join Our Community
-              </Button>
+              <Link href={Links.STATS}>
+                <Button
+                  type="button"
+                  className={styles.community__infoBlock_button}
+                >
+                  Join Our Community
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
