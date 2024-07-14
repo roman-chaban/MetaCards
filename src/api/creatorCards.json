@@ -53,5 +53,60 @@
     "subTitle": "Perperzon",
     "rating": "16,4",
     "likes": "200"
+  },
+  {
+    "id": 6,
+    "image": "/images/creator/first-icon.svg",
+    "title": "Sun-Glass",
+    "iconPrimary": "/images/creator/check.svg",
+    "iconSecondary": "/images/creator/ethereum.svg",
+    "iconThirdary": "/images/creator/heart.svg",
+    "subTitle": "Perperzon",
+    "rating": "16,4",
+    "likes": "200"
+  },
+  {
+    "id": 7,
+    "image": "/images/creator/nft-second.svg",
+    "title": "Sun-Glass",
+    "iconPrimary": "/images/creator/check.svg",
+    "iconSecondary": "/images/creator/ethereum.svg",
+    "iconThirdary": "/images/creator/heart.svg",
+    "subTitle": "Perperzon",
+    "rating": "16,4",
+    "likes": "200"
+  },
+  {
+    "id": 8,
+    "image": "/images/creator/nft-third.svg",
+    "title": "Sun-Glass",
+    "iconPrimary": "/images/creator/check.svg",
+    "iconSecondary": "/images/creator/ethereum.svg",
+    "iconThirdary": "/images/creator/heart.svg",
+    "subTitle": "Perperzon",
+    "rating": "16,4",
+    "likes": "200"
+  },
+  {
+    "id": 9,
+    "image": "/images/creator/nft-four.svg",
+    "title": "Sun-Glass",
+    "iconPrimary": "/images/creator/check.svg",
+    "iconSecondary": "/images/creator/ethereum.svg",
+    "iconThirdary": "/images/creator/heart.svg",
+    "subTitle": "Perperzon",
+    "rating": "16,4",
+    "likes": "200"
+  },
+  {
+    "id": 10,
+    "image": "/images/creator/nft-five.svg",
+    "title": "Sun-Glass",
+    "iconPrimary": "/images/creator/check.svg",
+    "iconSecondary": "/images/creator/ethereum.svg",
+    "iconThirdary": "/images/creator/heart.svg",
+    "subTitle": "Perperzon",
+    "rating": "16,4",
+    "likes": "200"
   }
 ]

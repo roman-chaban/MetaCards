@@ -49,8 +49,8 @@ const CollectionsTable: FC = () => {
               {tableItem.percent}
             </div>
             <div className={styles.gridCell}>{tableItem.rating}</div>
-            <div className={styles.gridCell}>{tableItem.owners}</div>
-            <div className={styles.gridCell}>{tableItem.items}</div>
+            <div className={styles.gridCell} id={styles.owners}>{tableItem.owners}</div>
+            <div className={styles.gridCell} id={styles.items}>{tableItem.items}</div>
           </div>
         ))}
       </div>

@@ -84,6 +84,7 @@
   height: auto;
   position: relative;
   bottom: 210px;
+  right: 285px;
   height: auto;
 }
 
@@ -150,7 +151,9 @@
     text-align: center;
     color: $color-white;
     border-radius: rem(12px);
-    transition: background 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, transform 0.3s ease-in-out 0s;
+    transition:
+      background 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0s,
+      transform 0.3s ease-in-out 0s;
 
     &:hover {
       transform: scale(1.1);
@@ -267,6 +270,19 @@
   }
 }
 
+.first__icon,
+.second__icon,
+.third__icon,
+.four__icon,
+.five__icon,
+.six__icon,
+.seven__icon,
+.eight__icon,
+.nine__icon {
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
 @media (max-width: 992px) {
   .community__firstBlock {
     max-width: 700px;
@@ -381,7 +397,7 @@
   }
 
   .first__icon {
-    bottom: 259px;
+    bottom: 268px;
   }
 
   .second__icon {
@@ -390,19 +406,19 @@
   }
 
   .third__icon {
-    top: 170px;
+    top: 185px;
   }
 
   .four__icon {
-    left: 100px;
+    left: 110px;
   }
 
   .seven__icon {
-    bottom: 250px;
+    bottom: 260px;
   }
 
   .six__icon {
-    right: 203px;
+    right: 210px;
   }
 }
 
@@ -450,29 +466,8 @@
   }
 }
 
+
 @media (max-width: 375px) {
-  .community__firstBlock {
-    max-width: 390px;
-  }
-
-  .community__secondBlock {
-    max-width: 250px;
-    padding: 15px;
-  }
-
-  .community__infoBlock {
-    gap: rem(15px);
-  }
-
-  .community__infoBlock_title {
-    font-size: 1.5rem;
-  }
-
-  .community__infoBlock_button {
-    padding: 12px;
-    font-size: 0.8rem;
-  }
-
   .first__icon {
     right: 55px;
   }
