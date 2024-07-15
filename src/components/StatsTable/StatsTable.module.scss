@@ -15,7 +15,7 @@
 .gridHeader,
 .gridRow {
   display: grid;
-  grid-template-columns: 300px repeat(5, 1fr);
+  grid-template-columns: 250px repeat(5, 1fr);
   align-items: center;
 }
 
@@ -49,7 +49,8 @@
 
 .firstCell {
   gap: rem(25px);
-  width: 300px;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 .statsTableDataTitles {
@@ -114,10 +115,6 @@
     justify-content: flex-start;
     padding: rem(5px);
     border-bottom: 1px solid $color-table-border-bottom;
-  }
-
-  .firstCell {
-    width: auto;
   }
 
   .gridTable {

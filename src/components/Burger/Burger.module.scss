@@ -69,7 +69,7 @@
 }
 
 .listItem__link:hover {
-  color: lighten($color-gray-medium, 10%);
+  color: lighten($color-button-bg, 10%);
   font-weight: bold;
   transform: scale(1.1);
   text-decoration: underline;
@@ -80,7 +80,7 @@
   width: 100%;
   padding: 1.5rem;
   text-align: center;
-  color: $color-search-icon;
+  color: $color-button-bg;
   margin-top: auto;
   border-top: 1px solid $color-button-bg;
 }
