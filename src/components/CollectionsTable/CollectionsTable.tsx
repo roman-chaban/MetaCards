@@ -1,3 +1,5 @@
+'use client';
+
 import { FC } from 'react';
 import styles from './CollectionsTable.module.scss';
 import {
@@ -7,9 +9,14 @@ import {
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import { collectionsNav } from '@/constants/collectionsNav';
+import { CompactTable } from '../CompactTable/CompactTable';
+import { useScreenResize } from '@/hooks/useScreenResize';
 
 const CollectionsTable: FC = () => {
-  return (
+  const { isCompact } = useScreenResize(500);
+  return isCompact ? (
+    <CompactTable />
+  ) : (
     <div className={styles.tableContainer}>
       <div className={styles.gridTable}>
         <div className={styles.gridHeader}>
@@ -49,8 +56,12 @@ const CollectionsTable: FC = () => {
               {tableItem.percent}
             </div>
             <div className={styles.gridCell}>{tableItem.rating}</div>
-            <div className={styles.gridCell} id={styles.owners}>{tableItem.owners}</div>
-            <div className={styles.gridCell} id={styles.items}>{tableItem.items}</div>
+            <div className={styles.gridCell} id={styles.owners}>
+              {tableItem.owners}
+            </div>
+            <div className={styles.gridCell} id={styles.items}>
+              {tableItem.items}
+            </div>
           </div>
         ))}
       </div>

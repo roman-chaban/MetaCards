@@ -1,0 +1,109 @@
+@import '../../assets/styles/stack.scss';
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  gap: rem(25px);
+  padding: rem(40px) 0;
+}
+
+.table__captures {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &_title {
+    color: $color-gray-collection;
+    font-size: $font-size-card-subtitle;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+  }
+}
+
+.gridRow__imageBlock {
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+.gridRow__imageBlock::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: attr(data-index);
+  position: absolute;
+  left: 27px;
+  bottom: 0px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: $color-white;
+  font-weight: 700;
+  color: $color-button-bg;
+  font-size: $font-size-explore-button-tablet;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.tableIcon {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 44px;
+  height: 44px;
+}
+
+.gridTable {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: rem(30px);
+}
+
+.gridRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gridRow__block {
+  display: flex;
+  align-items: center;
+  gap: rem(15px);
+}
+
+.statsTableDataTitles {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8px);
+}
+
+.tableFirstTitle {
+  font-weight: 600;
+  line-height: 140%;
+  font-size: $font-size-placeholder;
+  color: $color-button-bg;
+}
+
+.tableSecondTitle {
+  font-size: $font-size-subtitle-small;
+  line-height: 150%;
+  color: $color-table-subTitle;
+}
+
+.tableDetails {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8px);
+}
+
+.volume {
+  font-weight: 600;
+  line-height: 140%;
+  font-size: $font-size-placeholder;
+  color: $color-button-bg;
+}
+
+.percent {
+  line-height: 150%;
+  font-size: $font-size-bid-medium;
+}
