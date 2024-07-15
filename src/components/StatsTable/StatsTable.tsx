@@ -1,8 +1,12 @@
+'use client';
+
 import type { FC } from 'react';
 import styles from './StatsTable.module.scss';
 import statsTableItems from '@/api/stats.json';
 import Image from 'next/image';
 import { statsIcon } from '../StatsNav/statsIcon';
+import { useScreenResize } from '@/hooks/useScreenResize';
+import { CompactTable } from '../CompactTable/CompactTable';
 
 interface StatsTableProps {
   navItemsLabels: {
@@ -16,7 +20,10 @@ interface StatsTableProps {
 }
 
 export const StatsTable: FC<StatsTableProps> = ({ navItemsLabels }) => {
-  return (
+  const { isCompact } = useScreenResize(800);
+  return isCompact ? (
+    <CompactTable isMoreItems={true} />
+  ) : (
     <div className={styles.tableContainer}>
       <div className={styles.gridTable}>
         <div className={styles.gridHeader}>

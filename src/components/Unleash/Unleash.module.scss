@@ -51,18 +51,13 @@
   @include button(164px);
   display: flex;
   align-items: center;
-  gap: rem(12px);
-  border-radius: rem(14px);
-  font-family: 'Poppins', sans-serif;
-  max-width: 185px;
-  margin-top: rem(25px);
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.3s;
-  line-height: 125%;
   font-weight: 500;
-  background: $color-black;
-  font-size: $font-size-card-subtitle;
+  font-size: $font-size-base;
+  line-height: 125%;
+  text-transform: capitalize;
+  text-align: center;
+  color: $color-white;
+  background: $color-button-bg;
   &:hover {
     background: $color-gray-subtitle;
   }

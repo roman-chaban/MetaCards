@@ -15,7 +15,7 @@ import { useScreenResize } from '@/hooks/useScreenResize';
 const CollectionsTable: FC = () => {
   const { isCompact } = useScreenResize(500);
   return isCompact ? (
-    <CompactTable />
+    <CompactTable isMoreItems={false} />
   ) : (
     <div className={styles.tableContainer}>
       <div className={styles.gridTable}>
