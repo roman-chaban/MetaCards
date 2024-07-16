@@ -46,6 +46,16 @@ export const CreatorsCards: FC<CreatorsCardsProps> = ({ cards }) => {
               <div className={styles.titles} key={item.title}>
                 <h5 className={styles.infoList__title}>
                   {item.title}
+                  {parseFloat(item.title) > 16 ? (
+                    <Image
+                      src="/images/creators/ethereumIcon.svg"
+                      alt="Ethereum Icon"
+                      width={14}
+                      height={19}
+                    />
+                  ) : (
+                    ''
+                  )}
                 </h5>
                 <span className={styles.infoList__subTitle}>
                   {item.subTitle}
