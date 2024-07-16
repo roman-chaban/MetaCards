@@ -7,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function Creators() {
-  return <section className={styles.creators}></section>;
+  return <section className={styles.creators}>
+    <div className={styles.creators__container}>
+          <h1 className={styles.creators__title}>Meet Our Great Creators</h1>
+    </div>
+  </section>;
 }

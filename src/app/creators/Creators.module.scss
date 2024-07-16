@@ -3,3 +3,27 @@
 .creators {
   min-height: 100vh;
 }
+
+.creators__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(130px);
+}
+
+.creators__title {
+  padding-top: rem(155px);
+  text-align: center;
+  line-height: 67%;
+  font-weight: 600;
+  color: $color-button-bg;
+  font-size: $font-size-section-heading;
+}
+
+
+
+@media (max-width: rem(1200px)) {
+  .creators__title {
+    padding-top: rem(80px);
+    font-size: $font-size-media-title;
+  }
+}

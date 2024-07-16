@@ -72,6 +72,12 @@
    }
 }
 
+@media (max-width: 725px) {
+   .profile__banner {
+      max-height: 230px;
+   }
+}
+
 @media (max-width: 620px) {
    .profile__banner {
       display: none;

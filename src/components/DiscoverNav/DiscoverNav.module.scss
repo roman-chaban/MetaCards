@@ -40,13 +40,11 @@
   background: transparent;
 }
 
-
 @media (max-width: rem(1100px)) {
   .discover__nav {
     padding-top: rem(60px);
   }
 }
-
 
 @media (max-width: rem(600px)) {
   .discover__nav_title {
@@ -68,5 +66,20 @@
   .primaryButton__icon {
     max-width: 16px;
     max-height: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .discover__nav_title {
+    font-size: $font-size-collection-subtitle;
+  }
+  .button__primary {
+    max-width: 90px;
+    gap: rem(5px);
+    padding: rem(11px) rem(10px);
+  }
+  .primaryButton__icon {
+    max-width: 14px;
+    max-height: 14px;
   }
 }

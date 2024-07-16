@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .productDetail {
   display: flex;
@@ -33,13 +33,13 @@
   line-height: 89%;
   position: relative;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
-    width: 2px;
+    width: 3px;
     border-radius: rem(5px);
-    height: 20px;
+    height: 26px;
     background: $color-circle;
-    left: 148.5px;
+    left: 211px;
     transform: rotate(20deg);
   }
 }
@@ -235,6 +235,11 @@
   }
   .nav__title {
     font-size: $font-size-collection-subtitle;
+    &::after {
+      left: 148.5px;
+      height: 20px;
+      width: 2px;
+    }
   }
   .previous__button {
     max-width: 30px;
@@ -312,5 +317,19 @@
   .list > .list__details {
     flex-direction: column;
     align-items: start;
+  }
+  .nav__title {
+    font-size: $font-size-subtitle;
+    &::after {
+      left: 123.5px;
+    }
+  }
+  .previous__button {
+    max-width: 26px;
+    max-height: 26px;
+  }
+  .previous__icon {
+    max-width: 10px;
+    max-height: 10px;
   }
 }

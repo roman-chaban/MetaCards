@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .historyBid {
   width: 100%;
@@ -139,12 +139,12 @@
 }
 
 .select__container::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 65px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url("/images/historyBid/select-check.svg");
+  background-image: url('/images/historyBid/select-check.svg');
   background-size: 10px 15px;
   width: 10px;
   height: 15px;
@@ -161,5 +161,14 @@
 @media (max-width: 930px) {
   .historyBid {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .historyBid  {
+    min-height: 500px;
+  }
+  .historyBid__container {
+    gap: rem(45px);
   }
 }

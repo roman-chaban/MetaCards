@@ -36,6 +36,7 @@
 @media (max-width: rem(890px)) {
   .sell__block {
     flex-direction: column-reverse;
+    align-items: center;
   }
   .sell__container {
     padding-left: rem(30px);

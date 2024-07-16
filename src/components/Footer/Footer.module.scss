@@ -87,7 +87,7 @@
     font-family: "Inter", sans-serif;
     color: $color-footer-copyright;
     line-height: 1.47059;
-    font-weight: 500;
+    font-weight: 600;
     font-size: $font-size-link;
   }
 }
@@ -130,10 +130,10 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 650px) {
   .footer__top_social {
     display: none;
-  }
+  } 
 }
 
 @include onTablet {

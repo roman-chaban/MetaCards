@@ -44,7 +44,7 @@ export const Header: FC = () => {
               height={53}
             />
           </Link>
-          <h4 className={styles.logo__title}>DivSea</h4>
+          <h4 className={styles.logo__title}>MetaCards</h4>
         </div>
         <nav className={styles.header__nav}>
           <ul className={styles.header__nav_menu}>

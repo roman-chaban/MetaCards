@@ -12,7 +12,7 @@
 .buttonLine {
    display: block;
    width: rem(30px);
-   height: rem(4px);
+   height: rem(3px);
    background-color: $color-button-bg;
    position: relative;
    border-radius: rem(20px);
@@ -24,7 +24,7 @@
    position: absolute;
    top: rem(8px);
    width: rem(30px);
-   height: rem(4px);
+   height: rem(3px);
    background: $color-button-bg;
    border-radius: rem(20px);
 }
@@ -35,7 +35,7 @@
    position: absolute;
    bottom: rem(8px);
    width: rem(30px);
-   height: rem(3.5px);
+   height: rem(3px);
    background: $color-button-bg;
    border-radius: rem(20px);
 }
