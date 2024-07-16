@@ -1,15 +1,26 @@
-import { useChangePageTitle } from '@/hooks/useChangePageTitle';
-import styles from './Creators.module.scss';
-import { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'MetaCards | Creators'
-};
+import styles from './Creators.module.scss';
+import { CreatorsCards } from '@/components/CreatorsCards/CreatorsCards';
+import creators from '@/api/creators.json';
+import { useEffect, useState } from 'react';
+import { TypeCreatorsCards } from '@/interfaces/cards';
+import { useChangePageTitle } from '@/hooks/useChangePageTitle';
 
 export default function Creators() {
-  return <section className={styles.creators}>
-    <div className={styles.creators__container}>
-          <h1 className={styles.creators__title}>Meet Our Great Creators</h1>
-    </div>
-  </section>;
+  useChangePageTitle('MetaCards | Creators');
+  const [cardsInfo, setCardsInfo] = useState<TypeCreatorsCards>([]);
+
+  useEffect(() => {
+    setCardsInfo(creators);
+  }, []);
+
+  return (
+    <section className={styles.creators}>
+      <div className={styles.creators__container}>
+        <h1 className={styles.creators__title}>Meet Our Great Creators</h1>
+        <CreatorsCards cards={cardsInfo} />
+      </div>
+    </section>
+  );
 }

@@ -71,7 +71,7 @@
     },
     {
         "backgroundImage": "/images/creators/backgroundTernary.svg",
-        "mainImage": "/images/creators/iconSecondary.svg",
+        "mainImage": "/images/creators/iconTernary.svg",
         "title": "Leon Zn.",
         "iconPrimary": "/images/creators/checkIcon.svg",
         "itemsList": [
@@ -141,7 +141,7 @@
     },
     {
         "backgroundImage": "/images/creators/backgroundTernary.svg",
-        "mainImage": "/images/creators/iconSecondary.svg",
+        "mainImage": "/images/creators/iconTernary.svg",
         "title": "Leon Zn.",
         "iconPrimary": "/images/creators/checkIcon.svg",
         "itemsList": [

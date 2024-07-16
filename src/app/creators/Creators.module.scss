@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   gap: rem(130px);
+  @include container;
 }
 
 .creators__title {
@@ -18,8 +19,6 @@
   color: $color-button-bg;
   font-size: $font-size-section-heading;
 }
-
-
 
 @media (max-width: rem(1200px)) {
   .creators__title {
