@@ -1,8 +1,8 @@
 export interface HeaderNavLink {
-  label: string
-  href: string
-  slugRef: string
-  title: string
+  label: string;
+  href: string;
+  slugRef: string;
+  title: string;
 }
 
 export const NavigationLinks: HeaderNavLink[] = [
@@ -35,5 +35,11 @@ export const NavigationLinks: HeaderNavLink[] = [
     href: '/stats',
     slugRef: '',
     title: 'Stats'
+  },
+  {
+    label: 'Creators',
+    href: '/creators',
+    slugRef: '',
+    title: 'Creators'
   }
-]
+];

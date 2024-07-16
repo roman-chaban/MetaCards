@@ -39,6 +39,7 @@ export const CreatorsCards: FC<CreatorsCardsProps> = ({ cards }) => {
               alt="Check Icon"
               width={24}
               height={24}
+              className={styles.checkedIcon}
             />
           </div>
           <div className={styles.infoList}>
@@ -52,6 +53,7 @@ export const CreatorsCards: FC<CreatorsCardsProps> = ({ cards }) => {
                       alt="Ethereum Icon"
                       width={14}
                       height={19}
+                      className={styles.ethereumIcon}
                     />
                   ) : (
                     ''
@@ -69,18 +71,21 @@ export const CreatorsCards: FC<CreatorsCardsProps> = ({ cards }) => {
               alt="Gallery Icon"
               width={100}
               height={100}
+              className={styles.galleryImage}
             />
             <Image
               src={card.galleryImages[0].secondary}
               alt="Gallery Icon"
               width={100}
               height={100}
+              className={styles.galleryImage}
             />
             <Image
               src={card.galleryImages[0].ternary}
               alt="Gallery Icon"
               width={100}
               height={100}
+              className={styles.galleryImage}
             />
           </div>
         </div>

@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 5rem 3.75rem;
+  justify-items: center;
   margin-bottom: 7.5rem;
 }
 
@@ -81,3 +82,61 @@
   align-items: center;
   gap: rem(15px);
 }
+
+.galleryImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1300px) {
+  .cards {
+    column-gap: rem(30px);
+  }
+  .card {
+    max-width: 263px;
+    max-height: 385px;
+    border-radius: rem(18px);
+  }
+  .mainImage {
+    max-width: 75px;
+    max-height: 75px;
+  }
+
+  .cardInfo {
+    gap: rem(10px);
+  }
+
+  .cardInfo__title {
+    font-size: $font-size-base;
+  }
+
+  .checkedIcon {
+    max-width: 16px;
+    max-height: 16px;
+  }
+
+  .mainImage {
+    left: 35%;
+    top: 62%;
+  }
+  .backgroundImage {
+    max-height: 200px;
+  }
+  .galleryImage {
+    max-width: 72px;
+    max-height: 72px;
+  }
+  .infoList {
+    &__title {
+      font-size: $font-size-subtitle-small;
+    }
+    &__subTitle {
+      font-size: $font-size-discover-nav-button;
+    }
+  }
+  .ethereumIcon {
+    max-width: 9px;
+    max-height: 14px;
+  }
+}
+

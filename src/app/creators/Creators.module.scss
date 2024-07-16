@@ -16,9 +16,30 @@
   font-size: $font-size-section-heading;
 }
 
+@media (max-width: rem(1300px)) {
+  .creators__container {
+    padding-left: rem(40px);
+    padding-right: rem(40px);
+  }
+}
+
 @media (max-width: rem(1200px)) {
   .creators__title {
     padding-top: rem(80px);
     font-size: $font-size-media-title;
+  }
+}
+
+@media (max-width: rem(400px)) {
+  .creators__container {
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+    gap: rem(70px);
+  }
+  .creators__title {
+    max-width: 227px;
+    margin: 0  auto;
+    line-height: 125%;
+    font-size: $font-size-footer-title;
   }
 }
