@@ -126,7 +126,7 @@
 
 .select {
   border-radius: 14px 0 0 14px;
-  padding: 18px 28px;
+  padding: 8px;
   font-weight: 600;
   width: 118px;
   height: 53px;
@@ -135,6 +135,8 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  border: none;
+  outline: none;
   cursor: pointer;
 }
 

@@ -72,6 +72,10 @@
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
+  .explore__container {
+    padding-left: rem(60px);
+    padding-right: rem(60px);
+  }
 }
 
 @media (max-width: rem(1260px)) {
@@ -96,7 +100,7 @@
 
 @media (max-width: rem(1280px)) {
   .weekly__nftCardsGridContainer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

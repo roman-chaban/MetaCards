@@ -1,40 +1,42 @@
-'use client'
+'use client';
 
-import { KeyboardEventHandler, useEffect, useState, type FC } from 'react'
-import styles from './Burger.module.scss'
-import { usePathname } from 'next/navigation'
-import { useBodyOverFlow } from '@/hooks/useBodyOverflow'
-import { FormClose } from 'grommet-icons'
-import { HeaderNavLink, NavigationLinks } from '@/enums/navigation'
-import Link from 'next/link'
-import Image from 'next/image'
+import { KeyboardEventHandler, useEffect, useState, type FC } from 'react';
+import styles from './Burger.module.scss';
+import { usePathname } from 'next/navigation';
+import { useBodyOverFlow } from '@/hooks/useBodyOverflow';
+import { FormClose } from 'grommet-icons';
+import { HeaderNavLink, NavigationLinks } from '@/enums/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
 
 interface BurgerProps {
-  onClose: () => void
+  onClose: () => void;
 }
 
 export const Burger: FC<BurgerProps> = ({ onClose }) => {
-  const pathname = usePathname()
-  const [isActive, setIsActive] = useState<boolean>(false)
+  const pathname = usePathname();
+  const [isActive, setIsActive] = useState<boolean>(false);
 
-  useBodyOverFlow(isActive)
+  useBodyOverFlow(isActive);
 
   useEffect(() => {
-    setIsActive(true)
+    setIsActive(true);
     return () => {
-      setIsActive(false)
-    }
-  }, [])
+      setIsActive(false);
+    };
+  }, []);
 
   const handleCloseMenu = () => {
-    setIsActive(false)
-  }
+    setIsActive(false);
+  };
 
-  const handleMenuCloseOnEscape: KeyboardEventHandler<HTMLDivElement> = event => {
+  const handleMenuCloseOnEscape: KeyboardEventHandler<
+    HTMLDivElement
+  > = event => {
     if (event.code === 'Escape' || event.code === 'Esc') {
-      setIsActive(false)
+      setIsActive(false);
     }
-  }
+  };
 
   return (
     <nav
@@ -82,5 +84,5 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};

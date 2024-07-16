@@ -5,30 +5,15 @@ import styles from './HistoryBid.module.scss';
 import { BidListItem, bidList } from '@/constants/bidList';
 import Image from 'next/image';
 import { Button } from '../UI/Button/Button';
-import { Select } from '../UI/Select/Select';
+import Select from 'react-select';
+import { customStyles } from './selectStyles';
+import { CustomSelect } from '../UI/CustomSelect/CustomSelect';
 
 interface HistoryBidProps {
   onClose?: () => void;
 }
 
 export const HistoryBid: FC<HistoryBidProps> = ({ onClose }) => {
-  const [checkSelectValue, setCheckSelectValue] = useState('');
-  const classNames = {
-    select: styles.select,
-    option: styles.option
-  };
-
-  const options = [
-    {
-      value: 'ETH',
-      label: 'ETH'
-    }
-  ];
-
-  const handleSelectChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    setCheckSelectValue(event.target.value);
-  };
-
   return (
     <div className={styles.historyBid}>
       <div className={styles.historyBid__container}>
@@ -77,17 +62,7 @@ export const HistoryBid: FC<HistoryBidProps> = ({ onClose }) => {
         </div>
         <div className={styles.your__bid}>
           <h5 className={styles.your__bid_title}>Your Bid</h5>
-          <div className={styles.select__container}>
-            <Select
-              ariaLabel="bid-check"
-              name="select"
-              classNames={classNames}
-              selectedValue={checkSelectValue}
-              onChange={handleSelectChange}
-              options={options}
-              id={styles.select}
-            />
-          </div>
+            <CustomSelect />
           <Button
             type="button"
             className={styles.your__bid_button}
