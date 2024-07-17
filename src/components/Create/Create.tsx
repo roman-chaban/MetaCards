@@ -1,9 +1,13 @@
-import type { FC } from 'react'
-import styles from './Create.module.scss'
-import { Button } from '../UI/Button/Button'
-import Image from 'next/image'
+'use client';
+
+import type { FC } from 'react';
+import styles from './Create.module.scss';
+import { Button } from '../UI/Button/Button';
+import Image from 'next/image';
+import { useScreenResize } from '@/hooks/useScreenResize';
 
 export const Create: FC = () => {
+  const { isCompact } = useScreenResize(375);
   return (
     <section className={styles.create}>
       <div className={styles.create__container}>
@@ -35,5 +39,5 @@ export const Create: FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

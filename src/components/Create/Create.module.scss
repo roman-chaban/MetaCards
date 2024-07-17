@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .create {
   background: $color-explore-background;
@@ -95,7 +95,7 @@
   height: 100%;
   filter: blur(52.874610900878906px);
   z-index: 1;
-  background: url("/images/exploreIcons/banner.svg") no-repeat center center;
+  background: url('/images/exploreIcons/banner.svg') no-repeat center center;
   background-size: cover;
 }
 
@@ -272,7 +272,27 @@
 
 @include onMobile {
   .createInfo__title {
-    font-size: 1.8rem;
+    font-size: $font-size-collection-subtitle;
+  }
+  .createInfo__subTitle {
+    font-size: $font-size-discover-nav-button;
+  }
+  .create__banner {
+    max-width: 100%;
+    left: -57px;
+    min-height: 200px;
+  }
+  .banner {
+    max-width: 100%;
+    max-height: 100%;
+    left: -19%;
+  }
+  .createInfo__block {
+    bottom: 0;
+    gap: rem(20px);
+  }
+  .bannerContainer {
+    max-width: 250px;
   }
 }
 

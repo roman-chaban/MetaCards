@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .explore {
   padding: rem(100px) 0;
@@ -96,8 +96,6 @@
   }
 }
 
-
-
 @media (max-width: rem(1280px)) {
   .weekly__nftCardsGridContainer {
     grid-template-columns: repeat(4, 1fr);
@@ -140,6 +138,12 @@
   }
   .exploreBlock {
     padding-bottom: 3rem;
+  }
+  .explore__title {
+    margin: 0 auto;
+    font-size: $font-size-explore-medium-title;
+    max-width: rem(193px);
+    line-height: 150%;
   }
 }
 

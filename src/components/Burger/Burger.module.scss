@@ -120,6 +120,13 @@
   }
 
   .burger__menu {
-    gap: rem(20px);
+    gap: rem(34px);
+  }
+  .burgerLogo__title {
+    font-size: $font-size-collection-subtitle;
+  }
+  .burger__copyright {
+    font-size: $font-size-card-subtitle;
   }
 }
+

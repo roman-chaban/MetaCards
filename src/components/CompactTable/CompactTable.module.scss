@@ -63,6 +63,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: rem(10px);
+  border-bottom: 1.5px solid $color-compact-table-border-bottom;
 }
 
 .gridRow__block {

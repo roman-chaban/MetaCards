@@ -5,6 +5,12 @@
   position: relative;
 }
 
+.weekly__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(63px);
+}
+
 .weekly__titleBlock {
   display: flex;
   justify-content: center;

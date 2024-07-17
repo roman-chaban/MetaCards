@@ -1,3 +1,5 @@
+'use client';
+
 import type { FC } from 'react';
 import styles from './Hero.module.scss';
 import { Button } from '../UI/Button/Button';
@@ -5,8 +7,11 @@ import { HeroFeatures } from '../HeroFeatures/HeroFeatures';
 import { HeroGallery } from '../HeroGallery/HeroGallery';
 import Link from 'next/link';
 import { Links } from '@/enums/links';
+import { useScreenResize } from '@/hooks/useScreenResize';
+import { HeroTrust } from '../HeroTrust/HeroTrust';
 
 export const Hero: FC = () => {
+  const { isCompact } = useScreenResize(375);
   return (
     <section className={styles.hero}>
       <div className={styles.hero__container}>
@@ -25,16 +30,14 @@ export const Hero: FC = () => {
           <div className={styles.hero__information__buttons}>
             <Link href={Links.DISCOVER}>
               <Button type="button" className={styles.explore__button}>
-                <span>
-                Explore More
-
-                </span>
+                <span>Explore More</span>
               </Button>
             </Link>
             <Button type="button" className={styles.create__button}>
               Create NFT
             </Button>
           </div>
+          {isCompact ? <HeroTrust /> : ''}
           <HeroFeatures />
         </div>
         <HeroGallery />
