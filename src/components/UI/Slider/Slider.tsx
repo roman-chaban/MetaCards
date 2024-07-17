@@ -38,17 +38,12 @@ const SliderWithButtons: FC<SliderProps> = ({
   settings = {},
   children,
   width = '100%',
-  height = '600px',
-  maxHeight = '460px'
 }) => {
   const swiperRef = useRef<Swiper | null>(null);
   const dispatch = useAppDispatch();
 
   return (
-    <div
-      className="slider-container hero__slider"
-      style={{ width, height, maxHeight }}
-    >
+    <div className="slider-container hero__slider" style={{ width }}>
       <CustomSwiper
         modules={[Navigation, Pagination, Autoplay, A11y, Scrollbar]}
         navigation={settings.navigation}

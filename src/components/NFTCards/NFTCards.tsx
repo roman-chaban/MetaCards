@@ -34,7 +34,7 @@ export const NFTCards: FC<NFTCardsProps> = ({ classNames, settings }) => {
   return (
     <div className={classNames.container}>
       {settings ? (
-        <Slider height='600px' settings={sliderSettings}>
+        <Slider width="100%" settings={sliderSettings}>
           {products.map((product: Product, index) => (
             <div className={`${styles.card} ${classNames.card}`} key={index}>
               <div className={styles.image__block}>

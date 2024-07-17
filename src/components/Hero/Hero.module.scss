@@ -210,11 +210,13 @@
   justify-content: center;
   align-items: center;
   border-radius: rem(20px);
-  background: $color-slider-buttons-background;
-  box-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
+  box-shadow:
+    rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .sliderButtons__container {
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,6 +233,9 @@
 .prev__button,
 .next__button {
   background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dots__decoration {

@@ -1,6 +1,6 @@
 'use client';
 
-import { FC, useEffect } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { Button } from '../UI/Button/Button';
 import { FormNextLink, FormPreviousLink } from 'grommet-icons';
 import styles from '@/components/Hero/Hero.module.scss';
@@ -14,26 +14,28 @@ interface SliderButtonsProps {
 
 export const SliderButtons: FC<SliderButtonsProps> = ({ swiperRef }) => {
   const dispatch = useAppDispatch();
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [totalSlides, setTotalSlides] = useState(0);
 
   useEffect(() => {
-    if (swiperRef.current) {
-      swiperRef.current.on('slideChange', () => {
-        dispatch(setSwiperIndex(swiperRef.current!.activeIndex));
-      });
+    const swiperInstance = swiperRef.current;
+    if (swiperInstance) {
+      setTotalSlides(swiperInstance.slides.length);
+      const handleSlideChange = () => {
+        const newIndex = swiperInstance.activeIndex;
+        setCurrentIndex(newIndex);
+        dispatch(setSwiperIndex(newIndex));
+      };
+      swiperInstance.on('slideChange', handleSlideChange);
+
+      return () => {
+        swiperInstance.off('slideChange', handleSlideChange);
+      };
     }
   }, [swiperRef, dispatch]);
 
-  const handleNext = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slideNext();
-    }
-  };
-
-  const handlePrev = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slidePrev();
-    }
-  };
+  const handleNext = () => swiperRef.current?.slideNext();
+  const handlePrev = () => swiperRef.current?.slidePrev();
 
   return (
     <div className={styles.sliderButtons__container}>
@@ -44,7 +46,7 @@ export const SliderButtons: FC<SliderButtonsProps> = ({ swiperRef }) => {
           className={styles.prev__button}
           onClick={handlePrev}
         >
-          <FormPreviousLink />
+          <FormPreviousLink color={currentIndex > 0 ? 'black' : 'gray'} />
         </Button>
         <span className={styles.slider__decoration}></span>
         <Button
@@ -53,7 +55,13 @@ export const SliderButtons: FC<SliderButtonsProps> = ({ swiperRef }) => {
           className={styles.next__button}
           onClick={handleNext}
         >
-          <FormNextLink />
+          <FormNextLink
+            color={
+              currentIndex === totalSlides - 1 || currentIndex > 0
+                ? 'gray'
+                : 'black'
+            }
+          />
         </Button>
       </div>
     </div>
