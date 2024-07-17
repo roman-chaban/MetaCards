@@ -10,7 +10,8 @@
   gap: rem(50px);
   margin-top: rem(111px);
   @include heroContainer;
-  margin-top: rem(50px);
+  margin-top: rem(100px);
+  max-height: rem(800px);
 }
 
 .hero__information {
@@ -159,7 +160,7 @@
 
 .arrow__icon {
   position: relative;
-  bottom: 50px;
+  bottom: 145px;
   object-fit: cover;
   height: auto;
 }
@@ -174,6 +175,7 @@
 }
 
 .nft__image {
+  max-width: 390px;
   cursor: pointer;
   width: 100%;
   object-fit: cover;
@@ -185,11 +187,12 @@
 }
 
 .secondaryImage {
+  max-width: 320px;
   width: 100%;
   object-fit: cover;
   height: auto;
   position: relative;
-  bottom: 160px;
+  bottom: 320px;
 }
 
 .subGallery__items {
@@ -231,7 +234,7 @@
 }
 
 .dots__decoration {
-  max-width: 100px;
+  max-width: 173px;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -254,12 +257,21 @@
     position: relative;
     right: 30px;
   }
+  .hero__container {
+    gap: 0;
+  }
+  .secondaryImage {
+    bottom: 200px;
+  }
+  .arrow__icon {
+    bottom: 90px;
+  }
 }
 
 @media (max-width: rem(1110px)) {
   .dots__decoration {
     position: relative;
-    left: -5px;
+    left: -10px;
   }
   .arrow__icon {
     position: relative;
@@ -319,7 +331,7 @@
     gap: rem(34px);
   }
   .hero__information {
-    max-width: 403px;
+    max-width: 310px;
     gap: rem(31px);
   }
   .hero__informationTitles {
@@ -379,7 +391,7 @@
   }
   .dots__decoration {
     max-width: 75px;
-    left: -30px;
+    left: -5px;
   }
   .secondaryImage {
     bottom: 115px;
@@ -390,10 +402,6 @@
 }
 
 @include onMobileLarge {
-  .hero__container {
-    margin-top: 1rem;
-    flex-direction: column;
-  }
   .hero__title {
     font-size: $font-size-subtitle-large;
   }

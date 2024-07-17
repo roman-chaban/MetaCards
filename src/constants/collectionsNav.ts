@@ -1,5 +1,8 @@
+import styles from '../components/CollectionsTable/CollectionsTable.module.scss';
+
 export interface CollectionNavItem {
   title: string
+  id?: string;
 }
 
 export const collectionsNav: CollectionNavItem[] = [
@@ -10,12 +13,15 @@ export const collectionsNav: CollectionNavItem[] = [
     title: '24h %'
   },
   {
-    title: 'Floor Price'
+    title: 'Floor Price',
+    id: styles.priceNone,
   },
   {
-    title: 'Owners'
+    title: 'Owners',
+    id: styles.ownersNone,
   },
   {
-    title: 'Items'
+    title: 'Items',
+    id: styles.itemsNone,
   }
 ]

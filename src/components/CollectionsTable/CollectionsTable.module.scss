@@ -128,26 +128,31 @@
   .gridHeader,
   .gridRow {
     grid-auto-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .gridHeaderItem,
   .gridCell {
-    justify-content: flex-start;
+    justify-content: start;
     padding: rem(5px);
     border-bottom: 1px solid $color-table-border-bottom;
   }
 
+  .gridHeaderItem {
+    justify-content: center;
+  }
+
   .firstCell {
-    width: auto;
+    width: 300px;
   }
 
   .gridTable {
     row-gap: rem(15px);
   }
-  .gridHeader {
+  #items {
     display: none;
   }
-  #items {
+  #itemsNone {
     display: none;
   }
 }

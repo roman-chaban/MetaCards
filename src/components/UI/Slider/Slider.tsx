@@ -31,19 +31,24 @@ interface SliderProps {
   children: ReactNode[];
   width?: string | number;
   height?: string;
+  maxHeight?: string;
 }
 
 const SliderWithButtons: FC<SliderProps> = ({
   settings = {},
   children,
   width = '100%',
-  height = '480px'
+  height = '600px',
+  maxHeight = '460px'
 }) => {
   const swiperRef = useRef<Swiper | null>(null);
   const dispatch = useAppDispatch();
 
   return (
-    <div className="slider-container hero__slider" style={{ width, height }}>
+    <div
+      className="slider-container hero__slider"
+      style={{ width, height, maxHeight }}
+    >
       <CustomSwiper
         modules={[Navigation, Pagination, Autoplay, A11y, Scrollbar]}
         navigation={settings.navigation}

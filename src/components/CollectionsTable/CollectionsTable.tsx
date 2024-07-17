@@ -28,7 +28,7 @@ const CollectionsTable: FC = () => {
             Collection
           </div>
           {collectionsNav.map((item, index) => (
-            <div className={styles.gridHeaderItem} key={index}>
+            <div id={item.id} className={styles.gridHeaderItem} key={index}>
               {item.title}
             </div>
           ))}
