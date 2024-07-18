@@ -120,6 +120,8 @@
 }
 
 .collection__cardButton {
+   max-width: 80px !important;
+   max-height: 35px !important;
    padding: 8px 10px !important;
    font-size: $font-size-subtitle-small !important;
 }
@@ -129,6 +131,9 @@
    .collection__cardImage {
       max-width: 175px;
       max-height: 175px;
+   }
+   .collections__container {
+      gap: 1.5rem;
    }
 }
 

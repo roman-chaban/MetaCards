@@ -1,217 +1,214 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .profileInformation {
-   display: flex;
-   position: relative;
-   left: 90px;
-   bottom: 70px;
+  display: flex;
+  position: relative;
+  left: 90px;
+  bottom: 70px;
 }
 
 .profile__imageBlock {
-   max-width: 200px;
-   position: relative;
+  max-width: 200px;
+  position: relative;
 }
 
 .profile__image {
-   cursor: pointer;
-   transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  cursor: pointer;
+  transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 
-   &:hover {
-      transform: scale(1.1);
-   }
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-
-
 .check__icon {
-   position: absolute;
-   right: 45px;
-   bottom: 15px;
+  position: absolute;
+  right: 45px;
+  bottom: 15px;
 }
 
 .profile__information {
-   display: flex;
-   flex-direction: column;
-   gap: rem(50px);
-   width: 100%;
-   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: rem(50px);
+  width: 100%;
+  max-width: 400px;
 }
 
 .profile__information_titles {
-   display: flex;
-   flex-direction: column;
-   gap: rem(30px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(30px);
 }
 
 .titles__buttonBlock {
-   display: flex;
-   justify-content: space-between;
-   padding-bottom: rem(40px);
-   border-bottom: 1.5px solid $color-profile-border-bottom;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: rem(40px);
+  border-bottom: 1.5px solid $color-profile-border-bottom;
 }
 
 .profileFollow__button {
-   width: 100%;
-   border-radius: 11px;
-   max-width: 121px;
-   height: 46px;
-   background: $color-black;
-   color: $color-white;
-   letter-spacing: 0.01em;
-   text-transform: uppercase;
-   font-weight: 500;
+  width: 100%;
+  border-radius: 11px;
+  max-width: 121px;
+  height: 46px;
+  background: $color-black;
+  color: $color-white;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .titles {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .profileName {
-   font-weight: 600;
-   line-height: 130%;
-   letter-spacing: 0.01em;
-   font-size: $font-size-subtitle-large;
-   color: $color-profile-title;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  font-size: $font-size-subtitle-large;
+  color: $color-profile-title;
 }
 
 .profileTag {
-   line-height: 130%;
-   letter-spacing: 0.01em;
-   font-size: $font-size-subtitle;
-   color: $color-gray-collection;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  font-size: $font-size-subtitle;
+  color: $color-gray-collection;
 }
 
 .profile__stats {
-   display: flex;
-   align-items: center;
-   gap: rem(67px);
-   padding-bottom: rem(110px);
+  display: flex;
+  align-items: center;
+  gap: rem(67px);
+  padding-bottom: rem(110px);
 }
 
 .profile__stats_title {
-   line-height: 125%;
-   text-align: center;
-   color: $color-button-bg;
-   font-weight: 600;
-   font-size: $font-size-media-title;
+  line-height: 125%;
+  text-align: center;
+  color: $color-button-bg;
+  font-weight: 600;
+  font-size: $font-size-media-title;
 }
 
 .profile__stats_subTitle {
-   font-weight: 500;
-   line-height: 150%;
-   text-align: center;
-   color: $color-gray-light-alt;
-   font-size: $font-size-explore-button-tablet;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
+  color: $color-gray-light-alt;
+  font-size: $font-size-explore-button-tablet;
 }
 
 .bio__block {
-   display: flex;
-   flex-direction: column;
-   gap: rem(7px);
-   padding-bottom: rem(50px);
-   border-bottom: 1.5px solid $color-profile-border-bottom;
+  display: flex;
+  flex-direction: column;
+  gap: rem(7px);
+  padding-bottom: rem(50px);
+  border-bottom: 1.5px solid $color-profile-border-bottom;
 }
 
 .bio__block_title {
-   font-weight: 700;
-   line-height: 161%;
-   color: $color-unleash-mark;
-   font-size: $font-size-detail-title;
+  font-weight: 700;
+  line-height: 161%;
+  color: $color-unleash-mark;
+  font-size: $font-size-detail-title;
 }
 
 .bio__block_subTitle {
-   font-size: $font-size-card-subtitle;
-   line-height: 177%;
-   text-transform: capitalize;
-   color: $color-notification-title;
+  font-size: $font-size-card-subtitle;
+  line-height: 177%;
+  text-transform: capitalize;
+  color: $color-notification-title;
 }
 
 .social__medias {
-   display: flex;
-   align-items: center;
-   gap: rem(65px);
+  display: flex;
+  align-items: center;
+  gap: rem(65px);
 }
 
 .socialLink__icon {
-   max-width: 20px;
-   max-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
 }
-
 
 @media (max-width: 1160px) {
-   .profileInformation {
-      left: 55px;
-      bottom: 50px;
-   }
+  .profileInformation {
+    left: 55px;
+    bottom: 50px;
+  }
 
-   .profile__information {
-      max-width: 300px;
-   }
+  .profile__information {
+    max-width: 300px;
+  }
 
-   .profile__imageBlock>.profile__image {
-      max-width: 125px;
-      max-height: 125px;
-   }
+  .profile__imageBlock > .profile__image {
+    max-width: 125px;
+    max-height: 125px;
+  }
 
-   .check__icon {
-      right: 80px;
-      max-width: 24px;
-      max-height: 24px;
-   }
+  .check__icon {
+    right: 80px;
+    max-width: 24px;
+    max-height: 24px;
+  }
 
-   .profile__stats_title {
-      font-size: $font-size-stats-title;
-   }
+  .profile__stats_title {
+    font-size: $font-size-stats-title;
+  }
 }
-
 
 @media (max-width: 800px) {
-   .profileInformation {
-      left: 15px;
-   }
+  .profileInformation {
+    left: 15px;
+  }
 
-   .profile__stats {
-      padding-bottom: rem(30px);
-   }
+  .profile__stats {
+    padding-bottom: rem(30px);
+  }
 }
 
-
 @media (max-width: 620px) {
-   .profileInformation {
-      bottom: -65px;
-   }
+  .profileInformation {
+    bottom: -65px;
+  }
 
-   .profile__information {
-      max-width: 500px;
-   }
+  .profile__information {
+    max-width: 500px;
+  }
 
-   .titles__buttonBlock {
-      justify-content: start;
-      gap: rem(60px);
-   }
+  .titles__buttonBlock {
+    justify-content: start;
+    gap: rem(60px);
+  }
+  .social__medias {
+    gap: rem(30px);
+  }
+  .profile__stats {
+   flex-direction: column;
+   align-items: start;
+   gap: rem(20px);
+  }
 }
 
 @media (max-width: 350px) {
-   .profileName {
-      font-size: 1.5rem;
-   }
+  .profileName {
+    font-size: 1.5rem;
+  }
 
-   .profileFollow__button {
-      max-width: 110px
-   }
+  .profileFollow__button {
+    max-width: 110px;
+  }
 
-   .titles__buttonBlock {
-      justify-content: space-between;
-   }
+  .titles__buttonBlock {
+    justify-content: space-between;
+  }
 
-   .profile__stats_title {
-      font-size: 1.5rem;
-   }
-
-   .social__medias {
-      gap: 5.125rem;
-   }
+  .profile__stats_title {
+    font-size: 1.5rem;
+  }
 }
-
-;

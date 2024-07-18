@@ -466,38 +466,46 @@
   }
 }
 
-
-@media (max-width: 375px) {
+@media (max-width: 440px) {
   .first__icon {
-    right: 55px;
+    right: 100px;
+  }
+
+  .second__icon {
+    bottom: 165px;
+    right: -65px;
   }
 
   .five__icon {
-    top: 125px;
+    top: 170px;
   }
 
   .eight__icon {
-    left: 60px;
+    left: 175px;
     bottom: 97px;
   }
 
   .nine__icon {
-    top: 165px;
+    top: 155px;
   }
 
   .four__icon {
-    top: -71px;
-    left: -135px;
+    top: 45px;
+    left: -197px;
     z-index: 2;
   }
 
   .third__icon {
     top: 105px;
-    right: 70px;
+    right: -190px;
     z-index: 3;
   }
 
   .six__icon {
-    right: -195px;
+    right: -220px;
+    bottom: 25px;
+  }
+  .seven__icon {
+    bottom: 185px;
   }
 }

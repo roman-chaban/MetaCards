@@ -32,6 +32,8 @@
   text-transform: capitalize;
   font-size: $font-size-base;
   font-weight: 500;
+  background: $color-button-bg;
+  color: $color-white;
 }
 
 .upload__title {

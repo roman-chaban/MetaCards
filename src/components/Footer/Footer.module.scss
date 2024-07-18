@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .footer {
   background: $color-button-bg;
@@ -39,7 +39,7 @@
   }
 
   &__menu_listLink {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     color: $color-gray-footer-nav;
     font-size: $font-size-link;
     text-transform: capitalize;
@@ -54,7 +54,7 @@
 }
 
 .footer__socialMedias_listLink::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 25px;
   bottom: -1px;
@@ -84,7 +84,7 @@
   padding-bottom: rem(80px);
 
   &_copyright {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     color: $color-footer-copyright;
     line-height: 1.47059;
     font-weight: 600;
@@ -133,7 +133,7 @@
 @media (min-width: 650px) {
   .footer__top_social {
     display: none;
-  } 
+  }
 }
 
 @include onTablet {
@@ -215,5 +215,12 @@
   .footer__logo {
     max-width: 33px;
     max-height: 33px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

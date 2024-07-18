@@ -1,4 +1,4 @@
-@import "../../assets/styles/stack.scss";
+@import '../../assets/styles/stack.scss';
 
 .asked {
   background: $color-explore-background;
@@ -107,5 +107,11 @@
   .asked__container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .asked__list {
+    gap: 1rem;
+  }
+  .asked__list_item {
+    padding-bottom: 0;
   }
 }

@@ -78,11 +78,28 @@ $primary-accordion-gray: #333333;
 
 @include onMobile {
   .title {
-    font-size: 13px;
+    font-size: $font-size-card-subtitle;
     line-height: 130%;
   }
   .circle__icon {
     max-width: 20px;
     max-height: 20px;
+  }
+  .subTitle {
+    font-size: $font-size-card-subtitle;
+  }
+}
+
+
+@media (max-width: 350px) {
+  .title {
+    font-size: $font-size-explore-button-tablet;
+  }
+  .circle__icon {
+    max-width: 16px;
+    max-height: 16px;
+  }
+  .subTitle {
+    font-size: $font-size-explore-button-tablet;
   }
 }

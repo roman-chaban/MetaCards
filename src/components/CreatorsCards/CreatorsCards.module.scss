@@ -25,11 +25,13 @@
 }
 
 .backgroundImage {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   border-radius: 1.5625rem;
 }
 
 .mainImage {
+  width: auto;
   position: absolute;
   left: 37%;
   top: 66%;
@@ -139,4 +141,3 @@
     max-height: 14px;
   }
 }
-

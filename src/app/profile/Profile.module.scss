@@ -13,9 +13,9 @@
    position: relative;
    top: 50px;
    border-radius: 22px;
-   width: 100%;
+   width: 110%;
    max-width: 1275px;
-   height: 355px;
+   height: 365px;
    margin: 0 auto;
    overflow: hidden;
 }
@@ -37,7 +37,7 @@
    width: 100%;
    max-width: 1200px;
    display: flex;
-   gap: 11.5rem;
+   gap: 7rem;
    padding-bottom: rem(200px);
 }
 
@@ -45,7 +45,9 @@
    .profile__container {
       padding-left: 20px;
       padding-right: 20px;
-
+   }
+   .profile__banner {
+      max-width: 100%;
    }
 }
 

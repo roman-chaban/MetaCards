@@ -8,6 +8,7 @@
 
 .custom__select {
   &__control {
+    cursor: pointer !important;
     padding: rem(8px) 0 !important;
     border: none !important;
     background: transparent !important;
@@ -43,6 +44,9 @@
     }
     &--is-focused {
       background: $color-black !important;
+    }
+    &--is-selected {
+      background: $color-button-bg !important;
     }
   }
 }
