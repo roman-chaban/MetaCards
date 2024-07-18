@@ -36,4 +36,13 @@
     max-width: 40px !important;
     padding-right: 0 !important;
   }
+  &__option {
+    &:hover {
+      color: $color-white !important;
+      background: $color-black !important;
+    }
+    &--is-focused {
+      background: $color-black !important;
+    }
+  }
 }

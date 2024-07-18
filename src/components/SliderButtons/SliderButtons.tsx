@@ -46,7 +46,10 @@ export const SliderButtons: FC<SliderButtonsProps> = ({ swiperRef }) => {
           className={styles.prev__button}
           onClick={handlePrev}
         >
-          <FormPreviousLink color={currentIndex > 0 ? 'black' : 'gray'} />
+          <FormPreviousLink
+            className={styles.arrowLink__icon}
+            color={currentIndex > 0 ? '#23262f' : 'gray'}
+          />
         </Button>
         <span className={styles.slider__decoration}></span>
         <Button
@@ -56,10 +59,11 @@ export const SliderButtons: FC<SliderButtonsProps> = ({ swiperRef }) => {
           onClick={handleNext}
         >
           <FormNextLink
+            className={styles.arrowLink__icon}
             color={
               currentIndex === totalSlides - 1 || currentIndex > 0
                 ? 'gray'
-                : 'black'
+                : '#23262f'
             }
           />
         </Button>

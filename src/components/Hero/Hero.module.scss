@@ -10,7 +10,7 @@
   gap: rem(50px);
   margin-top: rem(111px);
   @include heroContainer;
-  margin-top: rem(100px);
+  margin-top: rem(30px);
   max-height: rem(800px);
 }
 
@@ -253,27 +253,34 @@
 
 @media (max-width: rem(1250px)) {
   .image__container {
-    max-width: 200px;
+    max-width: 278px;
   }
   .arrow__icon {
-    right: 40px;
+    max-width: 100px;
+    max-height: 100px;
   }
   .dots__decoration {
-    position: relative;
-    right: 30px;
+    max-height: 300px;
   }
   .hero__container {
-    gap: 0;
+    gap: rem(60px);
   }
   .secondaryImage {
-    bottom: 200px;
+    bottom: 175px;
   }
   .arrow__icon {
-    bottom: 90px;
+    bottom: 60px;
+  }
+  .dots__decoration {
+    max-width: 123px;
+    max-height: 284px;
   }
 }
 
 @media (max-width: rem(1110px)) {
+  .image__container {
+    max-width: 200px;
+  }
   .dots__decoration {
     position: relative;
     left: -10px;
@@ -303,10 +310,6 @@
     align-items: center;
     font-size: $font-size-base;
     max-height: 51px;
-  }
-
-  .image__container {
-    max-width: 150px;
   }
   .hero__information {
     max-width: 28.5rem;
@@ -377,12 +380,12 @@
     gap: rem(3px);
   }
   .dots__decoration {
-    left: -30px;
+    left: 0;
   }
   .arrow__icon {
     max-width: 90px;
     max-height: 90px;
-    right: 35px;
+    right: 20px;
   }
   .secondaryImage {
     max-width: 300px;
@@ -395,14 +398,21 @@
     padding-left: 40px;
   }
   .dots__decoration {
-    max-width: 75px;
+    max-width: 60px;
     left: -5px;
   }
   .secondaryImage {
     bottom: 115px;
   }
   .arrow__icon {
-    right: 35px;
+    right: 20px;
+    bottom: 45px;
+  }
+  .image__container {
+    max-width: 150px;
+  }
+  .hero__information {
+    max-width: 275px;
   }
 }
 
@@ -410,26 +420,35 @@
   .hero__title {
     font-size: $font-size-subtitle-large;
   }
-  .features {
-    display: none;
-  }
   .nft__image {
-    max-width: 100%;
+    max-width: 120px;
   }
-  .secondaryImage {
-    bottom: 215px;
-    left: 10px;
+  .hero__container {
+    flex-direction: column;
   }
-  .dots__decoration {
-    bottom: 100px;
-    left: 10px;
-  }
-  .arrow__icon {
-    right: 50px;
+  .hero__information {
+    max-width: 500px;
+    gap: rem(15px);
   }
   .heroNft__banner {
-    align-items: start;
-    max-width: 50%;
+    gap: 0;
+  }
+  .heroGallery {
+    justify-content: start;
+    gap: rem(50px);
+  }
+  .secondaryImage {
+    max-width: 1 60px;
+  }
+  .dots__decoration {
+    max-width: 85px;
+    left: -10px;
+  }
+  .secondaryImage {
+    bottom: 210px;
+  }
+  .arrow__icon {
+    right: 65px;
   }
 }
 
@@ -475,7 +494,7 @@
   }
   .heroNft__banner {
     padding-left: 20px;
-    gap: rem(10px);
+    gap: 0;
     align-items: center;
   }
   .nft__image {
@@ -486,17 +505,16 @@
     max-width: 65px;
     max-height: 215px;
     bottom: 7px;
-    left: 0px;
+    left: -10px;
   }
   .arrow__icon {
-    max-width: 60px;
-    max-height: 60px;
-    right: -20px;
+    max-width: 80px;
+    max-height: 80px;
+    right: 50px;
   }
   .secondaryImage {
-    max-height: 200px;
-    bottom: 145px;
-    left: 0px;
+    max-height: 310px;
+    bottom: 125px;
   }
   .hero__information__buttons {
     gap: rem(17px);
@@ -511,6 +529,28 @@
     padding-right: 21px;
     font-size: $font-size-subtitle-small;
   }
+  .hero__container {
+    margin-top: rem(10px);
+  }
+  .image__container {
+    max-width: 145px;
+  }
+
+  .arrowLink__icon {
+    max-width: 12px;
+    max-height: 12px;
+  }
+  .sliderButtons {
+    max-width: 90px;
+    padding: 11px;
+    max-height: 36px;
+  }
+  .slider__decoration {
+    max-height: 15px;
+  }
+  .features {
+    display: none;
+  }
 }
 
 @media (max-width: 321px) {
@@ -521,6 +561,12 @@
     max-width: 280px;
   }
   .arrow__icon {
-    right: 10px;
+    right: 40px;
+  }
+  .dots__decoration {
+    left: -30px;
+  }
+  .secondaryImage {
+    bottom: 100px;
   }
 }
