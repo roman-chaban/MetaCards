@@ -1,0 +1,61 @@
+@import '../../assets/styles/stack.scss';
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: $color-button-bg;
+}
+
+.swiper__container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.swiper {
+  padding-top: rem(80px);
+}
+
+.swiperInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(15px);
+  &__title {
+    max-width: 400px;
+    font-weight: 700;
+    font-size: $font-size-section-heading;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: $color-white;
+  }
+  &__subTitle {
+    margin-bottom: rem(60px);
+    color: $color-gray-dark;
+    font-size: $font-size-base;
+    max-width: 330px;
+    line-height: 171%;
+    text-align: center;
+  }
+}
+
+@media (max-width: rem(1250px)) {
+  .swiper__container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: rem(1005px)) {
+  .swiper__container {
+    max-width: 450px;
+  }
+}

@@ -1,77 +1,22 @@
 @import '../../assets/styles/stack.scss';
 
-.choose__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, rem(800px));
-}
-
-.leftSide {
-  padding-top: rem(100px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: rem(75px);
+.choose {
   background: $color-explore-background;
-  &__title {
-    font-weight: 600;
-    line-height: 125%;
-    letter-spacing: -0.04em;
-    font-size: $font-size-detail-title;
-    color: $color-asked-list-title;
-  }
-  &__buttonsBlock {
-    display: flex;
-    flex-direction: column;
-    gap: rem(25px);
-  }
+  border-bottom: 2px solid $color-white;
 }
 
-.button {
-  border-radius: 7px;
-  padding: 14px 10px 14px 20px;
-  width: 280px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  gap: rem(10px);
-  font-weight: 600;
-  font-size: $font-size-subtitle-small;
-  color: $color-button-bg;
-  line-height: 153%;
-  box-shadow: 4px 7px 36px 0 rgba(0, 0, 0, 0.1);
-  background: $color-white;
-}
-
-.next__button {
-  width: 100%;
-  max-width: 274px;
-  height: 53px;
-  color: $color-next-button;
-  background: $color-button-bg;
-  border-radius: rem(11px);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.LeftSide__copyright {
-  padding: 0 rem(35px);
-  padding-top: rem(80px);
-  width: 100%;
+.choose__container {
+  @include container;
   display: flex;
   justify-content: space-between;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
 }
 
-.policy__title,
-.copyright__title {
-  font-weight: 500;
-  font-size: $font-size-explore-button-tablet;
-  color: $color-policy-copyright-titles;
-  line-height: 150%;
-  letter-spacing: 0.01em;
-}
-
-.rightSide {
-  background: $color-button-bg;
+@media (max-width: 900px) {
+  .choose__container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

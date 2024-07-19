@@ -1,0 +1,73 @@
+@import '../../assets/styles/stack.scss';
+
+.chooseWallet {
+  width: 100%;
+  max-width: rem(800px);
+}
+
+.chooseWallet__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(105px);
+  padding-top: rem(70px);
+  box-shadow:
+    rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.chooseWallet__title {
+  font-size: $font-size-subtitle-large;
+  color: $color-asked-list-title;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.04em;
+}
+
+.walletButtons {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40px);
+  &__button {
+    width: 390px;
+    font-weight: 600;
+    font-size: $font-size-subtitle;
+    line-height: 153%;
+    display: flex;
+    align-items: center;
+    gap: rem(10px);
+    border-radius: 10px;
+    padding: 20px 14px 20px 28px;
+    box-shadow: 5px 10px 50px 0 rgba(0, 0, 0, 0.1);
+    background: $color-white;
+  }
+}
+
+.next__button {
+  width: 100%;
+  max-width: rem(435px);
+  height: 75px;
+  border-radius: rem(16px);
+  font-size: $font-size-subtitle;
+  background: $color-button-bg;
+  color: $color-next-button;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.chooseInfo {
+  padding: 0 rem(40px);
+  padding-bottom: rem(45px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &__policy,
+  &__copyright {
+    color: $color-policy-copyright-titles;
+    font-size: $font-size-base;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+  }
+}
