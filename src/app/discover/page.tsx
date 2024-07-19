@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './Discover.module.scss';
-import { Cards } from '@/components/Cards/Cards';
+import { CardItem, Cards } from '@/components/Cards/Cards';
 import { DiscoverNav } from '@/components/DiscoverNav/DiscoverNav';
 import { buttonLabels } from '@/constants/navButtonLabels';
 import { useState } from 'react';
@@ -14,7 +14,7 @@ export default function Discover() {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
 
-  const paginate = (items: any[], currentPage: number) => {
+  const paginate = (items: CardItem[], currentPage: number) => {
     const start = (currentPage - 1) * ITEMS_PER_PAGE;
     const end = start + ITEMS_PER_PAGE;
     return items.slice(start, end);

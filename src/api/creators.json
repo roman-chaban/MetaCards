@@ -208,5 +208,215 @@
             "ternary": "/images/creators/gallery/ternaryImage.svg"
             }
         ]    
+    },
+    {
+        "backgroundImage": "/images/creators/backgroundPrimary.svg",
+        "mainImage": "/images/creators/iconPrimary.svg",
+        "title": "Alex Ca.",
+        "iconPrimary": "/images/creators/checkIcon.svg",
+        "itemsList": [
+            {
+                "title": "5.8K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "17.9K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "17.5",
+                "subTitle": "floor price",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "22.4",
+                "subTitle": "traded",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            }
+        ],
+        "galleryImages": [
+            {
+            "primary": "/images/creators/gallery/primaryImage.svg", 
+            "secondary": "/images/creators/gallery/secondaryImage.svg", 
+            "ternary": "/images/creators/gallery/ternaryImage.svg"
+            }
+        ]    
+    },
+    {
+        "backgroundImage": "/images/creators/backgroundSecondary.svg",
+        "mainImage": "/images/creators/iconSecondary.svg",
+        "title": "Zeno Ka.",
+        "iconPrimary": "/images/creators/checkIcon.svg",
+        "itemsList": [
+            {
+                "title": "9.9K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "14.9K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "16.4",
+                "subTitle": "floor price",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "26.4",
+                "subTitle": "traded",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            }
+        ],
+        "galleryImages": [
+            {
+            "primary": "/images/creators/gallery/fourthImage.svg", 
+            "secondary": "/images/creators/gallery/fiveImage.svg", 
+            "ternary": "/images/creators/gallery/sixImage.svg"
+            }
+        ]    
+    },
+    {
+        "backgroundImage": "/images/creators/backgroundTernary.svg",
+        "mainImage": "/images/creators/iconTernary.svg",
+        "title": "Leon Zn.",
+        "iconPrimary": "/images/creators/checkIcon.svg",
+        "itemsList": [
+            {
+                "title": "7.8K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "19.5K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "19.7",
+                "subTitle": "floor price",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "54.5",
+                "subTitle": "traded",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            }
+        ],
+        "galleryImages": [
+            {
+            "primary": "/images/creators/gallery/fiveImage.svg", 
+            "secondary": "/images/creators/gallery/eightImage.svg", 
+            "ternary": "/images/creators/gallery/sevenImage.svg"
+            }
+        ]    
+    },
+    {
+        "backgroundImage": "/images/creators/backgroundSecondary.svg",
+        "mainImage": "/images/creators/iconSecondary.svg",
+        "title": "Zeno Ka.",
+        "iconPrimary": "/images/creators/checkIcon.svg",
+        "itemsList": [
+            {
+                "title": "9.9K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "14.9K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "16.4",
+                "subTitle": "floor price",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "26.4",
+                "subTitle": "traded",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            }
+        ],
+        "galleryImages": [
+            {
+            "primary": "/images/creators/gallery/fourthImage.svg", 
+            "secondary": "/images/creators/gallery/fiveImage.svg", 
+            "ternary": "/images/creators/gallery/sixImage.svg"
+            }
+        ]    
+    },
+    {
+        "backgroundImage": "/images/creators/backgroundTernary.svg",
+        "mainImage": "/images/creators/iconTernary.svg",
+        "title": "Leon Zn.",
+        "iconPrimary": "/images/creators/checkIcon.svg",
+        "itemsList": [
+            {
+                "title": "7.8K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "19.5K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "19.7",
+                "subTitle": "floor price",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "54.5",
+                "subTitle": "traded",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            }
+        ],
+        "galleryImages": [
+            {
+            "primary": "/images/creators/gallery/fiveImage.svg", 
+            "secondary": "/images/creators/gallery/eightImage.svg", 
+            "ternary": "/images/creators/gallery/sevenImage.svg"
+            }
+        ]    
+    },
+    {
+        "backgroundImage": "/images/creators/backgroundPrimary.svg",
+        "mainImage": "/images/creators/iconPrimary.svg",
+        "title": "Alex Ca.",
+        "iconPrimary": "/images/creators/checkIcon.svg",
+        "itemsList": [
+            {
+                "title": "5.8K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "17.9K",
+                "subTitle": "items",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "17.5",
+                "subTitle": "floor price",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            },
+            {
+                "title": "22.4",
+                "subTitle": "traded",
+                "iconSecondary": "/images/creators/ethereumIcon.svg"
+            }
+        ],
+        "galleryImages": [
+            {
+            "primary": "/images/creators/gallery/primaryImage.svg", 
+            "secondary": "/images/creators/gallery/secondaryImage.svg", 
+            "ternary": "/images/creators/gallery/ternaryImage.svg"
+            }
+        ]    
     }
 ]

@@ -1,30 +1,35 @@
-'use client'
+'use client';
 
-import { useState, type FC } from 'react'
-import styles from './Header.module.scss'
-import { NavLink, navLinks } from '@/constants/navLinks'
-import { NavItem } from '../NavItem/NavItem'
-import Image from 'next/image'
-import { Input } from '../UI/Input/Input'
-import { Search } from 'grommet-icons'
-import { Button } from '../UI/Button/Button'
-import { useScrollObserver } from '@/hooks/useScrollObserver'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { Burger } from '../Burger/Burger'
-import { BurgerButton } from '../UI/BurgerButton/BurgerButton'
+import { useState, type FC } from 'react';
+import styles from './Header.module.scss';
+import { NavLink, navLinks } from '@/constants/navLinks';
+import { NavItem } from '../NavItem/NavItem';
+import Image from 'next/image';
+import { Input } from '../UI/Input/Input';
+import { Search } from 'grommet-icons';
+import { Button } from '../UI/Button/Button';
+import { useScrollObserver } from '@/hooks/useScrollObserver';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Burger } from '../Burger/Burger';
+import { BurgerButton } from '../UI/BurgerButton/BurgerButton';
+import Choose from '@/app/choose/page';
 
-type InputValue = string
+type InputValue = string;
+
+const enum ButtonHref {
+  CHOOSE = '/choose'
+}
 
 export const Header: FC = () => {
-  const [text, setText] = useState<InputValue>('')
-  const { isScrolledNav } = useScrollObserver()
-  const [isMenuActive, setIsMenuActive] = useState<boolean>(false)
-  const pathname = usePathname()
+  const [text, setText] = useState<InputValue>('');
+  const { isScrolledNav } = useScrollObserver();
+  const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
+  const pathname = usePathname();
 
   const handleToggleMenu = () => {
-    setIsMenuActive(!isMenuActive)
-  }
+    setIsMenuActive(!isMenuActive);
+  };
 
   return (
     <header
@@ -49,7 +54,7 @@ export const Header: FC = () => {
         <nav className={styles.header__nav}>
           <ul className={styles.header__nav_menu}>
             {navLinks.map((navLink: NavLink) => {
-              const isActive = pathname === navLink.href
+              const isActive = pathname === navLink.href;
               return (
                 <NavItem
                   key={navLink.href}
@@ -58,7 +63,7 @@ export const Header: FC = () => {
                     isActive ? styles.activeLink : styles.menu__listLink
                   }
                 />
-              )
+              );
             })}
           </ul>
         </nav>
@@ -74,13 +79,15 @@ export const Header: FC = () => {
               className={styles.input}
             />
           </div>
-          <Button className={styles.connect__button} type="button">
-            Connect Wallet
-          </Button>
+          <Link href={ButtonHref.CHOOSE}>
+            <Button className={styles.connect__button} type="button">
+              Connect Wallet
+            </Button>
+          </Link>
           <BurgerButton isActive={isMenuActive} onClick={handleToggleMenu} />
         </div>
       </div>
       {isMenuActive && <Burger onClose={handleToggleMenu} />}
     </header>
-  )
-}
+  );
+};

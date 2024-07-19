@@ -1,12 +1,12 @@
 @import '../../assets/styles/stack.scss';
 
 .footer {
+  
   background: $color-button-bg;
 }
 
 .footer__container {
   @include container;
-  margin-bottom: rem(100px);
 }
 
 .footer__top {

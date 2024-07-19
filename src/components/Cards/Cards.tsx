@@ -2,7 +2,7 @@ import type { FC } from 'react';
 import styles from '@/components/Card/Card.module.scss';
 import { Card } from '../Card/Card';
 
-interface CardItem {
+export interface CardItem {
   id: number;
   title: string;
   subTitle: string;
