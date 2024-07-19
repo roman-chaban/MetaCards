@@ -21,6 +21,7 @@ export const ChooseWallet: FC = () => {
                 alt={`${button.label} Icon`}
                 width={38}
                 height={38}
+                className={styles.buttonIcon}
               />
               {button.label}
             </Button>

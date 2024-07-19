@@ -18,6 +18,7 @@
   align-items: center;
   margin: 0 auto;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .swiper {
@@ -49,8 +50,19 @@
 }
 
 @media (max-width: rem(1250px)) {
+  .swiper {
+    padding-top: rem(20px);
+  }
   .swiper__container {
     max-width: 500px;
+  }
+  .swiperInfo {
+    &__title {
+      font-size: $font-size-explore-medium-title;
+    }
+    &__subTitle {
+      margin-bottom: rem(30px);
+    }
   }
 }
 

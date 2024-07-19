@@ -71,3 +71,32 @@
     letter-spacing: 0.01em;
   }
 }
+
+@media (max-width: 1200px) {
+  .chooseWallet__title {
+    font-size: $font-size-collection-card-title;
+  }
+  .walletButtons {
+    &__button {
+      max-width: rem(350px);
+      font-size: $font-size-card-subtitle;
+      padding: 14px 20px 14px 28px;
+    }
+  }
+  .buttonIcon {
+    max-width: 28px;
+    max-height: 28px;
+  }
+  .next__button {
+    max-width: rem(350px);
+    max-height: 45px;
+  }
+}
+
+@media (max-width: 900px) {
+  .chooseWallet__container {
+    box-shadow: none;
+    padding-left: rem(20px);
+    padding-right: rem(20px);
+  }
+}
