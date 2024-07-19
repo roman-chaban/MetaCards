@@ -38,7 +38,7 @@ export const CreatorCard: FC<CreatorCardProps> = ({ card }) => {
               <span className={styles.rating}>{card.rating}</span>
             </div>
             <div className={styles.likesBlock}>
-              <Favorite color="gray" style={{ width: 14, height: 14 }} />
+              <Favorite color="gray" style={{ width: 22, height: 22 }} />
               <span className={styles.likes}>{card.likes}</span>
             </div>
           </div>

@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { Swiper as ReactSwiper, SwiperSlide } from 'swiper/react';
 import Swiper from 'swiper';
 import 'swiper/css';
-import './HeroSwiper.scss';
 import { SliderButtons } from '../SliderButtons/SliderButtons';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { setSwiperIndex } from '@/store/slices/swiperSlice';

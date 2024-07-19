@@ -134,6 +134,11 @@
 .socialLink__icon {
   max-width: 20px;
   max-height: 20px;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  &:hover {
+    transform: scale(1.1);
+    fill: $color-gray-light-alt;
+  }
 }
 
 @media (max-width: 1160px) {
@@ -158,7 +163,10 @@
   }
 
   .profile__stats_title {
-    font-size: $font-size-stats-title;
+    font-size: $font-size-collection-subtitle;
+  }
+  .profile__stats {
+    padding-bottom: rem(60px);
   }
 }
 
@@ -189,9 +197,9 @@
     gap: rem(30px);
   }
   .profile__stats {
-   flex-direction: column;
-   align-items: start;
-   gap: rem(20px);
+    flex-direction: column;
+    align-items: start;
+    gap: rem(20px);
   }
 }
 

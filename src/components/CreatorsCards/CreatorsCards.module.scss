@@ -116,6 +116,9 @@
     max-width: 16px;
     max-height: 16px;
   }
+  .titles {
+    gap: rem(3px);
+  }
 
   .mainImage {
     left: 35%;
@@ -130,6 +133,9 @@
   }
   .infoList {
     &__title {
+      display: flex;
+      align-items: center;
+      gap: rem(3px);
       font-size: $font-size-subtitle-small;
     }
     &__subTitle {

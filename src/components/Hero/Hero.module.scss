@@ -163,7 +163,11 @@
   bottom: 145px;
   object-fit: cover;
   height: auto;
+  animation: zoomElement alternate 0.5s linear infinite ;
 }
+
+
+
 
 .heroNft__banner {
   width: 100%;

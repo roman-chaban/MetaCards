@@ -74,6 +74,14 @@
   letter-spacing: 0.01em;
   font-weight: 600;
   font-size: $font-size-card-title;
+  transform:
+    background 0.8s linear 0s,
+    color 1s ease-in-out 0s, border 0.5s ease 0s ;
+  &:hover {
+    background: $color-white;
+    color: $color-button-bg;
+    border: 2.29px solid $color-button-bg;
+  }
 }
 
 .bannerContainer {

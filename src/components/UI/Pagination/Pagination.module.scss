@@ -1,0 +1,50 @@
+@import '../../../assets/styles/stack.scss';
+
+.pagination__isRounded {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pagination__next {
+  padding: 7px 15px;
+  order: 3;
+  background: $color-button-bg;
+  color: $color-white;
+  border-radius: rem(20px);
+  transition: background 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    background: $color-asked-list-title;
+  }
+}
+
+.pagination__previous {
+  padding: 7px 15px;
+  background: $color-button-bg;
+  color: $color-white;
+  border-radius: rem(20px);
+  transition: background 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    background: $color-asked-list-title;
+  }
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.paginationLink__isCurrent {
+  color: $color-white;
+  padding: 7px 13px;
+  border-radius: rem(10px);
+  font-weight: 600;
+  background: $color-border-top-dark;
+}
+
+.pagination__link {
+  color: $color-gray-light;
+}

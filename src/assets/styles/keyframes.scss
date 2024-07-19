@@ -1,0 +1,8 @@
+@keyframes zoomElement {
+  0% {
+    transform: scale(1.2) translate(-20px);
+  }
+  100% {
+    transform: scale(1) translate(0);
+  }
+}
