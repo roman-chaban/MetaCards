@@ -39,7 +39,7 @@
 
 .paginationLink__isCurrent {
   color: $color-white;
-  padding: 7px 13px;
+  padding: rem(6px) rem(13.5px);
   border-radius: rem(10px);
   font-weight: 600;
   background: $color-border-top-dark;

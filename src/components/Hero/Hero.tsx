@@ -33,9 +33,11 @@ export const Hero: FC = () => {
                 <span>Explore More</span>
               </Button>
             </Link>
-            <Button type="button" className={styles.create__button}>
-              Create NFT
-            </Button>
+            <Link href={Links.SELL}>
+              <Button type="button" className={styles.create__button}>
+                Create NFT
+              </Button>
+            </Link>
           </div>
           {isCompact ? <HeroTrust /> : ''}
           <HeroFeatures />

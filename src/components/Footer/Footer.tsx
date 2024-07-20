@@ -1,11 +1,13 @@
-import type { FC } from 'react'
-import styles from './Footer.module.scss'
-import Image from 'next/image'
-import { footerNavItems } from '@/constants/footerNav'
-import { FooterNav } from '../FooterNav/FooterNav'
-import { FooterSocial } from '../FooterSocial/FooterSocial'
-import Link from 'next/link'
-import { Instagram, Github, Linkedin } from 'grommet-icons'
+import type { FC } from 'react';
+import styles from './Footer.module.scss';
+import Image from 'next/image';
+import { footerNavItems } from '@/constants/footerNav';
+import { FooterNav } from '../FooterNav/FooterNav';
+import { FooterSocial } from '../FooterSocial/FooterSocial';
+import Link from 'next/link';
+import { Instagram, Github, Linkedin, Target } from 'grommet-icons';
+
+export type LinkTarget = '_blank' | '_self' | '_parent';
 
 export const Footer: FC = () => {
   return (
@@ -27,7 +29,7 @@ export const Footer: FC = () => {
             <Link href="/">
               <Instagram color="white" className={styles.social__icon} />{' '}
             </Link>
-            <Link href="/">
+            <Link href="https://github.com/roman-chaban">
               <Github color="white" className={styles.social__icon} />
             </Link>
             <Link href="/">
@@ -50,5 +52,5 @@ export const Footer: FC = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};

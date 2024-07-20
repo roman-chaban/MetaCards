@@ -15,7 +15,9 @@
   width: 282px;
   height: 403px;
   border-radius: rem(24px);
-  box-shadow: 39px 12px 59px 0 rgba(199, 199, 199, 0.6);
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   background: $color-white;
   padding: rem(15px);
 

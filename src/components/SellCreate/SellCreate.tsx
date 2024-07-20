@@ -9,7 +9,6 @@ import Image from 'next/image';
 import { Select } from '../UI/Select/Select';
 import { Button } from '../UI/Button/Button';
 import { Switcher } from '../Switcher/Switcher';
-import { switcherOn, switcherOff } from '../Switcher/switcherIcons';
 
 interface SellCreateProps {
   inputs: {

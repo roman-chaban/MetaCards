@@ -37,6 +37,7 @@
 .inputBlock,
 .AreaBlock,
 .tagsBlock {
+  cursor: pointer;
   width: 100%;
   display: flex;
   align-items: center;
@@ -45,11 +46,18 @@
   border-radius: 12px;
   background: $color-input-background-create;
   padding: rem(25px);
+  transition: border 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:focus-within {
+    border: 2px solid $color-button-bg;
+  }
 }
 
 .AreaBlock {
   align-items: flex-start;
   height: rem(165px);
+  &:focus-within {
+    border: 2px solid $color-button-bg;
+  }
 }
 
 .create__textArea {

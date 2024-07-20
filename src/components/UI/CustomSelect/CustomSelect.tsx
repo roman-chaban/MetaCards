@@ -41,6 +41,7 @@ export const CustomSelect: FC = () => {
   return (
     <div className="container">
       <Select
+      name=''
         classNamePrefix="custom__select"
         onChange={onChange}
         value={getValue()}
