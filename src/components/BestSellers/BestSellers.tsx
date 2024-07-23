@@ -1,14 +1,28 @@
-import type { FC } from 'react'
-import styles from './BestSellers.module.scss'
-import Image from 'next/image'
+'use client';
+
+import { useState, type FC } from 'react';
+import styles from './BestSellers.module.scss';
+import Image from 'next/image';
 import {
   BestSellersListItem,
   bestSellersList
-} from '@/constants/bestSellersList'
-import { Button } from '../UI/Button/Button'
-import { Notification } from '../Notification/Notification'
+} from '@/constants/bestSellersList';
+import { Button } from '../UI/Button/Button';
+import { Notification } from '../Notification/Notification';
 
 export const BestSellers: FC = () => {
+  const [buttonLabels, setButtonsLabels] = useState(
+    bestSellersList.map(item => item.buttonLabel)
+  );
+
+  const handleButtonClick = (index: number) => {
+    setButtonsLabels(prevLabels =>
+      prevLabels.map((label, i) =>
+        i === index ? (label === 'Follow' ? 'Unfollow' : 'Follow') : label
+      )
+    );
+  };
+
   return (
     <div className={styles.bestSellers}>
       <div className={styles.bestSellers__block}>
@@ -40,22 +54,17 @@ export const BestSellers: FC = () => {
                   </span>
                 </div>
               </div>
-              {item.buttonLabel === 'Unfollow' ? (
-                <Button
-                  style={{ background: '#e6e8ec' }}
-                  className={styles.bestSellers__followButton}
-                  type="button"
-                >
-                  {item.buttonLabel}
-                </Button>
-              ) : (
-                <Button
-                  className={styles.bestSellers__followButton}
-                  type="button"
-                >
-                  {item.buttonLabel}
-                </Button>
-              )}
+              <Button
+                style={{
+                  background:
+                    buttonLabels[index] === 'Unfollow' ? '#e6e8ec' : 'initial'
+                }}
+                className={styles.bestSellers__followButton}
+                onClick={() => handleButtonClick(index)}
+                type="button"
+              >
+                {buttonLabels[index]}
+              </Button>
             </div>
           ))}
         </div>
@@ -68,5 +77,5 @@ export const BestSellers: FC = () => {
         className={styles.dots__decoration}
       />
     </div>
-  )
-}
+  );
+};
