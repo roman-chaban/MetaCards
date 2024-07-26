@@ -1,14 +1,14 @@
-import React, { type FC } from 'react'
-import styles from './Accordion.module.scss'
-import { Add, Subtract } from 'grommet-icons'
+import React, { type FC } from 'react';
+import styles from './Accordion.module.scss';
+import { Add, Subtract } from 'grommet-icons';
 
 interface AccordionProps {
-  onToggle: () => void
-  title: string
+  onToggle: () => void;
+  title: string;
   subTitles: {
-    secondSubTitle: string
-  }
-  isOpen: boolean
+    secondSubTitle: string;
+  };
+  isOpen: boolean;
 }
 
 export const Accordion: FC<AccordionProps> = ({
@@ -40,5 +40,5 @@ export const Accordion: FC<AccordionProps> = ({
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

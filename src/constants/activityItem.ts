@@ -1,37 +1,37 @@
 export interface PriceDetails {
-  title: string
-  subTitle: string
-  icon?: string
+  title: string;
+  subTitle: string;
+  icon?: string;
 }
 
 export interface PriceItem {
-  firstPrice: PriceDetails
-  secondPrice: PriceDetails
-  thirdPrice: PriceDetails
-  fourPrice: PriceDetails
+  firstPrice: PriceDetails;
+  secondPrice: PriceDetails;
+  thirdPrice: PriceDetails;
+  fourPrice: PriceDetails;
 }
 
 export interface SaleItem {
-  title: string
-  subTitle: string
-  captureTime: string
-  icon: string
+  title: string;
+  subTitle: string;
+  captureTime: string;
+  icon: string;
 }
 
 export interface ActivityItem {
-  id: number
-  iconPrimary: string
-  iconSecondary: string
-  iconTertiary: string
-  iconFourth: string
-  iconFifth: string
-  title: string
-  subTitle: string
-  prices: PriceItem
-  sale: SaleItem
+  id: number;
+  iconPrimary: string;
+  iconSecondary: string;
+  iconTertiary: string;
+  iconFourth: string;
+  iconFifth: string;
+  title: string;
+  subTitle: string;
+  prices: PriceItem;
+  sale: SaleItem;
 }
 
-export type ActivityItemsType = ActivityItem[]
+export type ActivityItemsType = ActivityItem[];
 
 export const activityItems: ActivityItemsType = [
   {
@@ -110,4 +110,4 @@ export const activityItems: ActivityItemsType = [
       icon: '/images/activityItems/ethereum.svg'
     }
   }
-]
+];

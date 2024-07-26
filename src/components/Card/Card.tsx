@@ -1,22 +1,22 @@
-import { Product } from '@/interfaces/nft-product'
-import type { FC } from 'react'
-import styles from './Card.module.scss'
-import { Button } from '../UI/Button/Button'
-import Image from 'next/image'
-import Link from 'next/link'
-import { LinkNext } from 'grommet-icons'
+import { Product } from '@/interfaces/nft-product';
+import type { FC } from 'react';
+import styles from './Card.module.scss';
+import { Button } from '../UI/Button/Button';
+import Image from 'next/image';
+import Link from 'next/link';
+import { LinkNext } from 'grommet-icons';
 
 interface CardProps {
-  card: Product
+  card: Product;
   classNames: {
-    container: string
-    card: string
-    cardImage: string
-    cardTitle: string
-    cardSubtitle: string
-    cardRating: string
-    cardButton: string
-  }
+    container: string;
+    card: string;
+    cardImage: string;
+    cardTitle: string;
+    cardSubtitle: string;
+    cardRating: string;
+    cardButton: string;
+  };
 }
 
 export const Card: FC<CardProps> = ({ card, classNames }) => {
@@ -65,5 +65,5 @@ export const Card: FC<CardProps> = ({ card, classNames }) => {
         </Button>
       </div>
     </div>
-  )
-}
+  );
+};
