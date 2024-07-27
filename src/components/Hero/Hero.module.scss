@@ -122,7 +122,10 @@
 .create__button {
   @include secondaryButton;
   font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    border-color 0.3s ease;
 
   &:hover {
     background-color: lighten($color-button-bg, 10%);
@@ -172,11 +175,11 @@
 .arrow__icon {
   position: relative;
   bottom: 145px;
+  left: 10px;
   object-fit: cover;
   height: auto;
-  animation: zoomElement alternate 0.5s linear infinite ;
+  animation: zoomElement alternate 0.5s linear infinite;
 }
-
 
 .heroNft__banner {
   width: 100%;
@@ -301,7 +304,7 @@
   .arrow__icon {
     position: relative;
     bottom: 70px;
-    right: 20px;
+    left: -20px;
     max-width: 100px;
     max-height: 80px;
   }
@@ -521,13 +524,13 @@
     left: -10px;
   }
   .arrow__icon {
-    max-width: 80px;
-    max-height: 80px;
-    right: 50px;
+    max-width: 60px;
+    max-height: 60px;
+    right: 20px;
   }
   .secondaryImage {
     max-height: 310px;
-    bottom: 125px;
+    bottom: 110px;
   }
   .hero__information__buttons {
     gap: rem(17px);
@@ -563,6 +566,9 @@
   }
   .features {
     display: none;
+  }
+  .dots__decoration {
+    left: -26px;
   }
 }
 

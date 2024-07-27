@@ -11,9 +11,8 @@ import { Button } from '../UI/Button/Button';
 import { useScrollObserver } from '@/hooks/useScrollObserver';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Burger } from '../Burger/Burger';
 import { BurgerButton } from '../UI/BurgerButton/BurgerButton';
-import Choose from '@/app/choose/page';
+import { Burger } from '../Burger/Burger';
 
 type InputValue = string;
 
@@ -28,14 +27,12 @@ export const Header: FC = () => {
   const pathname = usePathname();
 
   const handleToggleMenu = () => {
-    setIsMenuActive(!isMenuActive);
+    setIsMenuActive(prevState => !prevState);
   };
 
   return (
     <header
-      className={`${styles.header} ${
-        isScrolledNav ? styles.header__scrollActive : ''
-      }`}
+      className={`${styles.header} ${isScrolledNav ? styles.header__scrollActive : ''}`}
     >
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
@@ -72,7 +69,7 @@ export const Header: FC = () => {
             <Search color="#9d9d9d" className={styles.search__input_icon} />
             <Input
               placeholder="Search Art Work / Creator"
-              name="Search at work "
+              name="Search at work"
               type="text"
               value={text}
               setValue={event => setText(event.target.value)}
@@ -87,7 +84,7 @@ export const Header: FC = () => {
           <BurgerButton isActive={isMenuActive} onClick={handleToggleMenu} />
         </div>
       </div>
-      {isMenuActive && <Burger onClose={handleToggleMenu} />}
+      <Burger onClose={handleToggleMenu} isActive={isMenuActive} />
     </header>
   );
 };

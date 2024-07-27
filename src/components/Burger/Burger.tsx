@@ -1,86 +1,80 @@
 'use client';
 
-import { KeyboardEventHandler, useEffect, useState, type FC } from 'react';
+import { KeyboardEventHandler, useEffect, useRef, FC } from 'react';
 import styles from './Burger.module.scss';
 import { usePathname } from 'next/navigation';
-import { useBodyOverFlow } from '@/hooks/useBodyOverflow';
 import { FormClose } from 'grommet-icons';
-import { HeaderNavLink, NavigationLinks } from '@/enums/navigation';
+import { NavigationLinks } from '@/enums/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useBodyOverFlow } from '@/hooks/useBodyOverflow';
 
 interface BurgerProps {
   onClose: () => void;
+  isActive: boolean;
 }
 
-export const Burger: FC<BurgerProps> = ({ onClose }) => {
-  const pathname = usePathname();
-  const [isActive, setIsActive] = useState<boolean>(false);
+export const Burger: FC<BurgerProps> = ({ onClose, isActive }) => {
+  const burgerMenuRef = useRef<HTMLDivElement>(null);
 
   useBodyOverFlow(isActive);
 
   useEffect(() => {
-    setIsActive(true);
-    return () => {
-      setIsActive(false);
-    };
-  }, []);
-
-  const handleCloseMenu = () => {
-    setIsActive(false);
-  };
+    if (burgerMenuRef.current) {
+      burgerMenuRef.current.focus();
+    }
+  }, [isActive]);
 
   const handleMenuCloseOnEscape: KeyboardEventHandler<
     HTMLDivElement
   > = event => {
     if (event.code === 'Escape' || event.code === 'Esc') {
-      setIsActive(false);
+      onClose();
     }
   };
 
   return (
     <nav
+      ref={burgerMenuRef}
       tabIndex={0}
+      className={`${styles.burgerMenu} ${isActive ? styles.active : ''}`}
       onKeyDown={handleMenuCloseOnEscape}
-      className={`${styles.burgerContainer} ${isActive ? styles.active : ''}`}
+      role="dialog"
+      aria-labelledby="burgerMenuTitle"
     >
-      <div className={styles.burger__logo}>
-        <div className={styles.burger__logo__wrapper}>
-          <h3 className={styles.burgerLogo__title}>MetaCards</h3>
-          <Image
-            src="/images/icons/Wave.svg"
-            alt="MetaCards Logo"
-            width={50}
-            height={50}
-          />
+      <div className={styles.burger__container}>
+        <div className={styles.burger__header}>
+          <div className={styles.burger__header_logo}>
+            <h3 className={styles.burgerLogo__title}>MetaCards</h3>
+            <Image
+              src="/images/icons/Wave.svg"
+              alt="MetaCards Logo"
+              width={50}
+              height={50}
+            />
+          </div>
+
+          <button className={styles.closeButton} onClick={onClose}>
+            <FormClose size="large" />
+          </button>
         </div>
-        <FormClose
-          className={styles.burgerClosed__icon}
-          onClick={onClose}
-          color="#141416"
-          style={{ width: 40, height: 40, cursor: 'pointer' }}
-        />
-      </div>
-      <div
-        className={`${styles.burgerNavigation__wrapper} ${isActive ? styles.active : ''}`}
-      >
-        <nav className={styles.burgerNav}>
-          <ul className={styles.burger__menu}>
-            {NavigationLinks.map((link: HeaderNavLink) => (
-              <li key={link.href} className={styles.menu__listItem}>
-                <Link
-                  onClick={handleCloseMenu}
-                  className={styles.listItem__link}
-                  href={link.href}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className={styles.burger__copyright}>
-          &copy; 2024 MetaCards, Inc. All Rights Reserved
+        <ul className={styles.menu}>
+          {NavigationLinks.map(link => (
+            <li key={link.title} className={styles.menu__item}>
+              <Link
+                onClick={onClose}
+                href={link.href}
+                className={styles.menu__item_link}
+              >
+                {link.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className={styles.burger__footer}>
+          <div className={styles.burger__copyright}>
+            &copy; 2024 MetaCards, Inc. All Rights Reserved
+          </div>
         </div>
       </div>
     </nav>

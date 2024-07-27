@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { Pagination } from '@/components/UI/Pagination/Pagination';
 import items from '@/api/nft-products.json';
 
-const ITEMS_PER_PAGE = 5;
+const ITEMS_PER_PAGE = 4;
 
 export default function Discover() {
   const [currentPage, setCurrentPage] = useState<number>(1);

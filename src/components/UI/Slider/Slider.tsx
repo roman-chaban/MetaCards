@@ -16,6 +16,7 @@ import './Slider.scss';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { setSwiperIndex } from '@/store/slices/swiperSlice';
 import { SliderButtons } from '@/components/SliderButtons/SliderButtons';
+import styles from '@/components/CreatorCards/CreatorCards.module.scss';
 
 interface SliderProps {
   settings?: {
@@ -37,13 +38,16 @@ interface SliderProps {
 const SliderWithButtons: FC<SliderProps> = ({
   settings = {},
   children,
-  width = '100%',
+  width = '100%'
 }) => {
   const swiperRef = useRef<Swiper | null>(null);
   const dispatch = useAppDispatch();
 
   return (
-    <div className="slider-container hero__slider" style={{ width }}>
+    <div
+      className={`slider-container hero__slider ${styles.creators__cardsSlider}`}
+      style={{ width }}
+    >
       <CustomSwiper
         modules={[Navigation, Pagination, Autoplay, A11y, Scrollbar]}
         navigation={settings.navigation}

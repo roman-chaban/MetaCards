@@ -132,25 +132,6 @@
     rgba(0, 0, 0, 0.16) 0px 3px 6px,
     rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transition: background 0.3s ease;
-  animation: slideIn 0.5s forwards;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideOut {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
 }
 
 .burger__button {
